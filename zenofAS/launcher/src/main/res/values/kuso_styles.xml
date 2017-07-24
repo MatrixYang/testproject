@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="kuso_AppBaseTheme" parent="android:Theme.Light"/>
+
+    <style name="kuso_AppTheme" parent="kuso_AppBaseTheme"/>
+
+    <style name="kuso_local_serach_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">#DCDCDC</item>
+    </style>
+    <style name="kuso_local_serach_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">7dp</item>
+        <item name="android:background">#eeeeee</item>
+    </style>
+
+    <style name="kuso_width_fill_line">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">11dp</item>
+        <item name="android:layout_marginRight">11dp</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">#d5d5d5</item>
+    </style>
+</resources>

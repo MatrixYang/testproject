@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="@dimen/kuso_localsearch_item_height"
+              android:background="@drawable/kuso_selector_search_list_item"
+              android:clickable="false"
+              android:focusable="false"
+              android:paddingLeft="11dp"
+              android:paddingRight="11dp"
+              android:gravity="center_vertical">
+
+    <TextView
+            android:id="@id/kuso_search_list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/kuso_contact_icon"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/kuso_engine_name_text"
+            android:drawablePadding="8dp"
+            android:textSize="@dimen/kuso_localsearch_item_textsize"/>
+
+    <ImageView
+            android:id="@+id/kuso_contact_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/kuso_contact_dail"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/kuso_contact_sms"
+            />
+
+    <ImageView
+            android:id="@+id/kuso_contact_dail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/kuso_contact_phone"/>
+</RelativeLayout>

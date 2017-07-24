@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titlebar_bg">#2f363f</color>
+    <color name="titlebar_icon_pressed">#20252b</color>
+
+    <!-- wang color start-->
+    <color name="dialog_enable">#5c6067</color>
+    <color name="rating_enable">#848991</color>
+    <color name="clear_create">#9199a7</color>
+    <color name="white">#fff</color>
+    <!-- wang color end -->
+
+    <!-- xiang color start-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rippelColor">#FFFFFF</color>
+    <!-- xiang color end -->
+
+    <color name="rate_normal_color">#00aae9</color>
+    <color name="rate_focus_color">#006c9e</color>
+</resources>

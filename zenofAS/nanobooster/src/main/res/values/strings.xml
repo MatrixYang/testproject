@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Nano Booster</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second_test">SecondTestActivity</string>
+    <string name="setting_instead">Instead of Nano Booster</string>
+    <string name="setting_you">You can find Nano Booster more quickly and improve your phone speed
+        by 50%
+    </string>
+
+    <string name="exit_warn">Press again to quit</string>
+</resources>

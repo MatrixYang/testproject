@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nano二维码</string>
+    <string name="string_interlinkage">链接</string>
+    <string name="string_text">文本</string>
+    <string name="share_title">选择分享方式</string>
+    <string name="exit_toast">再按一次退出</string>
+
+    <string name="open">打开</string>
+    <string name="copy">复制</string>
+    <string name="share">分享</string>
+    <string name="copy_success">复制成功</string>
+    <string name="select_new_photo">重选照片</string>
+    <string name="back">返回</string>
+    <string name="no_history_record">没有历史记录</string>
+    <string name="history_record">历史记录</string>
+    <string name="no_photo">没有选择照片</string>
+    <string name="decoding_error">解码出错</string>
+
+    <!-- Notification download begin -->
+    <string name="downloader_noti_downloading">正在下载...</string>
+    <string name="downloader_noti_pause">暂停</string>
+    <string name="downloader_noti_error">错误</string>
+    <string name="downloader_noti_done">完成!</string>
+    <string name="Align_the">将二维码放入扫描区域内进行扫描</string>
+    <string name="history_copy">复制</string>
+    <string name="history_delete">删除</string>
+    <string name="history_share">分享</string>
+    <string name="dialog_warning">警告</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_content">照相机设备故障</string>
+    <!-- Notification download end -->
+
+</resources>

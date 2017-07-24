@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1e1e1e">
+
+    <RelativeLayout
+            android:id="@+id/rl_paperTitle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#313743"
+            android:layout_gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/tv_set_wallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/wallpaper_set_wallpaper"
+                android:textColor="#cde0ff"
+                android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/ll_Bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            >
+
+        <ImageButton
+                android:id="@+id/downloadWallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wallpaper_download"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/zs_back_arrow_selector"
+                android:padding="20dp"
+                />
+
+
+        <Button
+                android:id="@+id/button_setWallPaper"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/wallpaper_set_as_wallpaper"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/zs_back_arrow_selector"
+                />
+
+        <ImageButton
+                android:id="@+id/shareWallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wallpaper_share"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/zs_back_arrow_selector"
+                android:padding="20dp"
+                android:layout_alignParentRight="true"
+                />
+    </RelativeLayout>
+
+    <FrameLayout
+            android:layout_above="@+id/wallpaper_selector"
+            android:layout_below="@+id/rl_paperTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+        <LinearLayout
+                android:id="@+id/linearNetError"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:clickable="true"
+                >
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wallpaper_refresh_btn"/>
+
+
+            <TextView
+                    android:id="@+id/tv_wallpaper_net_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/wallpaper_check_net"/>
+
+        </LinearLayout>
+
+
+        <com.cooeeui.wallpaper.croplib.CropImageView
+                android:id="@+id/crop_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+    </FrameLayout>
+
+    <LinearLayout
+            android:id="@+id/wallpaper_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@+id/ll_Bottom"
+            android:layout_marginBottom="20dp"
+            >
+
+        <TextView
+                android:id="@+id/myViewFixed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/wallpaper_fixed_selector"
+                android:drawablePadding="16dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/wallPaper_selector_fixed"/>
+
+        <TextView
+                android:id="@+id/myViewScrollable"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/wallpaper_scrollable_selector"
+                android:drawablePadding="16dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/wallPaper_selector_scrollable"/>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+

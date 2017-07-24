@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zen_setting_titlebar_height">50dp</dimen>
+    <dimen name="zen_setting_title_text_size">20dp</dimen>
+    <dimen name="zen_setting_subtitle_text_size">12dp</dimen>
+    <dimen name="zen_setting_list_item_height">50dp</dimen>
+    <dimen name="zen_setting_list_item_text_size">16dp</dimen>
+    <dimen name="zen_setting_margin_left">19dp</dimen>
+    <dimen name="zen_setting_margin_right">25dp</dimen>
+    <dimen name="zen_settin_divider_margin">15dp</dimen>
+    <dimen name="zen_settin_divider_height">0.5dp</dimen>
+    <!-- About start -->
+    <dimen name="zen_setting_about_icon_container_height">200dp</dimen>
+    <dimen name="zen_setting_about_launcher_name_size">20dp</dimen>
+    <dimen name="zen_setting_about_item_height">60dp</dimen>
+    <dimen name="zen_setting_about_item_title_size">18dp</dimen>
+    <dimen name="zen_setting_about_item_content_size">14dp</dimen>
+    <dimen name="zen_setting_thanks_margin_top">12dp</dimen>
+    <!-- About end -->
+
+
+    <!-- Feedback start -->
+    <dimen name="zen_setting_contact_info_edit_padding_top">6dp</dimen>
+    <!-- Feedback end -->
+
+</resources>

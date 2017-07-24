@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="all_apps_letter_size">12</integer>
+    <integer name="google_play_services_version">7327000</integer>
+    <integer name="shadow_dy">2</integer>
+    <integer name="shadow_radius">2</integer>
+
+</resources>

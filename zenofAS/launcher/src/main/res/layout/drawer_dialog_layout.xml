@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/dialog_width"
+              android:layout_height="@dimen/dialog_height"
+              android:background="@drawable/menu_background"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_messageheight"
+            android:layout_marginLeft="@dimen/dialog_messagemarginleft"
+            android:layout_marginRight="@dimen/dialog_messagemarginleft"
+            android:layout_marginTop="@dimen/dialog_messagemargintop"
+            android:text="TextView"
+            android:textColor="@color/popwindow_fontcolor"
+            android:textSize="@dimen/dialog_messagefontsize"/>
+
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/popmenu_lineheight"
+            android:layout_marginLeft="@dimen/popmenu_linemarginleft"
+            android:layout_marginRight="@dimen/popmenu_linemarginleft"
+            android:background="@color/popwindow_fontlinecolor"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_yesornoheight"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/dialog_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/fontclickbackgroundselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/hide_yes"
+                android:textColor="@color/popwindowfontclickselector"
+                android:textSize="@dimen/dialog_yesornofontsize"/>
+
+        <View
+                android:layout_width="@dimen/popmenu_lineheight"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dialog_yesornolinemargintop"
+                android:layout_marginTop="@dimen/dialog_yesornolinemargintop"
+                android:background="@color/popwindow_fontlinecolor"/>
+
+        <Button
+                android:id="@+id/dialog_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/fontclickbackgroundselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/hide_no"
+                android:textColor="@color/popwindowfontclickselector"
+                android:textSize="@dimen/dialog_yesornofontsize"/>
+    </LinearLayout>
+
+</LinearLayout>

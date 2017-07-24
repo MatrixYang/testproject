@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <com.cooeeui.brand.zenlauncher.tips.TextCircleView
+      android:id="@+id/unlocktimes"
+      android:layout_width="@dimen/cicle_height"
+      android:layout_height="@dimen/cicle_height"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_marginLeft="@dimen/cicle_margin_left_right"
+      android:layout_marginStart="@dimen/cicle_margin_left_right"
+      android:gravity="center"
+      android:text="00"
+      android:textColor="@color/circle_text_white"
+      android:textSize="@dimen/circle_text_size"
+      >
+  </com.cooeeui.brand.zenlauncher.tips.TextCircleView>
+
+  <com.cooeeui.brand.zenlauncher.tips.TextCircleView
+      android:id="@+id/phonetimes"
+      android:layout_width="@dimen/cicle_height"
+      android:layout_height="@dimen/cicle_height"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginEnd="@dimen/cicle_margin_left_right"
+      android:layout_marginLeft="@dimen/cicle_padding"
+      android:layout_marginRight="@dimen/cicle_margin_left_right"
+      android:layout_marginStart="@dimen/cicle_padding"
+      android:gravity="center"
+      android:text="0.0"
+      android:textColor="@color/circle_text_white"
+      android:textSize="@dimen/circle_text_size"
+      >
+  </com.cooeeui.brand.zenlauncher.tips.TextCircleView>
+
+  <TextView
+      android:id="@+id/unlocktime_tip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignEnd="@id/unlocktimes"
+      android:layout_alignLeft="@id/unlocktimes"
+      android:layout_alignRight="@id/unlocktimes"
+      android:layout_alignStart="@id/unlocktimes"
+      android:layout_below="@id/unlocktimes"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/cicle_tips_margin_top"
+      android:gravity="center_horizontal"
+      android:text="@string/tips_unlocktimes"
+      android:textColor="@color/circle_tip_text_color"
+      android:textSize="@dimen/circle_tip_size"
+      />
+
+  <LinearLayout
+      android:id="@+id/unlocktime_tip_unit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignEnd="@id/unlocktime_tip"
+      android:layout_alignLeft="@id/unlocktime_tip"
+      android:layout_alignRight="@id/unlocktime_tip"
+      android:layout_alignStart="@id/unlocktime_tip"
+      android:layout_below="@id/unlocktime_tip"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/cicle_tips_unit_margin_top"
+      android:gravity="center_horizontal"
+      >
+
+    <TextView
+        android:id="@+id/unlocktime_tip_unit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/tips_unlocktimes_unit"
+        android:textColor="@color/circle_tip_text_color"
+        android:textSize="@dimen/circle_tip_size"
+        />
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/phonetime_tip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignEnd="@id/phonetimes"
+      android:layout_alignLeft="@id/phonetimes"
+      android:layout_alignRight="@id/phonetimes"
+      android:layout_alignStart="@id/phonetimes"
+      android:layout_below="@id/phonetimes"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/cicle_tips_margin_top"
+      android:gravity="center_horizontal"
+      android:text="@string/tips_phonetime"
+      android:textColor="@color/circle_tip_text_color"
+      android:textSize="@dimen/circle_tip_size"
+      />
+
+  <LinearLayout
+      android:id="@+id/phonetime_tip_unit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignEnd="@id/phonetime_tip"
+      android:layout_alignLeft="@id/phonetime_tip"
+      android:layout_alignRight="@id/phonetime_tip"
+      android:layout_alignStart="@id/phonetime_tip"
+      android:layout_alignTop="@id/unlocktime_tip_unit"
+      android:layout_below="@id/phonetime_tip"
+      android:layout_toEndOf="@id/unlocktime_tip_unit"
+      android:layout_toRightOf="@id/unlocktime_tip_unit"
+      android:gravity="center_horizontal"
+      >
+
+    <TextView
+        android:id="@+id/tip_phonetime_unit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/tips_phonetime_unit_hour"
+        android:textColor="@color/circle_tip_text_color"
+        android:textSize="@dimen/circle_tip_size"
+        />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/top_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/unlocktime_tip_unit"
+      android:layout_marginLeft="@dimen/top_title_margin_left"
+      android:layout_marginStart="@dimen/top_title_margin_left"
+      android:layout_marginTop="@dimen/top_title_margin_top"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:id="@+id/top_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tips_top_title"
+        android:textColor="@color/top_title_text_color"
+        android:textSize="@dimen/top_title_text_size"
+        />
+  </LinearLayout>
+
+  <View
+      android:id="@+id/top_list_line"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@id/top_title"
+      android:layout_marginTop="@dimen/top_item_appname_margin_bottom"
+      android:background="@color/zs_listline_bg"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/top_list_line"
+      android:gravity="center_vertical"
+      android:orientation="vertical"
+      >
+
+    <ListView
+        android:id="@+id/top_list_day"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/tip_listview_divider"
+        android:dividerHeight="2dp"
+        />
+    <!-- Here is the view to show if the list is emtpy -->
+
+    <TextView
+        android:id="@+id/myempty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/tips_nodata_warning"
+        />
+  </LinearLayout>
+
+</RelativeLayout>

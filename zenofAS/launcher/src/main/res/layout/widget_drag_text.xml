@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/widget_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingTop="10dp">
+
+    <TextView
+            android:id="@+id/widget_drag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/widget_drag_text"
+            android:textSize="18dp"/>
+
+    <View
+            android:id="@+id/end_drag_view"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/navigation_height"
+            android:visibility="gone"/>
+
+</LinearLayout>

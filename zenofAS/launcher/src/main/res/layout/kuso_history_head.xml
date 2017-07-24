@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/kuso_search_list_background"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp">
+
+    <TextView
+            android:id="@+id/kuso_tv_history_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/kuso_history_record"
+            android:textColor="@color/kuso_history_title_color"
+            android:textSize="@dimen/kuso_localsearch_title_textsize"/>
+
+    <ImageView
+            android:id="@+id/kuso_history_record_clear"
+            android:layout_width="16dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/kuso_trash_can"
+            android:layout_alignParentRight="true"/>
+
+    <View style="@style/kuso_local_serach_line"/>
+</RelativeLayout>

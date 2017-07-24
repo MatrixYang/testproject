@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/zs_bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/zen_setting_title"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="13dp">
+
+        <LinearLayout style="@style/zenSetting_rl_group_style">
+
+        <RelativeLayout
+                android:id="@+id/rl_language_us"
+                style="@style/zenSetting_rl_style"
+                android:background="@drawable/ds_item_selector">
+
+            <TextView
+                    style="@style/zenSetting_tv_style"
+                    android:text="English"/>
+
+            <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                    android:id="@+id/image_us"
+                    android:layout_width="@dimen/zen_setting_language_size"
+                    android:layout_height="@dimen/zen_setting_language_size"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                    android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+            <View style="@style/zenSetting_view_style"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_ar"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector"
+                    android:visibility="gone">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="عربي"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_ar"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/rl_language_el"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="γλώσσα"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_el"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/rl_language_ro"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text=" în limba română"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_ro"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/rl_language_cs"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="česky"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_cs"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_ru"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="Русский язык"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_ru"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_pt"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="Português"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_pt"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_it"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="Italiano"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_it"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_fr"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="Français"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_fr"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_de"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="Deutsch"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_de"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_es"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="Español"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_es"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_in"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="Bahasa Indonesia"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_in"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_tr"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="Türk"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_tr"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_pl"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="polski"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_pl"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_cn"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="中文（简体）"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_cn"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_language_tw"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector"
+                    android:clickable="true">
+
+                <TextView
+                        style="@style/zenSetting_tv_style"
+                        android:text="中文（繁体）"/>
+
+                <com.cooeeui.brand.zenlauncher.scenes.ZenLanguageImage
+                        android:id="@+id/image_tw"
+                        android:layout_width="@dimen/zen_setting_language_size"
+                        android:layout_height="@dimen/zen_setting_language_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/zen_setting_margin_left"
+                        android:layout_marginRight="@dimen/zen_setting_margin_right"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/language_pop_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zen_setting_titlebar_height"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/zen_setting_title_text_size"
+            android:text="OK"/>
+
+</LinearLayout>

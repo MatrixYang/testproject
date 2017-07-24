@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cooeeui.nanobooster.views.DragViewForBooster
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:id="@+id/db_dragBooster">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/sc_after_clean"
+            android:overScrollMode="never">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <FrameLayout android:layout_width="match_parent"
+                         android:id="@+id/fl_total_upMove"
+                         android:visibility="invisible"
+                         android:layout_height="175dp"><!--android:background="#00aae9"   android:background="#ECECEC"-->
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="133dp"
+                              android:orientation="vertical"
+                              android:layout_gravity="center"
+                              android:gravity="center"
+                              android:id="@+id/ll_total_false"
+                              android:visibility="invisible">
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+                        <ImageView android:layout_width="40dp"
+                                   android:layout_height="40dp"
+                                   android:src="@drawable/rating_wujiaoxing"
+                                   android:id="@+id/iv_start_five_false"
+                                   android:gravity="center_vertical"
+                                   android:layout_centerVertical="true"/>
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="#ffffff"
+                                  android:text="300"
+                                  android:textSize="50dp"
+                                  android:layout_toRightOf="@+id/iv_start_five_false"
+                                  android:gravity="center_vertical"
+                                  android:id="@+id/tv_could_clean_false"
+                                  android:layout_centerVertical="true"
+                                  android:layout_marginLeft="20dp"/>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="vertical"
+                                      android:layout_centerVertical="true"
+                                      android:layout_toRightOf="@+id/tv_could_clean_false"
+                                      android:layout_marginLeft="20dp">
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textSize="20dp"
+                                      android:text="MB"
+                                      android:textColor="#ffffff"/>
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textSize="20dp"
+                                      android:text="Freeable"
+                                      android:textColor="#ffffff"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_gravity="center_horizontal"
+                              android:gravity="center_horizontal"
+                              android:layout_height="wrap_content"
+                              android:text="Nano Boost 15 Apps for you"
+                              android:textColor="#ffffff"
+                              android:textSize="20dp"/>
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fl_av"
+                    android:background="#ECECEC">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <!-- 广告1 -->
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="215dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shortcut"
+                                android:textSize="20dp"
+                                android:textColor="#585d64"
+                                android:layout_marginLeft="11dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="8dp"/>
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                            <ImageView
+                                    android:layout_width="260dp"
+                                    android:layout_height="104dp"
+                                    android:background="@drawable/setting_picture"
+                                    android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Create Nano booster instead mini booster"
+                                android:textColor="#9199a7"
+                                android:textSize="15dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#ECECEC"
+                                android:layout_marginTop="5dp"/>
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Instead"
+                                    android:textColor="#00aae9"
+                                    android:textSize="18dp"
+                                    android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <!-- 广告2-->
+
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="7dp"/>
+                    <FrameLayout android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="5dp"
+                                 android:padding="5dp"
+
+                                 android:layout_marginRight="5dp"
+                                 android:background="#FFFFFF">
+                        <include layout="@layout/ad_unit" android:id="@+id/ad_unit"/>
+                    </FrameLayout>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="7dp"/>
+                    <!-- 广告3 -->
+
+
+                    <FrameLayout android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="5dp"
+                                 android:padding="5dp"
+                                 android:background="#FFFFFF"
+                                 android:layout_marginRight="5dp">
+                        <include layout="@layout/ad_unit" android:id="@+id/ad_unit2"/>
+                    </FrameLayout>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="7dp"/>
+                    <!-- 广告4 -->
+
+
+                    <FrameLayout android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="5dp"
+                                 android:padding="5dp"
+                                 android:background="#FFFFFF"
+                                 android:layout_marginRight="5dp">
+                        <include layout="@layout/ad_unit" android:id="@+id/ad_unit3"/>
+                    </FrameLayout>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="10dp"/>
+                    <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="Finish"
+
+                            android:textSize="20dp"
+                            android:textColor="#ffffff"
+                            android:id="@+id/bt_booster_finish_false"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll_firstChild_for_DragViewForBooster"
+            >
+        <!--ActionBar图标-->
+        <!--android:background="#FF0000"-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+            <RelativeLayout
+                    android:id="@+id/titlebar_icon"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/action_bar_icon"/>
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/zs_titlebarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/titlebar_icon"
+                    android:gravity="center_vertical"
+                    android:text="Nano Booster"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"/>
+
+        </RelativeLayout>
+
+
+        <!--小圆部分+大圆（部分重叠）-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp">
+            <!--小圆部分）-->
+            <!--android:background="#FF34B3"-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="176dp"
+                    android:orientation="horizontal">
+
+                <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    <RelativeLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_centerVertical="true"
+                            android:visibility="invisible">
+
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/solid"
+                                android:layout_centerVertical="true"/>
+
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#ffffff"
+                                    android:text="90"
+                                    android:textSize="45dp"
+                                    android:id="@+id/tv_progress0"
+                                    android:layout_centerInParent="true"/>
+
+                            <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/percentage"
+                                    android:layout_alignBottom="@+id/tv_progress0"
+                                    android:layout_toRightOf="@+id/tv_progress0"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginBottom="12dp"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="invisible"
+                        android:id="@+id/ll_root_small_desc"
+                        android:gravity="center_vertical">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="300"
+                                android:textSize="45dp"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="#ffffff"
+                                android:id="@+id/tv_total"/>
+
+                        <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="MB"
+                                    android:id="@+id/tv_1"
+                                    android:textColor="#ffffff"
+                                    android:textSize="15dp"/>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Freeable"
+                                    android:id="@+id/tv_2"
+                                    android:layout_below="@+id/tv_1"
+                                    android:textColor="#ffffff"
+                                    android:textSize="15dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.31GB / 1.66GB"
+                            android:id="@+id/tv_small_desc"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RAM"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="22dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="-15dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--大圆部分）-->
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fl_root"
+                    android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl_wrap">
+
+                    <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:background="@drawable/half"
+                            android:id="@+id/iv_outter"
+                            android:layout_gravity="center"
+                            android:layout_centerInParent="true"/>
+
+                    <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="230dp"
+                            android:background="@drawable/half_of_solid"
+                            android:id="@+id/iv_inner"
+                            android:layout_gravity="center"
+                            android:layout_centerInParent="true"/>
+
+                    <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="230dp"
+                            android:background="@drawable/solid"
+                            android:layout_gravity="center"
+                            android:id="@+id/iv_inner_total"
+                            android:layout_centerInParent="true"/>
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_centerInParent="true">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ffffff"
+                                android:text="90"
+                                android:textSize="70dp"
+                                android:id="@+id/tv_progress"
+                                android:layout_centerInParent="true"/>
+
+                        <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/percentage"
+                                android:layout_alignBottom="@+id/tv_progress"
+                                android:layout_toRightOf="@+id/tv_progress"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="8dp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <!--波浪 2-->
+            <LinearLayout
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <FrameLayout android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                    <ImageView
+                            android:id="@+id/wave_second_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wave_second"/>
+
+                    <ImageView
+                            android:id="@+id/wave_second_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wave_second"/>
+                </FrameLayout>
+
+                <ImageView
+                        android:id="@+id/iv_wave_second_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#056eca"
+                        android:alpha="0.7"/>
+
+            </LinearLayout>
+            <!--波浪 1-->
+            <LinearLayout
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <FrameLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                            android:id="@+id/wave_first_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wave_first"/>
+
+                    <ImageView
+                            android:id="@+id/wave_first_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wave_first"/>
+                </FrameLayout>
+
+                <ImageView
+                        android:id="@+id/iv_wave_first_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#51acff"
+                        android:alpha="0.5"/>
+            </LinearLayout>
+
+            <!--三段文字-->
+            <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.31GB/1.66GB"
+                        android:id="@+id/tv_size"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#ffffff"/>
+
+                <!--30-->
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RAM"
+                        android:id="@+id/tv_name"
+                        android:textSize="20dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#ffffff"/>
+                <!--30-->
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15 Apps are showing down your phone"
+                            android:id="@+id/tv_desc"
+                            android:textSize="20dp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#ffffff"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="90dp"
+                                  android:orientation="vertical"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+
+                                  android:visibility="gone"
+                                  android:id="@+id/ll_detail_clean">
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/rl_clean_no_desc"
+                                        android:gravity="center">
+                            <ImageView android:layout_width="40dp"
+                                       android:layout_height="40dp"
+                                       android:src="@drawable/rating_wujiaoxing"
+                                       android:id="@+id/iv_start_five"
+                                       android:gravity="center_vertical"
+                                       android:layout_centerVertical="true"/>
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="#ffffff"
+                                      android:text="300"
+                                      android:textSize="50dp"
+                                      android:layout_toRightOf="@+id/iv_start_five"
+                                      android:gravity="center_vertical"
+                                      android:id="@+id/tv_could_clean"
+                                      android:layout_centerVertical="true"
+                                      android:layout_marginLeft="20dp"/>
+                            <LinearLayout android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:orientation="vertical"
+                                          android:layout_centerVertical="true"
+                                          android:layout_toRightOf="@+id/tv_could_clean"
+                                          android:layout_marginLeft="20dp">
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:textSize="20dp"
+                                          android:text="MB"
+                                          android:textColor="#ffffff"/>
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:textSize="20dp"
+                                          android:text="Freeable"
+                                          android:textColor="#ffffff"/>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_gravity="center_horizontal"
+                                  android:gravity="center_horizontal"
+                                  android:layout_height="wrap_content"
+                                  android:text="Nano Boost 15 Apps for you"
+                                  android:textColor="#ffffff"
+                                  android:id="@+id/tv_clean_desc"
+                                  android:textSize="20dp"/>
+                    </LinearLayout>
+
+
+
+
+                <!--提醒小箭头-->
+
+                <RelativeLayout
+                        android:id="@+id/guide_arrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:visibility="invisible">
+
+                    <ImageView
+                            android:id="@+id/guide_arrow_1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/arrow1"/>
+
+                    <ImageView
+                            android:id="@+id/guide_arrow_2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/arrow2"/>
+
+                    <ImageView
+                            android:id="@+id/guide_arrow_3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/arrow3"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--listView所在-->
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:background="#C1FFC1"
+            android:id="@+id/fl_child_include_list">
+
+        <include layout="@layout/content_view"/>
+        <!--button按钮-->
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#E5E5E5"
+                android:layout_marginTop="40dp"
+                android:id="@+id/fl_button_false">
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Booster 300MB"
+                    android:background="#0a71ce"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/bt_booster_false"
+                    android:visibility="visible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <com.cooeeui.nanobooster.views.RippleView
+            xmlns:ripple="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#E5E5E5"
+            android:id="@+id/fl_button_true"
+            android:visibility="invisible"
+            android:clickable="true"
+            ripple:rv_type="rectangle"
+            ripple:rv_rippleDuration="100">
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Booster 300MB"
+                android:background="#0a71ce"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:id="@+id/bt_booster_true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+    </com.cooeeui.nanobooster.views.RippleView>
+
+    <include layout="@layout/accessibility_alert_dialog"></include>
+
+    <include layout="@layout/rate_alert_dialog"></include>
+
+
+
+
+
+    <!--假的Nano Booster-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#00aae9"
+            android:layout_height="42dp">
+
+        <RelativeLayout
+                android:id="@+id/titlebar_icon_false"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/action_bar_icon"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/zs_titlebarTitle_false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/titlebar_icon_false"
+                android:gravity="center_vertical"
+                android:text="Nano Booster"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#E5E5E5"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"
+            android:id="@+id/fl_button_false_finish">
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Finish"
+                android:background="#0a71ce"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:id="@+id/bt_booster_finish"
+                android:visibility="visible"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+    </FrameLayout>
+</com.cooeeui.nanobooster.views.DragViewForBooster>

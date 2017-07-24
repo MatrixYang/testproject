@@ -1,0 +1,168 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E5E5E5"
+                    android:layout_weight="1">
+
+        <ListView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:id="@+id/lv_1"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:divider="#00000000"
+                  android:dividerHeight="@null">
+        </ListView>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"
+                      android:id="@+id/ll_2">
+
+            <com.cooeeui.nanobooster.views.RippleView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    ripple:rv_type="rectangle"
+                    android:id="@+id/rl_ignore_label"
+                    android:clickable="true">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="#E5E5E5"
+                                android:gravity="center_vertical">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/tv_ignore_label"
+                              android:text="Ignore List"
+                              android:layout_marginLeft="5dp"
+                              android:layout_centerVertical="true"
+                              android:textSize="16dp"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textColor="#00aae9"
+                              android:text="1"
+                              android:id="@+id/tv_ignore_size_label"
+                              android:layout_toRightOf="@+id/tv_ignore_label"
+                              android:textSize="16dp"
+                              android:layout_marginLeft="9dp"
+                              android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </com.cooeeui.nanobooster.views.RippleView>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#cccccc"
+                      android:id="@+id/tv_line"
+                      android:visibility="gone"/>
+
+            <com.cooeeui.nanobooster.views.RippleView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    ripple:rv_type="rectangle"
+                    android:id="@+id/ll_running_label_first"
+                    android:visibility="gone"
+                    android:clickable="true">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="38dp"
+                              android:background="#E5E5E5"
+                              android:gravity="center_vertical">
+                    <CheckBox android:layout_width="30dp"
+                              android:layout_height="30dp"
+                              android:id="@+id/ck_running_first"
+                              android:layout_marginLeft="5dp"
+                              android:layout_marginRight="9dp"
+                              android:onClick="selectAll_first"
+                              android:focusable="false"
+                              android:background="@drawable/running_checkbox_selector"
+                              android:button="@null"
+                              android:checked="true"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/tv_title_running_first"
+                              android:text="Running apps"
+                              android:layout_toRightOf="@+id/ck_running_first"
+                              android:textSize="16dp"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="23"
+                              android:layout_marginLeft="5dp"
+                              android:textSize="16dp"
+                              android:textColor="#00aae9"
+                              android:id="@+id/tv_running_manager_first"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="(38)"
+                              android:textSize="16dp"
+                              android:id="@+id/tv_running_total_first"/>
+                </LinearLayout>
+            </com.cooeeui.nanobooster.views.RippleView>
+
+        </LinearLayout>
+
+        <com.cooeeui.nanobooster.views.RippleView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ripple="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                ripple:rv_type="rectangle"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/ll_runnuing_label_second"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="38dp"
+                          android:background="#E5E5E5"
+                          android:gravity="center_vertical">
+                <CheckBox android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:id="@+id/ck_running_second"
+                          android:layout_marginLeft="5dp"
+                          android:layout_marginRight="9dp"
+                          android:onClick="selectAll_second"
+                          android:focusable="false"
+                          android:background="@drawable/running_checkbox_selector"
+                          android:button="@null"
+                          android:checked="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/tv_title_running_second"
+                          android:text="Running apps"
+                          android:layout_toRightOf="@+id/ck_running_second"
+                          android:textSize="16dp"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="24"
+                          android:layout_marginLeft="5dp"
+                          android:textSize="16dp"
+                          android:textColor="#00aae9"
+                          android:id="@+id/tv_running_manager_second"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="(39)"
+                          android:textSize="16dp"
+                          android:id="@+id/tv_running_total_second"/>
+            </LinearLayout>
+        </com.cooeeui.nanobooster.views.RippleView>
+
+    </RelativeLayout>
+    <!--<Button android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="点击我跳转到第二个Activity"-->
+    <!--android:onClick="jumpToSecondActivity"-->
+    <!--/>-->
+
+
+</LinearLayout>

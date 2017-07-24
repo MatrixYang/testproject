@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <include layout="@layout/ad_unit"></include>
+
+    <LinearLayout
+            android:id="@+id/ll_dl_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="17dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/browser_icon"
+                android:drawablePadding="8dp"
+                android:text="@string/string_interlinkage"
+                android:textSize="17dp"
+                android:textColor="#666666"/>
+
+        <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:text="www.launcher.com"
+                android:textSize="13dp"
+                android:textColor="#a1a19d"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp">
+
+            <TextView
+                    android:id="@+id/btn_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/button_share_bg"
+                    android:drawablePadding="8dp"
+                    android:text="@string/share"
+                    android:textColor="@drawable/button_share_color"/>
+
+            <TextView
+                    android:id="@+id/btn_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/btn_share"
+                    android:drawableLeft="@drawable/button_copy_bg"
+                    android:drawablePadding="8dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/copy"
+                    android:textColor="@drawable/button_share_color"/>
+
+        </RelativeLayout>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="10dp"
+                android:background="#c7c7c7"/>
+
+        <TextView
+                android:id="@+id/btn_open"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/open"
+                android:textSize="17dp"
+                android:textColor="@drawable/button_open_color"/>
+    </LinearLayout>
+
+</LinearLayout>

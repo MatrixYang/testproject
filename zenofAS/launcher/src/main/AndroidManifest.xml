@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.cooeeui.zenlauncher"
+          android:installLocation="internalOnly"
+          android:sharedUserId="com.cooeeui">
+
+    <uses-sdk
+            android:minSdkVersion="14"
+            android:targetSdkVersion="21"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+
+    <!-- MobvistaSDK *begin* -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- MobvistaSDK *end* -->
+
+    <uses-permission xmlns:tools="http://schemas.android.com/tools"
+                     android:name="android.permission.PACKAGE_USAGE_STATS"
+                     tools:ignore="ProtectedPermissions"/>
+
+    <!-- Kmob广告begin -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <!-- Kmob广告end -->
+
+    <uses-feature
+            android:name="android.hardware.telephony"
+            android:required="false"/>
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="false"/>
+    <uses-feature
+            android:name="android.hardware.camera.autofocus"
+            android:required="false"/>
+    <uses-feature
+            android:name="android.software.live_wallpaper"
+            android:required="false"/>
+    <uses-feature
+            android:name="android.software.app_widgets"
+            android:required="false"/>
+    <uses-feature
+            android:name="android.software.home_screen"
+            android:required="false"/>
+
+
+    <application
+            android:name="com.cooeeui.brand.zenlauncher.LauncherApplication"
+            android:allowBackup="true"
+            android:hardwareAccelerated="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/zen_launcher"
+            android:largeHeap="true"
+            android:persistent="true">
+
+        <!-- 友盟begin -->
+        <meta-data
+                android:value="54b87650fd98c5c81b00116a"
+                android:name="UMENG_APPKEY"></meta-data>
+        <meta-data
+                android:value="develop"
+                android:name="UMENG_CHANNEL"/>
+        <!-- 友盟end -->
+
+        <!-- Kmob广告begin -->
+        <meta-data
+                android:name="KMobAd_APP_ID"
+                android:value="501"/>
+        <!-- Kmob广告end -->
+
+
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.Launcher"
+                android:clearTaskOnLaunch="true"
+                android:launchMode="singleTask"
+                android:screenOrientation="nosensor"
+                android:stateNotNeeded="true"
+                android:theme="@style/Theme"
+                android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.MONKEY"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.settings.DefaultLauncher"
+                android:enabled="false"
+                android:excludeFromRecents="true"
+                android:exported="false"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.cooeeui.brand.zenlauncher.widget.zenicon.ZenIconProvider">
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/widget_zen_icon_provider_info"/>
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.cooeeui.zenlauncher.widget.click"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cooeeui.brand.zenlauncher.broadcast.WallpaperChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.WALLPAPER_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.cooeeui.brand.zenlauncher.broadcast.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service
+                android:name="com.cooeeui.brand.zenlauncher.wallpaper.LiveWallpaperService"
+                android:enabled="true"
+                android:icon="@drawable/wallpaper_01_small"
+                android:label="@string/zen_launcher"
+                android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter android:priority="1">
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.service.wallpaper"
+                    android:resource="@xml/wallpaper"/>
+        </service>
+
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.wallpaper.LiveWallpaperSettings"
+                android:exported="true"
+                android:label="@string/live_wallpaper_text_setting"
+                android:theme="@android:style/Theme.Light.WallpaperSettings">
+        </activity>
+
+        <service
+                android:name="com.cooeeui.brand.zenlauncher.alarmUpdate.service.DataService"/>
+
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.tips.TipsSetting"
+                android:launchMode="singleTop"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.scenes.ZenSetting"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.changeicon.ChangeAppIcon"
+                android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.scenes.ZenSettingPhone"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.scenes.ZenSettingEngine"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.scenes.ZenSettingFeedBack"
+                android:launchMode="singleTask"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.scenes.ZenSettingLanguage"
+                android:hardwareAccelerated="false"
+                android:screenOrientation="nosensor"
+                android:theme="@style/GuideStyle"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.settings.AboutActivity"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.widgets.SelectWidget"
+                android:screenOrientation="nosensor"
+                android:theme="@style/NumberClock_ContentTheme"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.searchbar.SearchActivity"
+                android:process="com.cooeeui.brand.zenlauncher.search"
+                android:launchMode="singleTask"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.searchbar.SearchWebViewActivity"
+                android:process="com.cooeeui.brand.zenlauncher.search"
+                android:launchMode="singleTask"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.searchbar.SearchEnginesActivity"
+                android:process="com.cooeeui.brand.zenlauncher.search"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.Light.NoTitleBar"/>
+
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.scenes.ZenAdvancedSetting"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.settings.SpecialThanks"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <!-- The settings provider contains Home's data, like the workspace favorites -->
+        <provider
+                android:name="com.cooeeui.brand.zenlauncher.LauncherProvider"
+                android:authorities="com.cooeeui.brand.zenlauncher.settings"
+                android:exported="true"
+                android:readPermission="com.cooeeui.zenlauncher.permission.READ_SETTINGS"
+                android:writePermission="com.cooeeui.zenlauncher.permission.WRITE_SETTINGS"/>
+
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.widget.weatherclock.weatherdata.WeatherCurveActivity"
+                android:theme="@style/NumberClock_ContentTheme">
+        </activity>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.widget.weatherclock.weatherdata.SearcherCityActivity"
+                android:theme="@style/NumberClock_ContentTheme"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <service android:name="com.cooeeui.brand.zenlauncher.favorite.MonitorService"/>
+        <service
+                android:name="com.cooeeui.brand.zenlauncher.favorite.WallpaperMonitorService"
+                android:enabled="true"
+                android:exported="true">
+        </service>
+        <!-- 单独开个进程来加载漫画页面，关闭之后，直接干掉进程释放所有内存 -->
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.scenes.ZenSettingLife"
+                android:process="com.cooeeui.brand.zenlauncher.zenlife"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.wallpaper.DetailAndCropActivity"
+                android:launchMode="singleTask"
+                android:process="com.cooeeui.brand.zenlauncher.zenwallpaper"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.wallpaper.OnlineWallpaperActivity"
+                android:launchMode="singleTask"
+                android:process="com.cooeeui.brand.zenlauncher.zenwallpaper"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+        <activity
+                android:name="com.cooeeui.brand.zenlauncher.wallpaper.local.WallPaperLocalActivity"
+                android:launchMode="singleTask"
+                android:process="com.cooeeui.brand.zenlauncher.zenwallpaper"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+
+        <!-- MobvistaSDK *begin* -->
+        <activity
+                android:name="com.mobvista.msdk.shell.MVActivity"
+                android:configChanges="keyboard|orientation"
+                android:screenOrientation="portrait">
+        </activity>
+        <service android:name="com.mobvista.msdk.shell.MVService">
+            <intent-filter>
+                <action android:name="com.mobvista.msdk.download.action"/>
+            </intent-filter>
+        </service>
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="826581090784415"/>
+        <!-- MobvistaSDK *end* -->
+
+
+        <!-- Kmob广告begin -->
+        <activity android:name="com.kmob.kmobsdk.InAppWebView"/>
+        <activity
+                android:name="com.kmob.kmobsdk.AdActivity"
+                android:process="com.cooeeui.brand.zenlauncher.search"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service
+                android:name="com.kmob.kmobsdk.KmobService"
+                android:exported="true"
+                android:process="com.kmob.dl.process"/>
+        <!-- Kmob广告end -->
+
+        <!-- 天气widget begin-->
+        <receiver
+                android:name="com.cooeeui.brand.zenlauncher.widgets.weather.WeatherWidget"
+                android:label="Weather"
+                android:icon="@drawable/widget_weather">
+            <intent-filter>
+                <action android:name="com.cooee.widget"/>
+            </intent-filter>
+            <meta-data
+                    android:name="proxyclass"
+                    android:value="com.cooeeui.brand.zenlauncher.widgets.weather.WeatherWidgetProxy"/>
+            <meta-data
+                    android:name="minwidth"
+                    android:resource="@dimen/weather_widget_minwidth"/>
+            <meta-data
+                    android:name="minheight"
+                    android:resource="@dimen/weather_widget_minheight"/>
+            <!--<meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/weather_widget_provider"/>-->
+        </receiver>
+        <!-- 天气widget end-->
+
+        <!-- hotapp widget begin-->
+        <receiver
+                android:name="com.cooeeui.brand.zenlauncher.widgets.hotapp.HotappWidget"
+                android:label="Hotapp"
+                android:icon="@drawable/widget_hot_app">
+            <intent-filter>
+                <action android:name="com.cooee.widget"/>
+            </intent-filter>
+            <meta-data
+                    android:name="proxyclass"
+                    android:value="com.cooeeui.brand.zenlauncher.widgets.hotapp.HotappWidgetProxy"/>
+            <meta-data
+                    android:name="minwidth"
+                    android:resource="@dimen/hotapp_widget_minwidth"/>
+            <meta-data
+                    android:name="minheight"
+                    android:resource="@dimen/hotapp_widget_minheight"/>
+            <!--<meta-data-->
+            <!--android:name="android.appwidget.provider"-->
+            <!--android:resource="@xml/hotapp_widget_provider"/>-->
+        </receiver>
+        <!-- hotapp widget end-->
+        <receiver
+                android:name="com.cooeeui.brand.zenlauncher.scenes.MyDeviceManager"
+                android:label="@string/lock_screen_name"
+                android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                    android:name="android.app.device_admin"
+                    android:resource="@xml/device_admin"/>
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

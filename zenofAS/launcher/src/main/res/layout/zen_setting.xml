@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:id="@+id/ll_setting"
+              android:layout_height="match_parent"
+              android:background="@color/zs_bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/zen_setting_title"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/ll_default_launcher_switch"
+                    style="@style/zenSetting_rl_group_style"
+                    android:layout_marginTop="13dp">
+
+                <RelativeLayout
+                        android:id="@+id/rl_default_launcher_switch"
+                        style="@style/zenSetting_rl_style"
+                        android:background="@drawable/ds_item_selector">
+
+                    <ImageView
+                            android:id="@+id/zs_icon_default"
+                            style="@style/zenSetting_icon_style"
+                            android:src="@drawable/zs_home_icon"/>
+
+                    <TextView
+                            android:id="@+id/rl_default_switch_text"
+                            style="@style/zenSetting_tv_style"
+                            android:layout_toRightOf="@id/zs_icon_default"
+                            android:text="@string/ds_default_launcher_setting"/>
+
+                    <ImageView style="@style/zenSetting_im_style"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/zs_setting_text"
+                    style="@style/zenSetting_grouptextview_style"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/zs_setting"/>
+
+            <LinearLayout style="@style/zenSetting_rl_group_style">
+
+                <RelativeLayout
+                        android:id="@+id/rl_phone"
+                        style="@style/zenSetting_rl_style"
+                        android:background="@drawable/ds_item_selector"
+                        android:clickable="true">
+
+                    <ImageView
+                            android:id="@+id/zs_icon_phone"
+                            style="@style/zenSetting_icon_style"
+                            android:src="@drawable/zs_phone_icon"/>
+
+                    <ImageView
+                            android:id="@+id/imageViewPhoneDetail"
+                            style="@style/zenSetting_view_detail_style"/>
+
+                    <TextView
+                            android:id="@+id/zs_phone_text"
+                            android:layout_toLeftOf="@id/imageViewPhoneDetail"
+                            style="@style/zenSetting_tv_style"
+                            android:layout_toRightOf="@id/zs_icon_phone"
+                            android:text="@string/zs_Phone"/>
+
+                    <View style="@style/zenSetting_view_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rl_engine"
+                        style="@style/zenSetting_rl_style"
+                        android:background="@drawable/ds_item_selector"
+                        android:clickable="true">
+
+                    <ImageView
+                            android:id="@+id/zs_icon_engine"
+                            style="@style/zenSetting_icon_style"
+                            android:src="@drawable/zs_search_icon"/>
+
+                    <ImageView
+                            android:id="@+id/imageViewEngineDetail"
+                            style="@style/zenSetting_view_detail_style"/>
+
+                    <TextView
+                            android:id="@+id/zs_engine_text"
+                            android:layout_toLeftOf="@id/imageViewEngineDetail"
+                            style="@style/zenSetting_tv_style"
+                            android:layout_toRightOf="@id/zs_icon_engine"
+                            android:text="@string/zs_Engine"/>
+
+                    <View style="@style/zenSetting_view_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rl_language"
+                        style="@style/zenSetting_rl_style"
+                        android:background="@drawable/ds_item_selector"
+                        android:clickable="true">
+
+                    <ImageView
+                            android:id="@+id/zs_language_icon"
+                            style="@style/zenSetting_icon_style"
+                            android:src="@drawable/zs_lan"/>
+
+                    <ImageView
+                            android:id="@+id/img_zen_language_alert"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_alignTop="@id/zs_language_icon"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/zs_red_alert"
+                            android:clickable="false"/>
+
+                    <TextView
+                            android:id="@+id/zs_language_text"
+                            style="@style/zenSetting_tv_style"
+                            android:layout_toRightOf="@id/zs_language_icon"
+                            android:text="@string/zs_language"/>
+
+                    <ImageView style="@style/zenSetting_view_detail_style"/>
+                    <View style="@style/zenSetting_view_style"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:id="@+id/rl_advanced"
+                        style="@style/zenSetting_rl_style"
+                        android:background="@drawable/ds_item_selector"
+                        android:clickable="true">
+
+                    <ImageView
+                            android:id="@+id/zs_advanced_icon"
+                            style="@style/zenSetting_icon_style"
+                            android:src="@drawable/advancedsetting_icon"/>
+
+                    <ImageView
+                            android:id="@+id/img_zen_advanced_alert"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_alignTop="@id/zs_advanced_icon"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/zs_red_alert"
+                            android:clickable="false"/>
+
+                    <TextView
+                            android:id="@+id/zs_advanced_text"
+                            style="@style/zenSetting_tv_style"
+                            android:layout_toRightOf="@id/zs_advanced_icon"
+                            android:text="@string/zs_advanced"/>
+
+                    <ImageView style="@style/zenSetting_view_detail_style"/>
+                    <View style="@style/zenSetting_view_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rl_usage"
+                        style="@style/zenSetting_rl_style"
+                        android:background="@drawable/ds_item_selector"
+                        android:clickable="true">
+
+                    <ImageView
+                            android:id="@+id/zs_usage_icon"
+                            style="@style/zenSetting_icon_style"
+                            android:src="@drawable/usage_zs"/>
+
+                    <ImageView
+                            android:id="@+id/img_zen_usage_alert"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_alignTop="@id/zs_usage_icon"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/zs_red_alert"
+                            android:clickable="false"/>
+
+                    <TextView
+                            android:id="@+id/zs_usage_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/zs_usage_icon"
+                            android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                            android:layout_marginTop="@dimen/zen_setting_contact_info_edit_padding_top"
+                            android:text="@string/usage_zs"
+                            android:textColor="@color/zs_text_color"
+                            android:textSize="@dimen/zen_setting_list_item_text_size"/>
+
+                    <TextView
+                            android:id="@+id/zs_usage_sub_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/zs_usage_icon"
+                            android:layout_alignLeft="@+id/zs_usage_text"
+                            android:layout_below="@+id/zs_usage_text"
+                            android:text="@string/usage_zs_summary"
+                            android:textColor="@color/ds_feedback_edittext_text"
+                            android:textSize="@dimen/zen_setting_subtitle_text_size"/>
+
+                    <ToggleButton
+                            android:id="@+id/tb_usage_switch"
+                            style="@style/zenSetting_toggle_style"
+                            android:clickable="false"
+                            android:textOff=" "
+                            android:textOn=" "/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/zs_more_text"
+                    style="@style/zenSetting_grouptextview_style"
+                    android:text="@string/zs_more"/>
+
+            <LinearLayout style="@style/zenSetting_rl_group_style">
+
+                <RelativeLayout
+                        android:id="@+id/rl_Feedback"
+                        style="@style/zenSetting_rl_style"
+                        android:background="@drawable/ds_item_selector"
+                        android:clickable="true">
+
+                    <ImageView
+                            android:id="@+id/zs_icon_Feedback"
+                            style="@style/zenSetting_icon_style"
+                            android:src="@drawable/zs_feedback_icon"/>
+
+                    <TextView
+                            android:id="@+id/zs_feedback_text"
+                            style="@style/zenSetting_tv_style"
+                            android:layout_marginRight="@dimen/togglebutton_width"
+                            android:layout_toRightOf="@id/zs_icon_Feedback"
+                            android:text="@string/zs_Feedback"/>
+
+                    <ImageView
+                            style="@style/zenSetting_view_detail_style"
+                            android:visibility="gone"/>
+
+                    <View style="@style/zenSetting_view_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rl_ZenLife"
+                        style="@style/zenSetting_rl_style"
+                        android:background="@drawable/ds_item_selector"
+                        android:clickable="true">
+
+                    <ImageView
+                            android:id="@+id/zs_icon_ZenLife"
+                            style="@style/zenSetting_icon_style"
+                            android:src="@drawable/zs_life_icon"/>
+                    <ImageView
+                            android:id="@+id/img_zen_lifeAlert"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_alignTop="@id/zs_icon_ZenLife"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/zs_red_alert"
+                            android:clickable="false"/>
+                    <ImageView
+                            android:id="@+id/imageViewZenLife"
+                            style="@style/zenSetting_view_detail_style"/>
+                    <TextView
+                            android:id="@+id/zs_ZenLife_text"
+                            style="@style/zenSetting_tv_style"
+                            android:layout_marginRight="@dimen/togglebutton_width"
+                            android:layout_toRightOf="@id/zs_icon_ZenLife"
+                            android:text="@string/zs_ZenLife"/>
+                    <View style="@style/zenSetting_view_style"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/rl_about"
+                        style="@style/zenSetting_rl_style"
+                        android:background="@drawable/ds_item_selector"
+                        android:clickable="true">
+
+                    <ImageView
+                            android:id="@+id/zs_icon_about"
+                            style="@style/zenSetting_icon_style"
+                            android:src="@drawable/zs_about_icon"/>
+
+                    <ImageView
+                            android:id="@+id/imageViewAboutDetail"
+                            style="@style/zenSetting_view_detail_style"/>
+
+                    <TextView
+                            android:id="@+id/about_zen_text"
+                            android:layout_toLeftOf="@id/imageViewAboutDetail"
+                            style="@style/zenSetting_tv_style"
+                            android:layout_toEndOf="@id/zs_icon_about"
+                            android:layout_toRightOf="@id/zs_icon_about"
+                            android:text="@string/about_zen"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

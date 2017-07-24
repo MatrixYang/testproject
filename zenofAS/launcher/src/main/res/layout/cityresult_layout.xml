@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <ImageView
+            android:id="@+id/iv_locationCity"
+            style="?android:attr/dropDownItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/txtCityName"
+            style="?android:attr/dropDownItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:ellipsize="marquee"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/fontcolor"
+            android:textSize="15dp"/>
+
+</LinearLayout>

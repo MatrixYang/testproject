@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cooeeui.nanobooster.views.DrawerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+    <include layout="@layout/drag_for_booster_view"/>
+
+    <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:id="@+id/ll_setting"
+                    android:background="#A8A8A8"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/setting"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Setting"
+                        android:textSize="22sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#5c6067"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="35dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="@string/setting_instead"
+                        android:textSize="20sp"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                </LinearLayout>
+
+                <ImageView
+                        android:paddingRight="15dp"
+                        android:id="@+id/setting_toggle"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/setting_open"/>
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/setting_picture"/>
+
+            <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_you"
+                    android:textSize="15sp"/>
+
+            <View
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#5c6067"/>
+            <!--分割-->
+            <LinearLayout
+                    android:id="@+id/ll_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:background="@drawable/click_selector">
+
+                <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/update"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Update"
+                        android:textSize="22sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#5c6067"/>
+            </LinearLayout>
+            <!--分割-->
+            <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:layout_height="1dip"
+                    android:background="#5c6067"/>
+            <!--分割-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/ll_feedback"
+                    android:orientation="horizontal"
+                    android:background="@drawable/click_selector">
+
+                <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/feedback"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Feedback"
+                        android:textSize="22sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#5c6067"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:layout_height="1dip"
+                    android:background="#5c6067"/>
+            <!--分割-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/ll_about"
+                    android:orientation="horizontal"
+                    android:background="@drawable/click_selector">
+
+                <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/about_nano_home"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="About Nano home"
+                        android:textSize="22sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#5c6067"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:layout_height="1dip"
+                    android:background="#5c6067"/>
+            <!--分割-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_good"
+                    android:background="@drawable/click_selector">
+
+                <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/goodjob"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Good job"
+                        android:textSize="22sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#5c6067"/>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#5c6067"/>
+
+        </LinearLayout>
+
+
+        <View
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#00000000"/>
+
+    </LinearLayout>
+    <!--</RelativeLayout>-->
+</com.cooeeui.nanobooster.views.DrawerView>
+
+

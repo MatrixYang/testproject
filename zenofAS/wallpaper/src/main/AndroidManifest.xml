@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.cooeeui.wallpaper">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+    <!-- shell 注册权限开始 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- shell 注册权限结束 -->
+
+    <!-- kpush start -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.CREATE_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- kpush end -->
+
+    <!-- MobvistaSDK *begin* -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- These permissions are strongly recommended and will result in higher performance -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- MobvistaSDK *end* -->
+
+    <!-- Kmob广告begin -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <!-- Kmob广告end -->
+
+    <!-- 友盟自更新 begin -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!-- 友盟自更新 end -->
+
+
+    <uses-feature
+            android:name="android.hardware.telephony"
+            android:required="false"/>
+
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/icon"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:largeHeap="true"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+
+        <activity
+                android:name="com.cooeeui.wallpaper.OnlineWallpaperActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.cooeeui.wallpaper.DetailAndCropActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="nosensor"/>
+        <activity
+                android:name="com.cooeeui.wallpaper.local.WallPaperLocalActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+
+        <!-- Cooee 统计 begin -->
+        <service
+                android:name="com.cooee.statistics.StatisticsServiceNew"
+                android:enabled="true"
+                android:exported="true"
+                android:process="com.cooeeui.wallpaper.statistics"/>
+        <!-- Cooee 统计 end -->
+
+        <!-- shell 注册组件开始 -->
+        <service
+                android:name="com.cooee.shell.shell.SdkServiceHullV5"
+                android:process="com.platform.shell.sdk">
+            <intent-filter android:priority="250">
+                <action android:name="com.cooee.shell.action.SdkServiceV5"/>
+            </intent-filter>
+        </service>
+        <service
+                android:name="com.cooee.shell.pay.PayServiceHullV5"
+                android:process="com.platform.shell.pay">
+            <intent-filter android:priority="250">
+                <action android:name="com.cooee.shell.action.PayServiceV5"/>
+            </intent-filter>
+        </service>
+        <activity
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:name="com.cooee.shell.shell.SdkActivityHullV5"
+                android:theme="@android:color/transparent">
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:exported="true"
+                android:name="com.cooee.shell.pay.PayActivityHullV5"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:name="com.cooee.shell.download.DownloaderActivityHullV5">
+        </activity>
+        <receiver android:name="com.cooee.shell.shell.SdkReceiverHullV5">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <!-- shell 注册组件结束 -->
+
+        <!-- kpush start -->
+        <service
+                android:name="com.kpsh.sdk.KpshService"
+                android:process="com.kpsh.kpshservice">
+            <intent-filter android:priority="250">
+                <action android:name="com.kpsh.sdk.action.KpshService"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.kpsh.sdk.KpshReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.USER_CLEARNOTIFY"/>
+                <action android:name="android.intent.action.SEND_TO_KPSH"/>
+                <action android:name="android.intent.action.CHECK_RECEIVER"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:name="com.kpsh.sdk.KpshActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:exported="true"
+                android:taskAffinity="com.kpsh.sdk.callScreen"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <!--   需要重新定义 com.cooee.testapp
+            <receiver android:name=".CooeeMsgReceiver">
+                <intent-filter>
+                <action android:name="android.intent.action.com.cooee.testapp" />
+                </intent-filter>
+            </receiver>
+            -->
+        <!-- kpush end -->
+
+
+        <!-- MobvistaSDK *begin* -->
+        <activity
+                android:name="com.mobvista.msdk.shell.MVActivity"
+                android:configChanges="keyboard|orientation"
+                android:screenOrientation="portrait">
+        </activity>
+        <service android:name="com.mobvista.msdk.shell.MVService">
+            <intent-filter>
+                <action android:name="com.mobvista.msdk.download.action"/>
+            </intent-filter>
+        </service>
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="1005802856193798"/>
+        <!-- MobvistaSDK *end* -->
+
+
+        <!-- Kmob广告begin -->
+        <meta-data
+                android:name="KMobAd_APP_ID"
+                android:value="584"/>
+        <activity android:name="com.kmob.kmobsdk.InAppWebView"/>
+        <activity
+                android:name="com.kmob.kmobsdk.AdActivity"
+                android:process="com.cooeeui.brand.zenlauncher.search"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service
+                android:name="com.kmob.kmobsdk.KmobService"
+                android:exported="true"
+                android:process="com.kmob.dl.process"/>
+        <!-- Kmob广告end -->
+
+        <!-- 友盟统计begin -->
+        <meta-data
+                android:value="573afd9667e58e3dc7002188"
+                android:name="UMENG_APPKEY"></meta-data>
+        <meta-data
+                android:name="UMENG_MESSAGE_SECRET"
+                android:value="1ed3318b8fd519822012c39987f2568e" >
+        </meta-data>
+        <meta-data
+                android:value="develop"
+                android:name="UMENG_CHANNEL"/>
+        <!-- 友盟统计end -->
+        <!-- 友盟自更新 begin -->
+        <service
+                android:name="com.umeng.update.net.DownloadingService"
+                android:process=":DownloadingService">
+        </service>
+        <activity
+                android:name="com.umeng.update.UpdateDialogActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <!-- 友盟自更新 end -->
+
+    </application>
+
+</manifest>

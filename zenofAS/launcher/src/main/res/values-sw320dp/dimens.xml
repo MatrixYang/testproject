@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- weather widget start -->
+    <dimen name="weather_widget_minwidth">144dp</dimen>
+    <dimen name="weather_widget_minheight">74dp</dimen>
+
+    <dimen name="widget_height">74dp</dimen>
+    <item name="widget_left_weight" format="float" type="dimen">1</item>
+    <item name="widget_right_weight" format="float" type="dimen">1.4</item>
+    <dimen name="widget_refresh_left">30dp</dimen>
+    <dimen name="widget_refresh_top">16dp</dimen>
+    <dimen name="widget_unknow_left">7dp</dimen>
+    <dimen name="widget_unknow_top">10dp</dimen>
+    <dimen name="widget_fu_tmp0_left">7dp</dimen>
+    <dimen name="widget_fu_tmp0_top">25dp</dimen>
+    <item name="widget_tmp_scale" format="float" type="dimen">0.5</item>
+    <item name="widget_unit_scale" format="float" type="dimen">1.0</item>
+    <item name="widget_condition_scale" format="float" type="dimen">1.0</item>
+    <dimen name="widget_fu_tmp1_left">-9dp</dimen>
+    <dimen name="widget_fu_tmp1_top">-6dp</dimen>
+    <dimen name="widget_fu_tmp2_left">-20dp</dimen>
+    <dimen name="widget_fu_tmp2_top">-6dp</dimen>
+    <dimen name="widget_fu_unit_left">-9.5dp</dimen>
+    <dimen name="widget_fu_unit_top">10dp</dimen>
+    <dimen name="widget_zheng_tmp1_left">-4dp</dimen>
+    <dimen name="widget_zheng_tmp1_top">-6dp</dimen>
+    <dimen name="widget_zheng_tmp2_left">-20dp</dimen>
+    <dimen name="widget_zheng_tmp2_top">-6dp</dimen>
+    <dimen name="widget_zheng_unit_left">-9.5dp</dimen>
+    <dimen name="widget_zheng_unit_top">10dp</dimen>
+    <dimen name="curr_temperature_right">3dp</dimen>
+    <dimen name="curr_temperature_bottom">4dp</dimen>
+    <dimen name="curr_temperature_textsize">10dp</dimen>
+    <dimen name="curr_condition_right">3dp</dimen>
+    <dimen name="widget_line_bottom">19dp</dimen>
+    <dimen name="widget_line_left">7dp</dimen>
+    <dimen name="widget_line_right">7dp</dimen>
+    <dimen name="widget_week_top">5dp</dimen>
+    <dimen name="widget_condition_top">3dp</dimen>
+    <!-- weather widget end -->
+
+</resources>

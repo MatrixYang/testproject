@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- application start -->
+    <dimen name="app_icon_size">64dp</dimen>
+    <!-- application end -->
+
+    <dimen name="zen_setting_title_text_size">27dp</dimen>
+
+    <!-- home screen start -->
+    <dimen name="searchbar_height">62dp</dimen>
+    <dimen name="bottom_height">100dp</dimen>
+    <dimen name="image_size">66dp</dimen>
+    <dimen name="all_apps_width">550dp</dimen>
+    <!-- home screen end -->
+
+    <!-- favorite start -->
+    <dimen name="favorite_grid_vertical_spacing">60dp</dimen>
+    <!-- favorite end -->
+
+    <!-- all APP start -->
+    <dimen name="all_apps_gridItemHeight">100dp</dimen>
+    <dimen name="all_apps_gridItemWidth">100dp</dimen>
+    <dimen name="all_apps_gridItemAppMarginBottom">8dp</dimen>
+    <!-- all APP end -->
+
+    <!-- setting start -->
+    <dimen name="zen_setting_groupheight">35dp</dimen>
+    <!-- setting end -->
+
+
+    <!-- Tip start -->
+    <dimen name="zen_setting_margin_left">30dp</dimen>
+    <dimen name="zen_setting_titlebar_height">82dp</dimen>
+    <dimen name="zen_setting_list_item_height">80dp</dimen>
+    <dimen name="zen_setting_margin_right">30dp</dimen>
+    <dimen name="zen_setting_contact_info_edit_padding_top">15dp</dimen>
+    <dimen name="zen_setting_list_item_text_size">25dp</dimen>
+    <dimen name="zen_setting_subtitle_text_size">20dp</dimen>
+    <dimen name="tip_date_gallery_margin_top">28dp</dimen>
+    <dimen name="tip_date_gallery_textsize">25dp</dimen>
+    <dimen name="cicle_margin_left_right">60dp</dimen>
+    <dimen name="cicle_height">180dp</dimen>
+    <dimen name="top_item_height">86dp</dimen>
+    <dimen name="top_item_margin_top">30dp</dimen>
+    <dimen name="top_item_icon_wh">57dp</dimen>
+    <dimen name="circle_text_size">40dp</dimen>
+    <dimen name="cicle_tips_margin_top">20dp</dimen>
+    <dimen name="circle_tip_size">15dp</dimen>
+    <dimen name="top_title_margin_left">30dp</dimen>
+    <dimen name="top_title_margin_top">32dp</dimen>
+    <dimen name="top_title_text_size">20dp</dimen>
+    <dimen name="top_item_appname_margin_bottom">7dp</dimen>
+    <dimen name="top_item_margin_left_right">50dp</dimen>
+    <dimen name="top_item_content_margin_top_bottom">10dp</dimen>
+    <dimen name="cicle_margin_top">18dp</dimen>
+    <dimen name="top_title_progress_text_size">20dp</dimen>
+    <dimen name="top_item_progress_margin_top">5dp</dimen>
+    <dimen name="tip_date_gallery">80dp</dimen>
+    <dimen name="cicle_tips_unit_margin_top">1dp</dimen>
+    <!-- Tip end -->
+
+
+    <!-- home screen sacles values start -->
+    <item name="date_group_date_X_sacle"
+          format="float"
+          type="dimen">0.25
+    </item>
+    <item name="weathergroup_temprature_width_sacle"
+          format="float"
+          type="dimen">0.5
+    </item>
+    <item name="weathergroup_temprature_height_sacle"
+          format="float"
+          type="dimen">1
+    </item>
+    <item name="weathergroup_weatherimg_height_sacle"
+          format="float"
+          type="dimen">0.8
+    </item>
+    <item name="weathergroup_weatherimg_width_sacle"
+          format="float"
+          type="dimen">0.8
+    </item>
+    <item name="homescreen_aspect_ratio"
+          format="float"
+          type="dimen">11
+    </item>
+    <!-- home screen sacles values end -->
+
+    <item name="change_app_icon_bottom_height_sc"
+          format="float" type="dimen">
+        0.044
+    </item>
+    <!-- alert dialog -->
+    <dimen name="alert_dialog_layout_width">328dp</dimen>
+    <!-- alert dialog end -->
+
+    <!-- weather widget start -->
+    <dimen name="weather_widget_minwidth">144dp</dimen>
+    <dimen name="weather_widget_minheight">123dp</dimen>
+
+    <dimen name="widget_height">123dp</dimen>
+    <item name="widget_left_weight" format="float" type="dimen">1</item>
+    <item name="widget_right_weight" format="float" type="dimen">1.6</item>
+    <dimen name="widget_refresh_left">50dp</dimen>
+    <dimen name="widget_refresh_top">27dp</dimen>
+    <dimen name="widget_unknow_left">12dp</dimen>
+    <dimen name="widget_unknow_top">17dp</dimen>
+    <dimen name="widget_fu_tmp0_left">12dp</dimen>
+    <dimen name="widget_fu_tmp0_top">42dp</dimen>
+    <item name="widget_tmp_scale" format="float" type="dimen">0.8</item>
+    <item name="widget_unit_scale" format="float" type="dimen">1.5</item>
+    <item name="widget_condition_scale" format="float" type="dimen">1.5</item>
+    <dimen name="widget_fu_tmp1_left">-4dp</dimen>
+    <dimen name="widget_fu_tmp1_top">10dp</dimen>
+    <dimen name="widget_fu_tmp2_left">-7.5dp</dimen>
+    <dimen name="widget_fu_tmp2_top">10dp</dimen>
+    <dimen name="widget_fu_unit_left">3dp</dimen>
+    <dimen name="widget_fu_unit_top">25dp</dimen>
+    <dimen name="widget_zheng_tmp1_left">8dp</dimen>
+    <dimen name="widget_zheng_tmp1_top">10dp</dimen>
+    <dimen name="widget_zheng_tmp2_left">-7.5dp</dimen>
+    <dimen name="widget_zheng_tmp2_top">10dp</dimen>
+    <dimen name="widget_zheng_unit_left">3dp</dimen>
+    <dimen name="widget_zheng_unit_top">25dp</dimen>
+    <dimen name="curr_temperature_right">8dp</dimen>
+    <dimen name="curr_temperature_bottom">7dp</dimen>
+    <dimen name="curr_temperature_textsize">17dp</dimen>
+    <dimen name="curr_condition_right">12dp</dimen>
+    <dimen name="widget_line_bottom">32dp</dimen>
+    <dimen name="widget_line_left">12dp</dimen>
+    <dimen name="widget_line_right">12dp</dimen>
+    <dimen name="widget_week_top">8dp</dimen>
+    <dimen name="widget_condition_top">15dp</dimen>
+    <!-- weather widget end -->
+
+    <!-- hotapp widget begin-->
+    <dimen name="hotapp_widget_minwidth">144dp</dimen>
+    <dimen name="hotapp_widget_minheight">193dp</dimen>
+
+    <dimen name="hotapp_widget_icon_width">188dp</dimen>
+    <dimen name="hotapp_widget_icon_height">193dp</dimen>
+    <!-- hotapp widget end-->
+    <!--setting_pop-->
+    <!--setting_pop-->
+    <dimen name="setting_pop_content_marginbottom">25dp</dimen>
+    <dimen name="setting_pop_content_margin_textsize">23dp</dimen>
+    <dimen name="setting_pop_content_margintop">25dp</dimen>
+    <dimen name="setting_pop_content_marginleft">18dp</dimen>
+    <dimen name="setting_pop_content_width">350dp</dimen>
+    <dimen name="setting_pop_content_lineSpacingExtra">13dp</dimen>
+
+    <dimen name="setting_pop_tip_marginleft">18dp</dimen>
+    <dimen name="setting_pop_tip_margin_top">23dp</dimen>
+    <dimen name="setting_pop_tip_textsize">34dp</dimen>
+    <dimen name="setting_pop_tip_drawablePadding">18dp</dimen>
+    <dimen name="setting_pop_tip_image_width">34dp</dimen>
+    <dimen name="setting_pop_tip_image_height">34dp</dimen>
+</resources>

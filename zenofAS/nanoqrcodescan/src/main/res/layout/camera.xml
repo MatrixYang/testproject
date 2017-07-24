@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    <com.cooeeui.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rl_bottom"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true">
+
+            <ImageButton
+                    android:id="@+id/btn_history"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/btn_history"/>
+
+            <ImageButton
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_album"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_album"
+                    />
+        </RelativeLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="#FFF"
+                android:layout_marginBottom="@dimen/camera_xml_text"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:layout_above="@id/rl_bottom"
+                android:text="@string/Align_the"
+                />
+
+        <ToggleButton
+                android:id="@+id/tb_flashlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/tb_flashlight"
+                android:textOff=" "
+                android:textOn=" "/>
+    </RelativeLayout>
+
+</FrameLayout>

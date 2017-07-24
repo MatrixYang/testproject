@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/zs_bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/zen_setting_title"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp">
+
+        <LinearLayout style="@style/zenSetting_rl_group_style">
+
+
+            <RelativeLayout
+                    android:id="@+id/rl_search_switch"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+                <ToggleButton
+                        android:id="@+id/tb_search_switch"
+                        style="@style/zenSetting_toggle_style"
+                        android:textOff=" "
+                        android:textOn=" "/>
+                <TextView
+                        android:id="@+id/desktop_search_text"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/tb_search_switch"
+                        style="@style/zenSetting_tv_style"
+                        android:text="@string/desktop_search"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

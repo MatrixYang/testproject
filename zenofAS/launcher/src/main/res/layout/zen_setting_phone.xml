@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/zs_bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/zen_setting_title"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp">
+
+        <LinearLayout
+                style="@style/zenSetting_rl_group_style"
+                android:layout_marginTop="@dimen/zen_setting_tfeedbackmargin">
+
+            <RelativeLayout
+                    android:id="@+id/rl_Recommend_setting"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector">
+
+                <TextView
+                        android:id="@+id/recommend_setting_text"
+                        style="@style/zenSetting_tv_style"
+                        android:text="@string/recommend_setting"/>
+
+                <ToggleButton
+                        android:id="@+id/tb_recommend_switch"
+                        style="@style/zenSetting_toggle_style"
+                        android:textOff=" "
+                        android:textOn=" "/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_blur_switch"
+                    style="@style/zenSetting_rl_style"
+                    android:background="@drawable/ds_item_selector"
+                    android:gravity="center_vertical">
+                <ToggleButton
+                        android:id="@+id/tb_blur_switch"
+                        style="@style/zenSetting_toggle_style"
+                        android:textOff=" "
+                        android:textOn=" "/>
+                <TextView
+                        android:layout_toLeftOf="@id/tb_blur_switch"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/zs_blurMainTitle"
+                        style="@style/zenSetting_tv_style"
+                        android:layout_centerVertical="false"
+                        android:text="@string/zs_BlurMainTitle"/>
+                <TextView
+                        android:id="@+id/blur_switch_text"
+                        android:layout_toLeftOf="@id/tb_blur_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/zs_blurMainTitle"
+                        android:layout_alignStart="@id/zs_blurMainTitle"
+                        android:layout_below="@id/zs_blurMainTitle"
+                        android:text="@string/ds_blur_switch"
+                        android:textSize="@dimen/zen_setting_blurSubtitleSize"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

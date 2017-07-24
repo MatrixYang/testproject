@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/dark_fore">
+
+    <ImageView
+            android:id="@+id/guide_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:id="@+id/guide_select2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:id="@+id/guide1"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/guide_finger1"
+                android:layout_width="24dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/finger"/>
+
+        <View
+                android:id="@+id/guide_line1"
+                android:layout_width="1dp"
+                android:layout_height="33dp"
+                android:layout_toLeftOf="@id/guide_finger1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"/>
+
+        <TextView
+                android:id="@+id/guide_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/guide_line1"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/guide2"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/guide_finger2"
+                android:layout_width="24dp"
+                android:layout_height="33dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/finger"/>
+
+        <View
+                android:id="@+id/guide_line2"
+                android:layout_width="1dp"
+                android:layout_height="33dp"
+                android:layout_toRightOf="@id/guide_finger2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"/>
+
+        <TextView
+                android:id="@+id/guide_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/guide_line2"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/guide_ok"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/blue"
+            android:text="@string/change_app_icon_ok"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+</FrameLayout>

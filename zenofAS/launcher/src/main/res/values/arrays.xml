@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 默认热门城市 -->
+    <string-array name="default_city_name">
+        <item>New York</item>
+        <item>London</item>
+        <item>Paris</item>
+        <item>Moscow</item>
+        <item>Sydney</item>
+        <item>Berlin</item>
+        <item>Tokyo</item>
+    </string-array>
+    <!-- 默认热门城市的国家 -->
+    <string-array name="default_country_name">
+        <item>United States</item>
+        <item>United Kingdom</item>
+        <item>France</item>
+        <item>Russia</item>
+        <item>Australia</item>
+        <item>Germany</item>
+        <item>Japan</item>
+    </string-array>
+    <!-- 默认热门城市的id -->
+    <string-array name="default_city_id">
+        <item>2459115</item>
+        <item>44418</item>
+        <item>615702</item>
+        <item>2122265</item>
+        <item>1105779</item>
+        <item>638242</item>
+        <item>1118370</item>
+    </string-array>
+    <!-- 默认国内热门城市的名字 -->
+    <string-array name="default_internal_city">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>香港</item>
+        <item>澳门</item>
+        <item>台北</item>
+    </string-array>
+    <!-- 屏蔽广告中的launcher -->
+    <string-array name="default_launcher_name">
+        <item>com.apusapps.launcher</item>
+        <item>net.aplusapps.launcher</item>
+        <item>com.hola.launcher</item>
+        <item>com.google.android.launcher</item>
+        <item>com.gau.go.launcherex</item>
+        <item>com.buzzpia.aqua.launcher</item>
+        <item>home.solo.launcher.free</item>
+        <item>com.qihoo360.launcher</item>
+        <item>com.solo.theme.colorfulflat</item>
+        <item>com.moxiu.launcher</item>
+        <item>com.miui.mihome2</item>
+        <item>com.tsf.shell</item>
+        <item>com.jiubang.XLLauncher</item>
+        <item>com.baidu.launcher</item>
+        <item>com.yaoo.qlauncher</item>
+        <item>com.tencent.launcher</item>
+        <item>com.lenovo.launcherhdmarket</item>
+    </string-array>
+
+
+    <!-- default app icon -->
+    <string-array name="default_app_icon">
+        <item>browser</item>
+        <item>camera</item>
+        <item>contacts</item>
+        <item>dial</item>
+        <item>setting</item>
+        <item>sms</item>
+    </string-array>
+    <!-- default app icon -->
+    <string-array name="other_package_icon_name">
+        <item>com.cooeeui.iconui</item>
+        <item>com.vertumus.rewun</item>
+        <item>stealthychief.theme.devo</item>
+        <item>com.vertumus.elun</item>
+        <item>com.samerzayer.theme.marvak</item>
+        <item>com.vertumus.cryten</item>
+        <item>difft.icons</item>
+        <item>com.Fraom.IrideUI</item>
+        <item>com.Fraom.IrideUIisHipster</item>
+        <item>com.hooolm.smokeandglass</item>
+        <item>stealthychief.theme.agent</item>
+        <item>stealthychief.icon.pack.retro</item>
+        <item>com.djskarpia.moko</item>
+        <item>com.onyxdev.iconpack.theme.glif</item>
+        <item>com.samerzayer.themes.rotox</item>
+        <item>com.vertumus.vopor</item>
+        <item>com.vertumus.atran</item>
+        <item>com.sikebo.materialistik.material.icons</item>
+        <item>com.Fraom.Gel</item>
+        <item>com.xonyxltd.icon.silhouettedonate</item>
+        <item>net.threekzerothree.softinsetroundicons.black</item>
+        <item>nexbit.icons.moonshine</item>
+        <item>com.numix.icons_circle</item>
+        <item>com.benx9.cactus</item>
+        <item>com.kittyplay.ex.iconpack.Comb</item>
+        <item>com.ryanmkelly.me.min</item>
+        <item>com.xynapse.futurounds</item>
+        <item>tomy.cadus.adastra</item>
+        <item>com.dlto.atom.theme.blackmechanic</item>
+        <item>com.iconnect.app.iconshop</item>
+        <item>com.srbodroid.longshadow</item>
+        <item>jp.iconnect.theme.notestyle</item>
+        <item>com.cooltouch.iconstore</item>
+        <item>com.benx9.tulip</item>
+        <item>com.benx9.poppy</item>
+        <item>com.benx9.palmtree</item>
+        <item>net.threekzerothree.icons.glass</item>
+        <item>stealthychief.icon.pack.stealth</item>
+        <item>com.djskarpia.balx</item>
+        <item>com.AVDesign.cube</item>
+        <item>com.numix.icons_fold</item>
+        <item>com.launchertheme.kxnt.click</item>
+        <item>com.tung91.flatico</item>
+        <item>com.sector.zero.axiom</item>
+        <item>com.arandompackage.flatconswhite</item>
+        <item>com.arandompackage.flatconswhite</item>
+        <item>com.zvd.zolo</item>
+        <item>com.daeva112.donate.belleui</item>
+        <item>giannisgx89.yoma.icons</item>
+        <item>com.samanthaconner.sense</item>
+        <item>jp.iconnect.theme.sweetgirl</item>
+        <item>jp.iconnect.theme.wine</item>
+        <item>com.onyxdev.launchertheme.iconpack.vit</item>
+        <item>com.kinux.icons.pack</item>
+        <item>com.uppack.stampeddark</item>
+        <item>com.nos_network.iconchange_pinkyheart</item>
+        <item>com.ray.ligna.icons.free</item>
+        <item>com.pinknoze.blitz</item>
+        <item>com.AVDesign.cube</item>
+        <item>com.daeva112.iconpack.belleui</item>
+        <item>com.uppack.roundedup</item>
+        <item>com.uppack.stampedwhite</item>
+        <item>com.uppack.nowicons</item>
+        <item>com.aroundlite.icons.edge.iconpack</item>
+        <item>grives.squircle.iconpack.free</item>
+        <item>jack.peek.iconpack</item>
+        <item>com.kaleidoscope.simpleroundslite</item>
+        <item>com.kittyplay.ex.iconpack.magic</item>
+        <item>com.jenning.simply8bit</item>
+        <item>com.pnest.iconmake</item>
+        <item>com.kittyplay.ex.iconpack.adamxxx</item>
+        <item>nexuscircle.iconpack.dsaif</item>
+        <item>drase.flui.iconpack</item>
+        <item>com.kittyplay.ex.iconpack.Crystalballling</item>
+        <item>com.zavukodlak.candycons</item>
+        <item>com.thearclabs.polycon</item>
+        <item>com.whicons.iconpack</item>
+        <item>com.natewren.lightvoid</item>
+        <item>com.czarnomorski.theme.dcikonz</item>
+        <item>com.artvandelay440.cardstock</item>
+        <item>com.xonyxltd.icon.flair</item>
+        <item>com.icons.glim</item>
+        <item>com.arandompackage.jive</item>
+        <item>com.djskarpia.quadro</item>
+        <item>com.xonyxltd.icon.focus</item>
+        <item>com.hd.plane</item>
+        <item>kov.theme.merus</item>
+        <item>com.kaleidoscope.surrounds</item>
+        <item>com.ds.goolo</item>
+        <item>com.czarnomorski.theme.dcikonz</item>
+        <item>com.samerzayer.theme.neonglow</item>
+        <item>com.esethnet.vion</item>
+        <item>com.arandompackage.influx</item>
+        <item>ideadesigns.theme.flazing</item>
+        <item>stealthychief.theme.vibe</item>
+        <item>com.samerzayer.theme.paper</item>
+        <item>com.ryanmkelly.me.tendere</item>
+        <item>com.djskarpia.stockui</item>
+        <item>com.ryanmkelly.me.hexacon</item>
+        <item>kov.theme.audax</item>
+        <item>com.ds.goolors</item>
+        <item>kov.theme.domo</item>
+        <item>com.samerzayer.theme.flatastico</item>
+        <item>com.samerzayer.theme.flatee</item>
+        <item>kov.theme.stark</item>
+        <item>com.launchertheme.kxnt.switchui</item>
+        <item>com.ryanmkelly.me.umbra</item>
+        <item>com.ryanmkelly.me.flatro</item>
+        <item>com.aroundfull.icons.edge.iconpack</item>
+        <item>com.ray.lewa</item>
+        <item>com.lconcept.icons.pack</item>
+        <item>com.biohazard.icons.packs</item>
+        <item>com.onyxdev.iconpack.theme.voya</item>
+        <item>com.onyxdev.iconpack.theme.flairretro</item>
+        <item>com.onyxdev.iconpack.theme.skiva</item>
+        <item>com.onyxdev.iconpack.theme.kontur</item>
+        <item>com.xonyxltd.icon.faint</item>
+        <item>com.xonyxltd.icon.crease</item>
+        <item>com.krom.icons.pack</item>
+        <item>com.lionsgate.mockingjay</item>
+    </string-array>
+
+</resources>

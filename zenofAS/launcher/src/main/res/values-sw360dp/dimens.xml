@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="image_size">44dp</dimen>
+
+    <!-- home screen start -->
+    <dimen name="home_add_icon_size">40dp</dimen>
+    <dimen name="home_add_icon_size_textwidth">40dp</dimen>
+    <dimen name="home_add_icon_size_textsize">8dp</dimen>
+    <!-- home screen end -->
+
+
+    <!-- favorite start -->
+    <dimen name="favorite_title_padding_top">20dp</dimen>
+    <dimen name="favorite_title_padding_bottom">20dp</dimen>
+    <dimen name="favorite_grid_vertical_spacing">30dp</dimen>
+    <dimen name="favorite_speedy_container_height">60dp</dimen>
+    <dimen name="favorite_recently_recommond_height">150dp</dimen>
+    <!-- favorite end -->
+
+
+    <!-- all APP start -->
+    <dimen name="all_apps_width">330dp</dimen>
+    <dimen name="all_apps_titlebar_height">50dp</dimen>
+    <dimen name="all_apps_section_size">20dp</dimen>
+    <dimen name="all_apps_list_padding_top_bottom">20dp</dimen>
+    <dimen name="all_apps_list_grid_margin_left">5dp</dimen>
+    <!-- all APP end -->
+
+
+    <!-- tip start -->
+    <dimen name="cicle_height">105dp</dimen>
+    <dimen name="cicle_margin_left_right">47dp</dimen>
+    <dimen name="cicle_padding">53dp</dimen>
+    <dimen name="cicle_margin_top">18dp</dimen>
+    <dimen name="cicle_tips_margin_top">18dp</dimen>
+    <dimen name="cicle_tips_unit_margin_top">5dp</dimen>
+    <dimen name="top_title_margin_left">25dp</dimen>
+    <dimen name="top_title_margin_top">21dp</dimen>
+    <dimen name="top_item_margin_left_right">25dp</dimen>
+    <dimen name="top_item_margin_top">12dp</dimen>
+    <dimen name="top_item_content_margin_top_bottom">9dp</dimen>
+    <dimen name="top_item_icon_wh">36dp</dimen>
+    <dimen name="top_item_appname_margin_bottom">7dp</dimen>
+    <dimen name="top_item_height">54dp</dimen>
+    <dimen name="circle_text_size">33dp</dimen>
+    <dimen name="circle_tip_size">12dp</dimen>
+    <dimen name="top_title_text_size">18dp</dimen>
+    <dimen name="top_title_progress_text_size">10dp</dimen>
+    <dimen name="tip_view_marginleft">14dp</dimen>
+    <dimen name="tip_view_margintop">10dp</dimen>
+    <dimen name="top_item_progress_margin_top">7dp</dimen>
+    <dimen name="tip_date_gallery">30dp</dimen>
+    <dimen name="tip_date_gallery_margin_top">13.5dp</dimen>
+    <dimen name="tip_date_gallery_textsize">14dp</dimen>
+    <dimen name="tip_date_gallery_itempadding">18dp</dimen>
+    <!-- tip end -->
+
+
+    <!-- home screen sacles values start -->
+    <item name="weathergroup_temprature_height_sacle" format="float" type="dimen">1.2</item>
+    <!-- home screen sacles values end -->
+
+
+    <!-- change app icon -->
+    <dimen name="change_app_icon_icon_size">42dp</dimen>
+    <dimen name="change_app_icon_oldicon_size">42dp</dimen>
+    <dimen name="change_app_icon_newicon_size">42dp</dimen>
+    <dimen name="change_app_icon_gradview_horizontalSpacing">30dp</dimen>
+    <dimen name="change_app_icon_gradview_verticalSpacing">27dp</dimen>
+    <dimen name="change_app_icon_gradview_marginbottom">0dp</dimen>
+    <dimen name="change_app_icon_gradview_margintop">23dp</dimen>
+    <!-- change app icon -->
+
+
+    <!-- alert dialog -->
+    <dimen name="alert_dialog_layout_width">328dp</dimen>
+    <!-- alert dialog end -->
+
+
+    <!-- home screen sacles values start -->
+    <item name="date_group_week_Y_sacle" format="float" type="dimen">0.38</item>
+    <item name="date_group_week_height_sacle" format="float" type="dimen">0.23</item>
+    <!-- home screen sacles values end -->
+
+    <!--setting_pop-->
+    <dimen name="setting_pop_content_marginbottom">15dp</dimen>
+    <dimen name="setting_pop_content_margin_textsize">14dp</dimen>
+    <dimen name="setting_pop_content_margintop">15dp</dimen>
+    <dimen name="setting_pop_content_marginleft">11dp</dimen>
+    <dimen name="setting_pop_content_width">210dp</dimen>
+    <dimen name="setting_pop_content_lineSpacingExtra">8dp</dimen>
+
+    <dimen name="setting_pop_tip_marginleft">11dp</dimen>
+    <dimen name="setting_pop_tip_margin_top">14dp</dimen>
+    <dimen name="setting_pop_tip_textsize">20dp</dimen>
+    <dimen name="setting_pop_tip_drawablePadding">11dp</dimen>
+    <dimen name="setting_pop_tip_image_width">20dp</dimen>
+    <dimen name="setting_pop_tip_image_height">20dp</dimen>
+
+    <!--setting pop end-->
+</resources>

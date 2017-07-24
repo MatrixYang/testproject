@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zen_setting_titlebar_height"
+            android:background="#333333">
+
+        <FrameLayout
+                android:id="@+id/thanks_back"
+                android:layout_width="@dimen/arrow_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/zs_back_arrow_selector">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/zs_back_arrow"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zen_setting_about_icon_container_height"
+                    android:background="#333333">
+
+                <ImageView
+                        android:id="@+id/iv_logo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/zen_logo"/>
+
+                <TextView
+                        android:id="@+id/logo_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_logo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/zen_launcher"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/zen_setting_about_launcher_name_size"/>
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/about_special_thank_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginRight="@dimen/zen_setting_margin_right"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:singleLine="false"
+                    android:text="@string/ds_about_special_thanks_text"
+                    android:textColor="@color/zs_text_color"
+                    android:textSize="@dimen/zen_setting_about_item_title_size"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_russian_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_russian"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Artem Rez,Piter Falk,Hrach Mkrtchyan,Алексей Герцен"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_spanish_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_spanish"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Maikid TheZarkey,Juan Mano,Keynner Solano,Alberto Baron Boja,Ruben Matinez,Edgar Valencia,Mathieu Quittre,Rafael Sanchez,Miguel Gonzalez,Ruben Matinez Garacia"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_french_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_french"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Mathieu Quittre  Ange Kevin Amlaman"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_german_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_german"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Sebastian Schuster, Jusef Ahmadi, Kevin Hartmann, The Nameless, Robort Kummer, A klingenberg, Lars Albercht, Vincent ChiLLin, Mischa Jorg"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_portuguese_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_portuguese"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Matheus Reinheimer Schopf, Rafael Silva, Gabriel Palagani，pinportal, Normenio Momm, Cleber Negreiro, Guilgerme Nogara, Lucas marx, byfredss,Rafael R. Kuhn, Baris TIGLI, F Marcelo O Amaraante, Vitor Danilel"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_Indonesian_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_Indonesian"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Yahya Nurmisuari, Andhika Rithma Espinoza, Muhammad Mujahidin Alhaq"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_Italian_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_Italian"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Giovanni Fiorini, Matteo Borella, Luca Mambretti, Matteo Delton, Alessandro Pratesi"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_Turkish_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_Turkish"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="cylon1974, Barış TIĞLI, gizlimesenger, Ali Komesogutlu. Emrah Teksan, Mustafa OZKAYA, gereksiz adam, baris929292, Gokdeniz Cetin, Ali Kaptan"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_Czech_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_Czech"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Longrik, jenes333, lukpospi, Sebastian  Schuster, Tentovac"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_Dutch_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_Dutch"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Bart de Jong, Kyl0flipr, Evert Eckhardt, Mitchell Van Dijk"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_Greek_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_Greek"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Staduk, Kostas Karakepelis, ylrexidx"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_Romanian_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_Romanian"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="George Davel, Tech Heck, thph4"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_polish_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_polish"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="xgeoredfox, Sebastian Schuster, Patryk Szkudlarek"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_swedish_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_swedish"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Markus Wallgren"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+
+            <TextView
+                    android:id="@+id/about_special_thanks_ukrainian_text"
+                    style="@style/aboutLayout_item_title_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"
+                    android:text="@string/ds_about_special_thanks_ukrainian"/>
+
+            <TextView
+                    style="@style/aboutLayout_item_content_style"
+                    android:layout_marginLeft="@dimen/zen_setting_margin_left"
+                    android:text="Stepan Tkhir"/>
+
+            <View
+                    style="@style/aboutLayout_divider_style"
+                    android:layout_marginTop="@dimen/zen_setting_thanks_margin_top"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="app_icon_size">72dp</dimen>
+  <dimen name="zen_setting_title_text_size">26dp</dimen>
+
+  <!-- home screen start -->
+  <dimen name="home_add_icon_size">66dp</dimen>
+  <dimen name="home_add_icon_size_textwidth">66dp</dimen>
+  <dimen name="home_add_icon_size_textsize">12dp</dimen>
+  <dimen name="searchbar_height">62dp</dimen>
+  <dimen name="bottom_height">100dp</dimen>
+  <dimen name="image_size">66dp</dimen>
+  <!-- home screen end -->
+
+  <!-- all APP start -->
+  <dimen name="all_apps_width">680dp</dimen>
+  <dimen name="all_apps_gridItemAppMarginBottom">10dp</dimen>
+  <!-- all APP end -->
+
+
+  <!-- favorite start -->
+  <dimen name="favorite_recently_recommond_height">200dp</dimen>
+  <dimen name="favorite_speedy_container_height">80dp</dimen>
+  <dimen name="favorite_speedy_container_padding">20dp</dimen>
+  <dimen name="favorite_grid_vertical_spacing">60dp</dimen>
+
+  <!-- favorite end -->
+
+
+  <!-- Tip start -->
+  <dimen name="zen_setting_margin_left">30dp</dimen>
+  <dimen name="zen_setting_titlebar_height">82dp</dimen>
+  <dimen name="zen_setting_list_item_height">80dp</dimen>
+  <dimen name="zen_setting_margin_right">30dp</dimen>
+  <dimen name="zen_setting_contact_info_edit_padding_top">15dp</dimen>
+  <dimen name="zen_setting_list_item_text_size">25dp</dimen>
+  <dimen name="zen_setting_subtitle_text_size">20dp</dimen>
+  <dimen name="tip_date_gallery_margin_top">28dp</dimen>
+  <dimen name="tip_date_gallery_textsize">25dp</dimen>
+  <dimen name="cicle_margin_left_right">138dp</dimen>
+  <dimen name="cicle_height">188dp</dimen>
+  <dimen name="top_item_height">86dp</dimen>
+  <dimen name="top_item_margin_top">30dp</dimen>
+  <dimen name="top_item_icon_wh">57dp</dimen>
+  <dimen name="circle_text_size">50dp</dimen>
+  <dimen name="cicle_tips_margin_top">28dp</dimen>
+  <dimen name="circle_tip_size">20dp</dimen>
+  <dimen name="top_title_margin_left">30dp</dimen>
+  <dimen name="top_title_margin_top">32dp</dimen>
+  <dimen name="top_title_text_size">25dp</dimen>
+  <dimen name="top_item_appname_margin_bottom">7dp</dimen>
+  <dimen name="top_item_margin_left_right">50dp</dimen>
+  <dimen name="top_item_content_margin_top_bottom">10dp</dimen>
+  <dimen name="cicle_margin_top">18dp</dimen>
+  <dimen name="top_title_progress_text_size">20dp</dimen>
+  <dimen name="top_item_progress_margin_top">5dp</dimen>
+  <dimen name="tip_date_gallery">80dp</dimen>
+  <dimen name="cicle_tips_unit_margin_top">1dp</dimen>
+  <dimen name="togglebutton_width">60dp</dimen>
+  <dimen name="togglebutton_hight">36dp</dimen>
+  <dimen name="arrow_width">76dp</dimen>
+  <!-- Tip end -->
+
+
+  <!-- home screen sacles values start -->
+  <item name="date_group_date_X_sacle"
+      format="float"
+      type="dimen">0.3
+  </item>
+  <item name="weathergroup_temprature_width_sacle"
+      format="float"
+      type="dimen">0.5
+  </item>
+  <item name="weathergroup_temprature_height_sacle"
+      format="float"
+      type="dimen">1
+  </item>
+  <item name="weathergroup_weatherimg_height_sacle"
+      format="float"
+      type="dimen">0.9
+  </item>
+  <item name="weathergroup_weatherimg_width_sacle"
+      format="float"
+      type="dimen">0.9
+  </item>
+  <item name="homescreen_aspect_ratio"
+      format="float"
+      type="dimen">11
+  </item>
+  <item name="homescreen_date_textsize"
+      format="integer"
+      type="dimen">20
+  </item>
+  <item name="homescreen_city_textsize"
+      format="integer"
+      type="dimen">20
+  </item>
+  <item name="homescreen_locationiocn_width_scale"
+      format="float"
+      type="dimen">0.035
+  </item>
+  <item name="homescreen_locationiocn_height_scale"
+      format="float"
+      type="dimen">0.245
+  </item>
+  <!-- home screen sacles values end -->
+
+    <item name="change_app_icon_bottom_height_sc" format="float" type="dimen">
+        0.044
+    </item>
+  <!-- alert dialog -->
+  <dimen name="alert_dialog_layout_width">328dp</dimen>
+  <!-- alert dialog end -->
+
+</resources>

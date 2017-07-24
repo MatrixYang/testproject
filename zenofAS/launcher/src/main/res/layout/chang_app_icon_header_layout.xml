@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/change_suggestion_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/change_app_icon_suggestion"
+            android:textColor="#566172"
+            android:textSize="17dp"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#9ca2a9"/>
+
+    <GridView
+            android:id="@+id/gv_change_app_icon_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/change_app_icon_gradview_marginbottom"
+            android:layout_marginTop="@dimen/change_app_icon_gradview_margintop"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/change_app_icon_gradview_horizontalSpacing"
+            android:numColumns="@dimen/change_app_icon_numcolumns"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:stretchMode="columnWidth"
+            android:textFilterEnabled="true"
+            android:verticalSpacing="@dimen/change_app_icon_gradview_verticalSpacing">
+    </GridView>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#9ca2a9"/>
+
+</LinearLayout>

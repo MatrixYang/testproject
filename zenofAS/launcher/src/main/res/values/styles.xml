@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme" parent="@android:style/Theme.Holo.Wallpaper.NoTitleBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="GuideStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="GuideAnimStyle" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/guide_page</item>
+    </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="NumberClock_ContentTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ZenTextCustomize">
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Theme.App" parent="android:Theme.Light">
+        <item name="android:colorForeground">@color/fore_color</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="menu_anim_style" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/menu_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_out</item>
+    </style>
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Animations_PopDownMenu_Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations_PopDownMenu_Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations_PopDownMenu_Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations_PopDownMenu_Reflect">
+        <item name="android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <style name="Animations_PopUpMenu_Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations_PopUpMenu_Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations_PopUpMenu_Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations_PopUpMenu_Reflect">
+        <item name="android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- tip progressbar start -->
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+        <item name="progress_text_size">10dp</item>
+        <item name="progress_text_color">#3498DB</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+    <!-- tip progressbar end -->
+
+    <!-- search progressbar start -->
+    <style name="NumberProgressBar_Search_WebView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#FFFFFF</item>
+        <item name="progress_reached_color">#00a2ff</item>
+        <item name="progress_text_size">0sp</item>
+        <item name="progress_text_color">#00a2ff</item>
+        <item name="progress_reached_bar_height">3dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+    <!-- search progressbar end -->
+
+    <!-- AboutActivity Layout Start -->
+    <style name="aboutLayout_divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/zen_settin_divider_height</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginLeft">@dimen/zen_settin_divider_margin</item>
+        <item name="android:layout_marginRight">@dimen/zen_settin_divider_margin</item>
+        <item name="android:background">@color/zs_item_color</item>
+    </style>
+
+    <style name="aboutLayout_item_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/zs_text_color</item>
+        <item name="android:textSize">@dimen/zen_setting_about_item_title_size</item>
+    </style>
+
+    <style name="aboutLayout_item_content_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/ds_about_detail_text</item>
+        <item name="android:textSize">@dimen/zen_setting_about_item_content_size</item>
+    </style>
+
+    <style name="aboutLayout_item_rl_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/zen_setting_about_item_height</item>
+        <item name="android:background">@drawable/ds_item_selector</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="aboutLayout_item_ll_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/zen_setting_margin_left</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- AboutActivity Layout End -->
+
+
+    <!-- Zen Setting start -->
+    <style name="zenSetting_rl_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/zen_setting_list_item_height</item>
+    </style>
+
+    <style name="zenSetting_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/zen_setting_margin_left</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/zs_text_color</item>
+        <item name="android:textSize">@dimen/zen_setting_list_item_text_size</item>
+    </style>
+
+    <style name="zenSetting_im_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:background">@drawable/zs_red_alert</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="zenSetting_toggle_style">
+        <item name="android:layout_width">@dimen/togglebutton_width</item>
+        <item name="android:layout_height">@dimen/togglebutton_hight</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/zen_setting_margin_left</item>
+        <item name="android:background">@drawable/ds_switch_selector</item>
+    </style>
+
+    <style name="zenSetting_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/zen_settin_divider_height</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginLeft">@dimen/zen_settin_divider_margin</item>
+        <item name="android:layout_marginRight">@dimen/zen_settin_divider_margin</item>
+        <item name="android:background">@color/zs_item_color</item>
+    </style>
+
+    <style name="zenSetting_icon_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/zen_settin_divider_margin</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="zenSetting_grouptextview_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/zen_setting_groupheight</item>
+        <item name="android:textColor">@color/zs_grouptextcolor</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/zen_setting_list_item_text_size</item>
+    </style>
+
+    <style name="zenSetting_rl_group_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/zen_setting_groupmargin</item>
+        <item name="android:layout_marginRight">@dimen/zen_setting_groupmargin</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="zenSetting_view_detail_style">
+        <item name="android:layout_width">@dimen/zen_setting_selectengine_iconwidth</item>
+        <item name="android:layout_height">@dimen/zen_setting_selectengine_iconheight</item>
+        <item name="android:layout_marginRight">@dimen/zen_setting_margin_right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/zs_details_arrow</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- Zen Setting end -->
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:paddingLeft">1dip</item>
+    </style>
+
+
+    <!-- hide style start -->
+    <style name="hideLinearlayoutStyle">
+        <item name="android:layout_width">@dimen/all_apps_hide_layoutWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/linear_hidenpop_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="hideTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/all_apps_hide_pop_height</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/popwindow_fontcolor</item>
+        <item name="android:textSize">@dimen/all_apps_hide_textSize</item>
+    </style>
+    <!-- hide style end -->
+    <!--home search bar-->
+    <style name="search_bar_vertical_line">
+        <item name="android:layout_width">0.7dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">#c9c9c9</item>
+    </style>
+    <!--home search bar-->
+    <!-- 底部弹窗动画 -->
+    <style name="slide_up_in_down_out">
+        <item name="android:windowEnterAnimation">@anim/slide_up_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_out</item>
+    </style>
+</resources>

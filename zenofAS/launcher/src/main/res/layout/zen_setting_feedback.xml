@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/zs_bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/zen_setting_title"/>
+
+    <EditText
+            android:id="@+id/zenSetting_edittext_FeedBackContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zen_setting_feedbackheightcontent"
+            android:layout_marginLeft="@dimen/zen_setting_tfeedbackmargin"
+            android:layout_marginRight="@dimen/zen_setting_tfeedbackmargin"
+            android:layout_marginTop="@dimen/zen_setting_tfeedbackmargin"
+            android:background="@color/white"
+            android:gravity="top|start"
+            android:hint="@string/zs_FeedbackContentHint"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColorHint="#b1b1b1"/>
+
+    <EditText
+            android:id="@+id/zenSetting_edittext_FeedBackContact"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zen_setting_feedbackheightcontact"
+            android:layout_marginLeft="@dimen/zen_setting_tfeedbackmargin"
+            android:layout_marginRight="@dimen/zen_setting_tfeedbackmargin"
+            android:layout_marginTop="@dimen/zen_setting_tfeedbackmargin"
+            android:background="@color/white"
+            android:hint="@string/zs_FeedbackContackHint"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="#b1b1b1"/>
+
+</LinearLayout>

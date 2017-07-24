@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cooeeui.brand.zenlauncher.scenes.HomeScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:zenlauncher="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/clockGroup_SpeedDial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:id="@+id/weather_area"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="40"
+                android:padding="20dp">
+
+            <com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    zenlauncher:aspect_ratio="2.13"
+                    zenlauncher:width_weight="0.9">
+
+                <View
+                        android:id="@+id/weather_blank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"/>
+
+                <com.cooeeui.brand.zenlauncher.widget.weatherclock.WeatherClockGroup
+                        android:id="@+id/weatherclock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|bottom"/>
+            </com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout>
+        </FrameLayout>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60">
+
+            <com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    zenlauncher:aspect_ratio="1"
+                    zenlauncher:width_weight="0.86">
+
+                <com.cooeeui.brand.zenlauncher.scenes.SpeedDial
+                        android:id="@+id/speed_dial"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></com.cooeeui.brand.zenlauncher.scenes.SpeedDial>
+            </com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_alignParentBottom="true">
+
+        <FrameLayout
+                android:id="@+id/search_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/bottom_padding"
+                android:paddingRight="@dimen/bottom_padding">
+
+            <com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    zenlauncher:aspect_ratio="@dimen/homescreen_aspect_ratio">
+
+                <com.cooeeui.brand.zenlauncher.searchbar.SearchBarGroup
+                        android:id="@+id/search_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY">
+
+                    <ImageView
+                            android:id="@+id/search_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/searchbar_height"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/search_bg"/>
+
+                    <ImageView
+                            android:id="@+id/search_scan"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/alert_scan_pro"/>
+
+                    <TextView
+                            android:id="@+id/tv_search_engine"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/search_scan"
+                            android:drawablePadding="6dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/search_text_hint"
+                            android:textColor="#c9c9c9"
+                            android:textSize="17dp"/>
+
+                    <View
+                            android:id="@+id/search_vertical_line"
+                            style="@style/search_bar_vertical_line"
+                            android:layout_toLeftOf="@+id/search_button"/>
+
+                    <ImageView
+                            android:id="@+id/search_button"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/search_button"
+                            android:scaleType="centerInside"
+                            android:background="@color/transparent"/>
+                </com.cooeeui.brand.zenlauncher.searchbar.SearchBarGroup>
+            </com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout>
+        </FrameLayout>
+
+        <LinearLayout
+                android:id="@+id/edit_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/bottom_padding"
+                android:visibility="invisible">
+
+            <com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    zenlauncher:aspect_ratio="1"
+                    zenlauncher:height_weight="0.6">
+
+                <com.cooeeui.brand.zenlauncher.scenes.EditView
+                        android:id="@+id/edit_bottom_change_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/edit_bottom_change_icon"/>
+            </com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout>
+
+            <com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    zenlauncher:aspect_ratio="1"
+                    zenlauncher:height_weight="0.6">
+
+                <com.cooeeui.brand.zenlauncher.scenes.EditView
+                        android:id="@+id/edit_bottom_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/edit_bottom_delete"/>
+            </com.cooeeui.brand.zenlauncher.scenes.FitCenterLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</com.cooeeui.brand.zenlauncher.scenes.HomeScreen>

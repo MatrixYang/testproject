@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nano二維碼</string>
+    <string name="string_interlinkage">鏈接</string>
+    <string name="string_text">文本</string>
+    <string name="share_title">選擇分享方式</string>
+    <string name="exit_toast">再按一次退出</string>
+
+    <string name="open">打開</string>
+    <string name="copy">複製</string>
+    <string name="share">分享</string>
+    <string name="copy_success">複製成功</string>
+    <string name="select_new_photo">重選照片</string>
+    <string name="back">返回</string>
+    <string name="no_history_record">沒有歷史記錄</string>
+    <string name="history_record">歷史記錄</string>
+    <string name="no_photo">沒有選擇照片</string>
+    <string name="decoding_error">解碼錯誤</string>
+
+    <!-- Notification download begin -->
+    <string name="downloader_noti_downloading">正在下載...</string>
+    <string name="downloader_noti_pause">暫停</string>
+    <string name="downloader_noti_error">錯誤</string>
+    <string name="downloader_noti_done">完成!</string>
+    <string name="Align_the">將二維碼放入掃描區域內進行掃描</string>
+    <string name="history_copy">復制</string>
+    <string name="history_delete">删除</string>
+    <string name="history_share">分享</string>
+    <string name="dialog_warning">警告</string>
+    <string name="dialog_ok">確定</string>
+    <string name="dialog_content">照相機設備故障</string>
+    <!-- Notification download end -->
+
+</resources>

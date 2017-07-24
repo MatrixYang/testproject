@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tips_background"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+        <LinearLayout
+                android:id="@+id/tips_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:orientation="vertical">
+
+            <com.cooeeui.brand.zenlauncher.tips.DateDetail
+                    android:id="@+id/img_detail"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"/>
+
+            <TextView
+                    android:id="@+id/tips_detail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/tips_detail"
+                    android:textColor="@color/tips_title"
+                    android:textSize="12dp"/>
+        </LinearLayout>
+
+        <View
+                android:id="@+id/img_line"
+                android:layout_width="1dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@id/tips_detail"
+                android:background="@color/tips_line"/>
+
+        <ImageView
+                android:id="@+id/img_time"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/tips_time"/>
+
+        <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img_time"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/img_time"
+                android:text="@string/tips_time_app"
+                android:textColor="@color/tips_text"
+                android:textSize="11dp"/>
+
+        <TextView
+                android:id="@+id/text_time_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/text_time"
+                android:layout_alignLeft="@id/text_time"
+                android:textColor="@color/tips_title"
+                android:textSize="15dp"/>
+
+        <TextView
+                android:id="@+id/tips_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/img_time"
+                android:layout_below="@id/img_time"
+                android:layout_marginTop="5dp"
+                android:text="@string/tips_title"
+                android:textColor="@color/tips_title"
+                android:textSize="12dp"/>
+
+        <TextView
+                android:id="@+id/tips_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tips_title"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@id/img_line"
+                android:layout_toRightOf="@id/tips_title"
+                android:textColor="@color/tips_text"
+                android:textSize="12dp"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cooeeui.brand.zenlauncher.favorite.FavoriteScene xmlns:android="http://schemas.android.com/apk/res/android"
+                                                      android:id="@+id/rl_favorite_scene"
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/rl_favorite_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="@dimen/favorite_title_padding_bottom"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="@dimen/favorite_title_padding_top"
+                    android:shadowColor="@color/text_shadow_color"
+                    android:shadowDx="0"
+                    android:shadowDy="@integer/shadow_dy"
+                    android:shadowRadius="@integer/shadow_radius"
+                    android:text="@string/favorite"
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"/>
+
+        <com.cooeeui.brand.zenlauncher.android.view.MyGridView
+                android:id="@+id/favorite_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:gravity="center"
+                android:horizontalSpacing="30dp"
+                android:numColumns="4"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/favorite_grid_vertical_spacing">
+
+        </com.cooeeui.brand.zenlauncher.android.view.MyGridView>
+
+
+        <com.cooeeui.brand.zenlauncher.favorite.SpeedyContainer
+                android:id="@+id/speedy_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/favorite_speedy_container_height"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                <FrameLayout
+                        android:id="@+id/fl_brightness"
+                        android:layout_width="@dimen/speedy_size"
+                        android:layout_height="@dimen/speedy_size"
+                        android:layout_gravity="center">
+
+                    <ImageView
+                            android:id="@+id/iv_brightness_center"
+                            android:layout_width="@dimen/favorite_speedy_brightCenterImageWidth"
+                            android:layout_height="@dimen/favorite_speedy_brightCenterImageWidth"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+                            android:src="@drawable/brightcontrol_white"/>
+
+                    <ImageButton
+                            android:id="@+id/ib_brightness_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@color/transparent"
+                            android:maxHeight="@dimen/favorite_speedy_brightButtonMaxHeight"
+                            android:maxWidth="@dimen/favorite_speedy_brightButtonMaxWidth"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/brightcontrol_light"/>
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/fl_sound"
+                    android:layout_width="@dimen/speedy_size"
+                    android:layout_height="@dimen/speedy_size"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                <ImageButton
+                        android:id="@+id/ib_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@color/transparent"
+                        android:maxHeight="@dimen/favorite_speedy_brightButtonMaxHeight"
+                        android:maxWidth="@dimen/favorite_speedy_brightButtonMaxWidth"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/quick_sound_normal"/>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/fl_wifi"
+                    android:layout_width="@dimen/speedy_size"
+                    android:layout_height="@dimen/speedy_size"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                <ImageButton
+                        android:id="@+id/ib_wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@color/transparent"
+                        android:maxHeight="@dimen/favorite_speedy_brightButtonMaxHeight"
+                        android:maxWidth="@dimen/favorite_speedy_brightButtonMaxWidth"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/quick_wifi_off"/>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/fl_mobile"
+                    android:layout_width="@dimen/speedy_size"
+                    android:layout_height="@dimen/speedy_size"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                <ImageButton
+                        android:id="@+id/ib_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@color/transparent"
+                        android:maxHeight="@dimen/favorite_speedy_brightButtonMaxHeight"
+                        android:maxWidth="@dimen/favorite_speedy_brightButtonMaxWidth"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/quick_mobile_off"/>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/fl_flash"
+                    android:layout_width="@dimen/speedy_size"
+                    android:layout_height="@dimen/speedy_size"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                <ImageButton
+                        android:id="@+id/ib_flash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@color/transparent"
+                        android:maxHeight="@dimen/favorite_speedy_brightButtonMaxHeight"
+                        android:maxWidth="@dimen/favorite_speedy_brightButtonMaxWidth"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/quick_flashlight_off"/>
+            </FrameLayout>
+        </com.cooeeui.brand.zenlauncher.favorite.SpeedyContainer>
+
+        <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_above="@id/speedy_container"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/favorite_line"/>
+
+        <com.cooeeui.brand.zenlauncher.android.view.DefinedScrollView
+                android:id="@+id/defined_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/favorite_recently_recommond_height"
+                android:layout_above="@id/line"
+                android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                    android:id="@+id/ll_recently"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_recently"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:shadowColor="@color/text_shadow_color"
+                        android:shadowDx="0"
+                        android:shadowDy="@integer/shadow_dy"
+                        android:shadowRadius="@integer/shadow_radius"
+                        android:text="@string/recently_install_text"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"/>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <GridView
+                            android:id="@+id/gv_recently"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:horizontalSpacing="10dp"
+                            android:numColumns="4"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:scrollbars="none"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="30dp">
+                    </GridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                    android:id="@+id/ll_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tv_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:shadowColor="@color/text_shadow_color"
+                            android:shadowDx="0"
+                            android:shadowDy="@integer/shadow_dy"
+                            android:shadowRadius="@integer/shadow_radius"
+                            android:text="@string/recommend_app_text"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"/>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        <GridView
+                                android:id="@+id/gv_recommend"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:horizontalSpacing="10dp"
+                                android:numColumns="4"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:scrollbars="none"
+                                android:stretchMode="columnWidth"
+                                android:verticalSpacing="30dp">
+                        </GridView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </com.cooeeui.brand.zenlauncher.android.view.DefinedScrollView>
+    </RelativeLayout>
+
+    <!-- 亮度调节，注意有些颜色值没改 -->
+
+    <FrameLayout
+            android:id="@+id/frameLayoutBrightGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+        <LinearLayout
+                android:id="@+id/LinearLayout_bright"
+                android:layout_width="@dimen/speedy_size"
+                android:layout_height="@dimen/favorite_speedy_brightBackgroundHeight"
+                android:background="#BB000000"
+                android:orientation="vertical">
+
+            <com.cooeeui.brand.zenlauncher.favorite.VerticalSeekBar
+                    android:id="@+id/myVerticalSeekBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:max="255"
+                    android:padding="10dp"
+                    android:thumb="@drawable/brightcontrol_circle"
+                    android:thumbOffset="1dip"/>
+        </LinearLayout>
+
+        <FrameLayout
+                android:id="@+id/fragmelayoutAdjust"
+                android:layout_width="@dimen/speedy_size"
+                android:layout_height="@dimen/speedy_size"
+                android:layout_gravity="center_horizontal">
+
+            <ImageView
+                    android:id="@+id/buttonAdjustBrightCenter"
+                    android:layout_width="@dimen/favorite_speedy_brightCenterImageWidth"
+                    android:layout_height="@dimen/favorite_speedy_brightCenterImageHeight"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/favorite_speedy_brightCenterImageMargin"
+                    android:background="@color/transparent"
+                    android:src="@drawable/brightcontrol_white"/>
+
+            <ImageButton
+                    android:id="@+id/buttonAdjustBright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@color/transparent"
+                    android:maxHeight="@dimen/favorite_speedy_brightButtonMaxHeight"
+                    android:maxWidth="@dimen/favorite_speedy_brightButtonMaxWidth"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/brightcontrol_light"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <ImageView
+            android:id="@+id/iv_blured_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"/>
+
+</com.cooeeui.brand.zenlauncher.favorite.FavoriteScene>

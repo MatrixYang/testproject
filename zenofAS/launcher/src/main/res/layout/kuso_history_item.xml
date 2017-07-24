@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ 
+   <TextView 
+       android:id="@+id/kuso_tv_history_item"
+       android:layout_height="@dimen/kuso_localsearch_item_height"
+       android:layout_width="fill_parent"
+       android:textSize="@dimen/kuso_localsearch_item_textsize"
+       android:gravity="center_vertical"
+       android:layout_marginLeft="6dp"
+       android:layout_marginRight="18dp"
+       android:textColor="@color/kuso_engine_name_text"/>
+</LinearLayout>

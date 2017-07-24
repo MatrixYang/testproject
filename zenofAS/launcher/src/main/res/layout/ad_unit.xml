@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ad_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wallpaper_default">
+
+    <ImageView
+            android:id="@+id/native_ad_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/mobvista_ad"/>
+
+    <ImageView
+            android:id="@+id/bottom_mask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/mobvista_bottom_mask"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/native_ad_call_to_action"
+            android:paddingLeft="5dp">
+
+        <ImageView
+                android:id="@+id/native_ad_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/wallpaper_default"
+                android:contentDescription="icon_desc"
+                android:paddingBottom="1dp"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingLeft="5dp"
+                android:paddingBottom="1dp">
+
+            <TextView
+                    android:id="@+id/native_ad_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp"/>
+
+            <TextView
+                    android:id="@+id/native_ad_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/native_ad_call_to_action"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="5dp"
+            android:text="Detail"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/mobvista_nativead_download"
+            android:duplicateParentState="true"
+            android:textSize="16dp"/>
+</RelativeLayout>

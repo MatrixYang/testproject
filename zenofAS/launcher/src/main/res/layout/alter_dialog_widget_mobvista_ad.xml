@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="@dimen/hotapp_widget_alert_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hotapp_widget_alert_banner_height">
+
+            <ImageView
+                    android:id="@+id/iv_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/mobvista_ad"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_iconAndDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:background="#ffffff">
+
+            <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="@dimen/hotapp_widget_alert_icon_size"
+                    android:layout_height="@dimen/hotapp_widget_alert_icon_size"
+                    android:layout_marginRight="11dp"
+                    android:scaleType="centerCrop"/>
+
+            <TextView
+                    android:id="@+id/tv_appName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:textSize="17dp"
+                    android:textColor="#4b4b4b"/>
+
+            <TextView
+                    android:id="@+id/tv_appDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_appName"
+                    android:layout_alignLeft="@+id/tv_appName"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="12dp"
+                    android:textColor="#979797"
+                    android:ellipsize="end"
+                    android:maxLines="10"/>
+
+            <Button
+                    android:id="@+id/bt_showDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:text="Show Detail"
+                    android:layout_below="@+id/tv_appDesc"
+                    android:background="@drawable/mobvista_widget_button_selector"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

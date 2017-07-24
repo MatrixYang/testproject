@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- XML attributes used by default_workspace.xml begin -->
+    <declare-styleable name="Default">
+        <attr name="className" format="string"/>
+        <attr name="packageName" format="string"/>
+        <attr name="position" format="string"/>
+        <attr name="widgetType" format="string"/>
+        <attr name="icon" format="reference"/>
+        <attr name="title" format="reference"/>
+        <attr name="uri" format="string"/>
+        <attr name="iconName" format="string"/>
+        <attr name="intent" format="string"/>
+    </declare-styleable>
+    <!-- XML attributes used by default_workspace.xml end -->
+
+    <declare-styleable name="zenlauncher">
+        <attr name="aspect_ratio" format="float"/>
+        <attr name="width_weight" format="float"/>
+        <attr name="height_weight" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="PagedView">
+
+        <!-- A spacing override for the icons within a page -->
+        <attr name="pageLayoutWidthGap" format="dimension"/>
+        <attr name="pageLayoutHeightGap" format="dimension"/>
+        <!-- The padding of the pages that are dynamically created per page -->
+        <attr name="pageLayoutPaddingTop" format="dimension"/>
+        <attr name="pageLayoutPaddingBottom" format="dimension"/>
+        <attr name="pageLayoutPaddingLeft" format="dimension"/>
+        <attr name="pageLayoutPaddingRight" format="dimension"/>
+        <!-- The space between adjacent pages of the PagedView. -->
+        <attr name="pageSpacing" format="dimension"/>
+        <!-- The page indicator for this workspace -->
+        <attr name="pageIndicator" format="reference"/>
+    </declare-styleable>
+
+    <!-- progress涉及的style -->
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer"/>
+        <attr name="max" format="integer"/>
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress_text_offset" format="dimension"/>
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--localSearch -->
+    <attr name="borderRadius" format="dimension"/>
+    <attr name="type">
+        <enum name="circle" value="0"/>
+        <enum name="round" value="1"/>
+    </attr>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="IconImageView">
+        <attr name="borderRadius"/>
+        <attr name="type"/>
+        <attr name="src"/>
+    </declare-styleable>
+</resources>

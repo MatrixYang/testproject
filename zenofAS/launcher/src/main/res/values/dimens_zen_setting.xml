@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zen_setting_titlebar_height">42dp</dimen>
+    <dimen name="zen_setting_title_text_size">17dp</dimen>
+    <dimen name="zen_setting_subtitle_text_size">10dp</dimen>
+    <dimen name="zen_setting_list_item_height">47dp</dimen>
+    <dimen name="zen_setting_list_item_text_size">13dp</dimen>
+    <dimen name="zen_setting_margin_right">15dp</dimen>
+    <dimen name="zen_setting_margin_left">19dp</dimen>
+    <dimen name="zen_settin_divider_margin">15dp</dimen>
+    <dimen name="zen_settin_divider_height">0.5dp</dimen>
+    <dimen name="zen_setting_selectengine_iconwidth">8dp</dimen>
+    <dimen name="zen_setting_selectengine_iconheight">15dp</dimen>
+    <dimen name="zen_setting_groupheight">26dp</dimen>
+    <dimen name="zen_setting_groupmargin">5dp</dimen>
+    <dimen name="zen_setting_feedbackheightcontent">150dp</dimen>
+    <dimen name="zen_setting_feedbackheightcontact">50dp</dimen>
+    <dimen name="zen_setting_titlebackmarginleft">22dp</dimen>
+    <dimen name="zen_setting_tfeedbackmargin">5dp</dimen>
+    <dimen name="zen_setting_blurSubtitleSize">12dp</dimen>
+    <dimen name="zen_setting_language_size">18dp</dimen>
+
+    <!-- About start -->
+    <dimen name="zen_setting_about_icon_container_height">200dp</dimen>
+    <dimen name="zen_setting_about_launcher_name_size">20dp</dimen>
+    <dimen name="zen_setting_about_item_height">60dp</dimen>
+    <dimen name="zen_setting_about_item_title_size">18dp</dimen>
+    <dimen name="zen_setting_about_item_content_size">14dp</dimen>
+    <dimen name="zen_setting_thanks_margin_top">12dp</dimen>
+    <!-- About end -->
+
+
+    <!-- Feedback start -->
+    <dimen name="zen_setting_feedback_contact_container_height">40dp</dimen>
+    <dimen name="zen_setting_feedback_contact_text">16dp</dimen>
+    <dimen name="zen_setting_contact_info_edit_padding_top">6dp</dimen>
+    <dimen name="zen_setting_feedback_conversation_content_size">16dp</dimen>
+    <dimen name="zen_setting_feedback_conversation_remarks_size">13dp</dimen>
+    <!-- Feedback end -->
+
+
+    <!-- Rate start -->
+    <dimen name="zen_setting_rate_width">293dp</dimen>
+    <dimen name="zen_setting_rate_height">350dp</dimen>
+    <dimen name="zen_setting_rate_top_height">200dp</dimen>
+    <dimen name="zen_setting_rate_bottom_height">150dp</dimen>
+    <!-- Rate end -->
+
+    <!-- Zen Life start -->
+    <dimen name="zen_setting_ZenLifeButtonMargin">8dp</dimen>
+    <dimen name="zen_setting_ZenLifeButtonHeight">60dp</dimen>
+    <dimen name="zen_setting_ZenLifeButtonWidth">60dp</dimen>
+    <!-- Zen Life end -->
+
+</resources>

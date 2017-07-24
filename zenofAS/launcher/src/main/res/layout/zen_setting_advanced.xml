@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/zs_bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/zen_setting_title"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp">
+
+
+        <LinearLayout style="@style/zenSetting_rl_group_style">
+            
+            <RelativeLayout
+                    style="@style/zenSetting_rl_style"
+                    android:id="@+id/rl_nano_screen"
+                    android:background="@drawable/ds_item_selector">
+                <ToggleButton
+                        android:id="@+id/tb_nano_screen"
+                        style="@style/zenSetting_toggle_style"
+                        android:layout_marginRight="22dp"
+                        android:clickable="false"
+                        android:textOff=" "
+                        android:textOn=" "/>
+                <ImageView
+                        android:id="@+id/iv_advanced_lock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/lockscreen_icon"/>
+
+                <TextView
+                        android:id="@+id/tv_advanced_text"
+                        style="@style/zenSetting_tv_style"
+                        android:layout_toRightOf="@id/iv_advanced_lock"
+                        android:text="@string/tv_advanced_text"/>
+
+                <View style="@style/zenSetting_view_style"/>
+            </RelativeLayout>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="150dp"
+                       android:id="@+id/iv_pic"
+                       android:src="@drawable/advanced_pic"
+                       android:layout_marginLeft="22dp"
+                       android:layout_marginRight="22dp"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/tv_advanced_content"
+                      android:layout_marginLeft="22dp"
+                      android:id="@+id/tv_advanced_content"
+                      android:layout_marginRight="22dp"
+                      android:textSize="16dp"
+                      android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

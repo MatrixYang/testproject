@@ -1,0 +1,8 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:title="@string/live_wallpaper_text_setting">
+
+    <Preference
+            android:key="preference_launch_launhcer"
+            android:title="@string/zen_launcher"
+            android:summary="@string/live_wallpaper_summary"/>
+</PreferenceScreen>

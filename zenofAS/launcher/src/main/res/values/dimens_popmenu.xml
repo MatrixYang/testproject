@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="popmenu_linemarginleft">11dp</dimen>
+    <dimen name="popmenu_lineheight">1dp</dimen>
+    <dimen name="dialog_width">278dp</dimen>
+    <dimen name="dialog_height">111dp</dimen>
+    <dimen name="dialog_messageheight">70dp</dimen>
+    <dimen name="dialog_messagemarginleft">20dp</dimen>
+    <dimen name="dialog_messagemargintop">22.5dp</dimen>
+    <dimen name="dialog_messagefontsize">16dp</dimen>
+    <dimen name="dialog_yesornoheight">40dp</dimen>
+    <dimen name="dialog_yesornofontsize">18dp</dimen>
+    <dimen name="dialog_yesornolinemargintop">5dp</dimen>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application name -->
+    <string name="app_name">Nano桌面通知插件</string>
+    <string name="turbo_launcher_name">Nano桌面</string>
+    <string name="turbo_launcher_desc">少即是多</string>
+    <string name="turbo_apply_content">在您使用通知插件以前请下载Nano桌面</string>
+    <string name="turbo_button_download">下载Nano桌面</string>
+    <string name="google_play_not_install">Google play 不可用</string>
+
+</resources>

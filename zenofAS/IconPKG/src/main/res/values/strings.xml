@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nano UI</string>
+    <string name="turbo_launcher_name">Nano Launcher</string>
+    <string name="turbo_launcher_desc">Less is more</string>
+    <string name="turbo_apply_content">You need to download the Nano launcher first before using this Icon feature.</string>
+    <string name="turbo_button_download">Download Nano Launcher</string>
+    <string name="google_play_not_install">Google play can not be used</string>
+
+</resources>

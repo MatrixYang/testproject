@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:id="@+id/pop_layout"
+              android:orientation="vertical"
+
+        >
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/rl_feature"
+                    android:layout_weight="1"
+            >
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/alert_pop_adavancedsetting"
+                   android:scaleType="fitEnd"
+
+                />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_above="@+id/tv_pop_content"
+                      android:gravity="center_vertical"
+
+                >
+            <ImageView
+                    android:layout_marginLeft="@dimen/setting_pop_tip_marginleft"
+                       android:layout_width="@dimen/setting_pop_tip_image_width"
+                       android:layout_height="@dimen/setting_pop_tip_image_height"
+                       android:src="@drawable/zs_notice_icon_white"
+                    />
+            <TextView
+
+                    android:id="@+id/tv_pop_title"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_pop_tip_marginleft"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_feature"
+                    android:textSize="@dimen/setting_pop_tip_textsize"
+                    android:textColor="@color/white"
+
+
+                    />
+        </LinearLayout>
+
+
+        <TextView android:layout_width="@dimen/setting_pop_content_width"
+                  android:layout_height="wrap_content"
+
+                  android:layout_marginLeft="@dimen/setting_pop_content_marginleft"
+                  android:id="@+id/tv_pop_content"
+                  android:text="@string/pop_content"
+                  android:layout_marginTop="@dimen/setting_pop_content_margintop"
+                  android:lineSpacingExtra="@dimen/setting_pop_content_lineSpacingExtra"
+                  android:textSize="@dimen/setting_pop_content_margin_textsize"
+                  android:textColor="@color/setting_pop_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="@dimen/setting_pop_content_marginbottom"
+                />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal"
+                  android:background="@color/white"
+            >
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="@string/pop_later"
+                  android:id="@+id/tv_pop_later"
+                  android:textSize="17dp"
+                  android:gravity="center"
+                  android:textColor="@drawable/alert_pop_selector"
+                />
+        <View android:layout_width="1dp" android:layout_height="25dp"
+              android:layout_gravity="center"
+              android:background="@color/setting_pop_button"
+                />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="@string/pop_try"
+                  android:textSize="17dp"
+                  android:id="@+id/tv_pop_try"
+                  android:gravity="center"
+                  android:textColor="@drawable/alert_pop_selector"
+                />
+
+    </LinearLayout>
+</LinearLayout>

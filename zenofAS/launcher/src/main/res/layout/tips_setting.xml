@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zen_setting_titlebar_height"
+            android:background="@color/zs_titlebar_bg"
+            android:clickable="true">
+
+        <FrameLayout
+                android:id="@+id/tips_back"
+                android:layout_width="@dimen/arrow_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/zs_back_arrow_selector">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/zs_back_arrow"/>
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/tips_setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="@string/tips_setting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/zen_setting_title_text_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zen_setting_list_item_height"
+            android:background="@drawable/ds_item_selector">
+
+        <TextView
+                android:id="@+id/tips_switch_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/zen_setting_margin_right"
+                android:layout_marginStart="@dimen/zen_setting_margin_right"
+                android:layout_marginTop="@dimen/zen_setting_contact_info_edit_padding_top"
+                android:text="@string/tips_setting"
+                android:textColor="@color/zs_text_color"
+                android:textSize="@dimen/zen_setting_list_item_text_size"/>
+
+        <TextView
+                android:id="@+id/sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tips_switch_name"
+                android:layout_alignStart="@id/tips_switch_name"
+                android:layout_below="@id/tips_switch_name"
+                android:text="@string/tips_setting_subtitle"
+                android:textColor="@color/ds_feedback_edittext_text"
+                android:textSize="@dimen/zen_setting_subtitle_text_size"/>
+
+        <ToggleButton
+                android:id="@+id/tips_switch"
+                android:layout_width="@dimen/togglebutton_width"
+                android:layout_height="@dimen/togglebutton_hight"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/zen_setting_margin_right"
+                android:layout_marginRight="@dimen/zen_setting_margin_right"
+                android:background="@drawable/ds_switch_selector"
+                android:textOff=" "
+                android:textOn=" "/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/zen_setting_contact_info_edit_padding_top"
+                android:background="@color/list_divider"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <Gallery
+                android:id="@+id/gallery_dates"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tip_date_gallery">
+        </Gallery>
+
+        <com.cooeeui.brand.zenlauncher.tips.SwitchPagedView
+                android:id="@+id/switch_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </com.cooeeui.brand.zenlauncher.tips.SwitchPagedView>
+    </LinearLayout>
+
+</LinearLayout>

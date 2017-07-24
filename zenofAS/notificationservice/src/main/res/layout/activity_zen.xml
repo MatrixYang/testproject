@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eceff4"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="21dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="17.5dp"
+                android:src="@drawable/ic_launcher"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:paddingTop="0dp"
+                    android:text="@string/turbo_launcher_name"
+                    android:textColor="#6e859d"
+                    android:textSize="16.5dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:paddingTop="4dp"
+                    android:text="@string/turbo_launcher_desc"
+                    android:textColor="#6e859d"
+                    android:textSize="13.5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="19dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"/>
+
+    <LinearLayout
+            android:id="@+id/layoutIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="@string/turbo_apply_content"
+            android:textColor="#8996a3"
+            android:textSize="12dp"/>
+
+    <Button
+            android:id="@+id/btnGooglePlay"
+            android:layout_width="309dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/turbo_button"
+            android:selectAllOnFocus="true"
+            android:text="@string/turbo_button_download"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+</LinearLayout>

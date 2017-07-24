@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/widget_zen_icon"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:clickable="true"
+          android:drawablePadding="6dp"
+          android:drawableTop="@mipmap/ic_launcher"
+          android:gravity="center_horizontal"
+          android:singleLine="true"
+          android:text="@string/zen_launcher"
+          android:textColor="#ffffffff"
+          android:textSize="13dp">
+
+</TextView>

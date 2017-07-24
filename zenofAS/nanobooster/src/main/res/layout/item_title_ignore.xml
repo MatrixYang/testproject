@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cooeeui.nanobooster.views.RippleView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ripple="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ripple:rv_type="rectangle"
+        android:id="@+id/rv_title_ignore">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:background="#E5E5E5"
+                        android:gravity="center_vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tv_ignore"
+                      android:text="Ignore List"
+                      android:layout_marginLeft="5dp"
+                      android:layout_centerVertical="true"
+                      android:textSize="16dp"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="#00aae9"
+                      android:text="1"
+                      android:id="@+id/tv_ignore_size"
+                      android:layout_toRightOf="@+id/tv_ignore"
+                      android:textSize="16dp"
+                      android:layout_marginLeft="9dp"
+                      android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.cooeeui.nanobooster.views.RippleView>

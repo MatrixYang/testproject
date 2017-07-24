@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="fontcolor">#FFFFFF</color>
+    <color name="bg_sitespan_press">#c7c9cf</color>
+    <color name="fore_color">#ff888271</color>
+    <color name="blue">#327aff</color>
+    <color name="dark_fore">#B3000000</color>
+    <color name="text_shadow_color">#65000000</color>
+
+    <!-- Menu color start -->
+    <color name="menu_item_text_color">#4d4d4d</color>
+    <color name="menu_item_select_color">#efefef</color>
+    <color name="menu_divider_color">#dbdbdb</color>
+    <!-- Menu color start -->
+
+
+    <!-- pop window color start -->
+    <color name="popwindow_fontcolor">#4d4d4d</color>
+    <color name="popwindow_fontclickcolor">#828282</color>
+    <color name="popwindow_fontlinecolor">#70ababab</color>
+    <color name="popwindow_fontbackgroundcolor">#d8d8d8</color>
+    <color name="pop_font">#6a7280</color>
+    <!-- pop window color end -->
+
+
+    <!-- Zen settings color start -->
+    <color name="zs_bg_color">#f6f6f6</color>
+    <color name="zs_back_arrow_pressed">#20252b</color>
+    <color name="zs_titlebar_bg">#2f363f</color>
+    <color name="zs_listline_bg">#e9ecec</color>
+    <color name="zs_text_color">#585d64</color>
+    <color name="zs_item_color">#e6e7e9</color>
+    <color name="ds_about_detail_text">#8E929D</color>
+    <color name="ds_feedback_edittext_text">#969CA6</color>
+    <color name="zs_grouptextcolor">#566172</color>
+    <!-- Zen settings color end -->
+
+
+    <!-- tips color start -->
+    <color name="tips_title">#2f3641</color>
+    <color name="tips_text">#767f8f</color>
+    <color name="circle_blue">#33ccff</color>
+    <color name="circle_green">#6fdf69</color>
+    <color name="circle_red">#ff5151</color>
+    <color name="circle_yellow">#ffaa3b</color>
+    <color name="circle_text_white">#ffffff</color>
+    <color name="circle_tip_text_color">#969ca6</color>
+    <color name="top_title_text_color">#6a7280</color>
+    <color name="list_divider">#f9f9f9</color>
+    <color name="tips_line">#d2dae4</color>
+    <!-- tips color end -->
+
+
+    <!-- change app icon -->
+    <color name="normalcolor">#485a74</color>
+    <color name="passedcolor">#28374e</color>
+    <color name="ok_normalcolor">#8896ab</color>
+    <color name="ok_passedcolor">#63748d</color>
+    <color name="dialog_fengexian">#7a8595</color>
+    <color name="spinner_normal">#263448</color>
+    <color name="spinner_passed">#485a74</color>
+    <color name="spinner_nano">#8e9db3</color>
+    <!-- change app icon end -->
+
+
+    <!-- All APP start -->
+    <color name="HideAppColor">#33d8d8d8</color>
+    <!-- All APP end -->
+
+
+    <!-- speed container start -->
+    <color name="seekbarcolor">#a2ff00</color>
+    <!-- speed container end -->
+
+    <!--wallpaper start-->
+    <color name="loadingBackground">#222222</color>
+    <!--wallpaper end-->
+
+    <!--widget start-->
+    <color name="mobvista_button_selector_normal">#398eeb</color>
+    <color name="mobvista_button_selector_pressed">#005698</color>
+    <!--widget end-->
+    <!--灭屏颜色-->
+    <color name="setting_pop_button">#969696</color>
+    <color name="adavancedsetting_text_pre">#0a71ce</color>
+    <color name="adavancedsetting_text_nor">#626262</color>
+    <color name="setting_pop_content">#b6f2ff</color>
+
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="activity_not_found">未找到应用.</string>
+    <string name="zen_launcher">Nano桌面</string>
+
+    <string name="add">添加</string>
+    <string name="wallpaper">Nano壁纸</string>
+    <string name="settings">系统设置</string>
+    <string name="tips_setting">智能提醒</string>
+    <string name="zen_settings">Nano设置</string>
+    <string name="recommend_setting">Nano工具条自动滚动</string>
+    <string name="tips_setting_subtitle">提醒您不要过度使用手机.</string>
+    <string name="guide_home_text1">1.长按空白处可打开菜单</string>
+    <string name="guide_home_text2">2.长按图标可以改变图标的样式</string>
+    <string name="guide_favorite_text1">1.长按图标可以查看更多操作</string>
+    <string name="guide_favorite_text2">2.根据您的使用习惯为您整理常用应用</string>
+    <string name="guide_favorite_text2_usage">2.我们需要您给予读取应用使用情况的权限来为您整理出你常用的应用</string>
+    <string name="guide_favorite_text3">3.常用快捷开关，长按可查看详情</string>
+    <string name="guide_allapp_text1">1.呼出菜单</string>
+    <string name="guide_allapp_text2">2.长按图标可以获得更多操作</string>
+    <string name="ds_default_launcher_setting">设为默认桌面</string>
+    <string name="desktop_search">显示桌面搜索框</string>
+    <string name="status_bar_setting">状态栏设置</string>
+    <string name="ds_feedback_sender_me_text">我</string>
+    <string name="ds_check_update_text">检查更新</string>
+    <string name="about_zen">关于Nano</string>
+    <string name="notice_setting">通知设置</string>
+    <string name="notice_setting_sub">在主页电话和短信图标上显示错过的事件数目</string>
+    <string name="ds_about_email_name_text">邮件</string>
+    <string name="ds_about_found_new_version_text">发现新版本，立即更新？</string>
+    <string name="ds_about_helpus_tranlate_text">帮助我们翻译Nano桌面</string>
+    <string name="ds_about_helpus_tranlate_url">https://crowdin.com/project/zenlauncher</string>
+    <string name="ds_about_special_thanks">特别鸣谢</string>
+    <string name="ds_about_special_thanks_text">我们很高兴收到几位用户为我们桌面翻译的内容。非常感谢你们的支持，我们会继续努力完善Nano桌面！
+    </string>
+    <string name="ds_about_special_thanks_russian">俄语翻译支持</string>
+    <string name="ds_about_special_thanks_spanish">西班牙语翻译支持</string>
+    <string name="ds_about_special_thanks_french">法语翻译支持</string>
+    <string name="ds_about_special_thanks_german">德语翻译支持</string>
+    <string name="ds_about_special_thanks_portuguese">葡萄牙语翻译支持</string>
+    <string name="ds_about_special_thanks_Indonesian">印尼语翻译支持</string>
+    <string name="ds_about_special_thanks_Italian">意大利语翻译支持</string>
+    <string name="ds_about_special_thanks_Turkish">土耳其语翻译支持</string>
+    <string name="ds_about_special_thanks_Czech">捷克语翻译支持</string>
+    <string name="ds_about_special_thanks_Dutch">荷兰语翻译支持</string>
+    <string name="ds_about_special_thanks_Greek">希腊语翻译支持</string>
+    <string name="ds_about_special_thanks_Romanian">罗马尼亚语翻译支持</string>
+    <string name="ds_about_special_thanks_polish">波兰语翻译支持</string>
+    <string name="ds_about_special_thanks_swedish">瑞士语翻译支持</string>
+    <string name="ds_about_special_thanks_ukrainian">乌克兰语翻译支持</string>
+    <string name="ds_blur_switch">滑动侧边栏时模糊壁纸</string>
+
+    <string name="zs_setting">设置</string>
+    <string name="zs_more">更多</string>
+    <string name="zs_Phone">外观</string>
+    <string name="zs_Engine">搜索设置</string>
+    <string name="zs_Feedback">意见反馈</string>
+    <string name="zs_FeedbackContentHint">吐槽…</string>
+    <string name="zs_FeedbackContackHint">请输入你的邮箱、Facebook、QQ…</string>
+    <string name="zs_FeedbackCSend">发送</string>
+    <string name="zs_BlurMainTitle">模糊效果</string>
+    <string name="zs_rate_button_encourage">鼓励</string>
+    <string name="zs_rate_button_feedback">吐槽</string>
+    <string name="zs_rate_button_later">以后再说</string>
+    <string name="zs_Email_Feedback_Subject">用户反馈</string>
+    <string name="zs_Email_Feedback_Choose_Client">请选择邮箱</string>
+    <string name="zs_Email_Feedback_input_isempty">输入不能为空</string>
+    <string name="zs_language">语言</string>
+    <string name="zs_download_fail">下载失败</string>
+    <string name="zs_ZenLifeShareMessageTitle">分享给好友</string>
+
+    <string name="chooseApp">选择将使用的应用:</string>
+    <string name="unload">卸载</string>
+    <string name="hideicon">隐藏图标</string>
+    <string name="search_text_hint">搜索</string>
+    <string name="search_input_tips">请输入关键字</string>
+    <string name="default_cityname">设置城市</string>
+    <string name="default_prompt">请输入城市名称</string>
+    <string name="weathercurve_title">天气预报</string>
+    <string name="defaultWeatherconditionName">多云</string>
+    <string name="unkonwweek">未知</string>
+    <string name="notsetcity">你还未设置城市，请先设置城市</string>
+    <string name="flushfailed">更新失败</string>
+    <string name="flushsuccess">更新成功</string>
+    <string name="networkerror">网络连接异常</string>
+    <string name="citynotfound">没有找到此城市</string>
+    <string name="default_foreigncorf">温度单位</string>
+    <string name="default_foreigncity">未知</string>
+    <string name="searchfailed_foreign">搜索失败</string>
+    <string name="Flushfailed_foreign">刷新失败</string>
+    <string name="Flushsuccess_foreign">刷新成功</string>
+    <string name="networkerror_foreign">网络连接异常</string>
+    <string name="citynotfound_foreign">找不到该城市</string>
+    <string name="defaultWeatherconditionName_foreign">多云</string>
+    <string name="firstweek_foreign">周一</string>
+    <string name="secondweek_foreign">周二</string>
+    <string name="thirdweek_foreign">周三</string>
+    <string name="forthweek_foreign">周四</string>
+    <string name="fiveweek_foreign">周五</string>
+    <string name="sixweek_foreign">周六</string>
+    <string name="sevenweek_foreign">周末</string>
+    <string name="firstweek_full">星期一</string>
+    <string name="secondweek_full">星期二</string>
+    <string name="thirdweek_full">星期三</string>
+    <string name="forthweek_full">星期四</string>
+    <string name="fiveweek_full">星期五</string>
+    <string name="sixweek_full">星期六</string>
+    <string name="sevenweek_full">星期天</string>
+    <string name="first_month">一月</string>
+    <string name="second_month">二月</string>
+    <string name="third_month">三月</string>
+    <string name="forth_month">四月</string>
+    <string name="fifth_month">五月.</string>
+    <string name="sixth_month">六月</string>
+    <string name="seventh_month">七月</string>
+    <string name="eighth_month">八月</string>
+    <string name="ninth_month">九月</string>
+    <string name="tenth_month">十月</string>
+    <string name="eleventh_month">十一月</string>
+    <string name="twelfth_month">十二月</string>
+    <string name="notsetcity_foreign">您还未选择城市，请先设置城市</string>
+    <string name="change">修改</string>
+    <string name="change_icon">修改图标</string>
+    <string name="hide_yes">是</string>
+    <string name="hide_no">否</string>
+    <string name="app_recommend_title">Nano工具</string>
+    <string name="app_more">更多应用</string>
+    <string name="loading">数据加载中...</string>
+    <string name="input_isempty">输入为空，请输入城市名</string>
+    <string name="locating">正在定位...</string>
+    <string name="no_data_found">暂时没数据</string>
+    <string name="favorite">常 用</string>
+    <string name="google_play_store">Play Store</string>
+    <string name="ad_loading">加载中...</string>
+    <string name="all_apps">全部应用</string>
+
+    <string name="always">总是</string>
+    <string name="once">仅一次</string>
+    <string name="default_launcher_guide_step1">第一步，选择</string>
+    <string name="default_launcher_guide_step2">下一步，点击 "总是"</string>
+
+    <string name="widget_long_press">点击添加插件</string>
+    <string name="widget_add">+ 添加插件</string>
+    <string name="widget_drag_text">保持长按可移动插件</string>
+    <string name="pop_move_out">移除</string>
+    <string name="pop_add_speeddial">添加到首页</string>
+    <string name="pop_app_info">应用详情</string>
+    <string name="pop_change_app_icon">更改图标</string>
+    <string name="pop_add_success">添加成功</string>
+    <string name="pop_add_fail">桌面没有多的空间了.</string>
+    <string name="pop_set_hide">设置为隐藏</string>
+    <string name="pop_set_visible">设置为显示</string>
+    <string name="pop_replace_widget">替换为插件</string>
+    <string name="pop_replace_weather">显示天气时钟</string>
+    <string name="pop_hideapp">隐藏应用.</string>
+
+    <string name="recently_install_text">最新安装</string>
+    <string name="recommend_app_text">Nano工具</string>
+
+    <string name="tips_title">提醒:</string>
+    <string name="tips_time_app">应用时间</string>
+    <string name="tips_time_text">设备时间</string>
+    <string name="tips_unlock_text">解锁次数</string>
+    <string name="tips_unlock_low">您是在等某人的来电吗?</string>
+    <string name="tips_unlock_mid">您检查信息过于频繁了!</string>
+    <string name="tips_unlock_high">您过度依赖手机</string>
+    <string name="tips_time_low">也许您可以利用这段时间读一本书</string>
+    <string name="tips_time_mid">也许您可以利用这段时间做些锻炼</string>
+    <string name="tips_time_high">也许您可以利用这段时间多陪陪家人</string>
+    <string name="tips_other_low">也许您可以和朋友出去喝杯咖啡</string>
+    <string name="tips_other_mid">手机在吞噬你的时间!</string>
+    <string name="tips_other_high">您太依赖手机了</string>
+    <string name="tips_app">您已经使用了 %1$s 在 %2$s. 您应该休息会儿.</string>
+    <string name="tips_detail">详情</string>
+    <string name="tips_smart_reminder">智能提醒</string>
+    <string name="tips_unlocktimes">您的解锁次数</string>
+    <string name="tips_unlocktimes_unit">(次数)</string>
+    <string name="tips_phonetime">您的手机时间</string>
+    <string name="tips_phonetime_unit_hour">(小时)</string>
+    <string name="tips_phonetime_unit_min">(分钟)</string>
+    <string name="tips_top_title">前 10 应用</string>
+    <string name="tips_nodata_warning">您在这段时间还未使用任何应用</string>
+    <string name="tips_time_unit_min">分钟</string>
+    <string name="tips_time_unit_hour">小时</string>
+    <string name="tips_appused_unit_min">分钟</string>
+    <string name="tips_appused_unit_hour">小时</string>
+    <string name="tip_view_unlockcount_unit">次</string>
+
+    <string name="alter_plugin_name">通知插件</string>
+    <string name="alter_content">让通知插件成为您的信使，不再错过重要的消息，要想使用此插件请先下载。</string>
+    <string name="alter_download">下载</string>
+    <string name="alter_cancel">取消</string>
+    <string name="camera_occupied">相机被其他应用占用，无法正常打开</string>
+    <string name="version_update">更新</string>
+    <string name="version_update_prompt">Nano桌面发布了一个新版本，马上下载体验吧！</string>
+    <string name="version_update_checkbox">不再提示</string>
+    <string name="update_is_newest">你当前已经是最新的版本</string>
+    <string name="update_fail">检测更新失败</string>
+    <string name="google_play_not_install">Google play 不可用</string>
+
+    <string name="default_weather_content_title">晴天</string>
+    <string name="weather_content_title_tropical_storm">风暴</string>
+    <string name="weather_content_title_thunder_storms">大雨</string>
+    <string name="weather_content_title_sleet">雨夹雪</string>
+    <string name="weather_content_title_drizzle">小雨</string>
+    <string name="weather_content_snow_showers">阵雪</string>
+    <string name="weather_content_blowing_snow">小雪</string>
+    <string name="weather_content_hail">冰雹</string>
+    <string name="weather_content_dust">雾霾</string>
+    <string name="weather_content_foggy">雾</string>
+    <string name="weather_content_mostly_cloudy">多云</string>
+    <string name="weather_content_sunny">晴天</string>
+    <string name="weather_content_heavy_snow">大雪</string>
+    <string name="weather_content_not_available">未知</string>
+
+    <string name="change_app_icon_notification">Nano图标包</string>
+    <string name="change_app_icon_title">自定义Icon</string>
+    <string name="change_app_icon_suggestion">建议</string>
+    <string name="change_app_icon_more_icons">更多图标</string>
+    <string name="change_app_icon_ok">确定</string>
+    <string name="change_app_icon_dialog_content">下次不再提示</string>
+    <string name="change_app_icon_dialog_title">是否将所有的图标都替换为新图标？</string>
+    <string name="change_app_icon_dialog_all_yes">是</string>
+    <string name="change_app_icon_dialog_all_no">否</string>
+    <string name="change_app_icon_not_support_icon_tips">
+        抱歉，我们暂时不支持加载这个图标包，但是我们会尽快修复。您也可以通过邮件告诉我们你想要使用那些图标包。
+    </string>
+    <!-- wallpaper -->
+    <string name="live_wallpaper_text_setting">设置</string>
+    <string name="live_wallpaper_summary">启动Nano桌面</string>
+    <string name="wallPaperSetSuccess">设置壁纸成功!</string>
+    <string name="wallPaperSetFailed">设置壁纸失败!</string>
+    <string name="wallpaper_set_wallpaper">壁纸详情</string>
+    <string name="wallpaper_check_net">请检查网络连接</string>
+    <string name="wallpaper_set_as_wallpaper">设置为当前壁纸</string>
+    <string name="wallpaper_zen_wallpaper">Nano壁纸</string>
+    <string name="wallpaper_local">本地壁纸</string>
+    <string name="wallpaper_gallery">相册</string>
+    <string name="wallpaper_liver_wallpaper">动态壁纸</string>
+    <string name="wallpaper_save_success">成功保存到本地</string>
+    <string name="wallPaper_detailDialogMessage">正在加载高清壁纸</string>
+    <string name="wallPaper_selector_fixed">固定壁纸</string>
+    <string name="wallPaper_selector_scrollable">滚动壁纸</string>
+    <!-- wallpaper -->
+    <!-- start nano tools-->
+    <string name="nano_tools_settings">Nano设置</string>
+    <string name="nano_tools_remind">智能提醒</string>
+    <string name="nano_tools_top">热门应用</string>
+    <string name="nano_tools_game">试试手气</string>
+    <!--end nano tools-->
+
+    <!-- search -->
+    <string name="search_check_net">请检查网络连接</string>
+    <string name="search_engine_nano">Nano (推荐)</string>
+    <string name="search_engine_google">谷歌</string>
+    <string name="search_engine_yahoo">雅虎</string>
+    <string name="search_engine_bing">必应</string>
+    <string name="search_engine_baidu">百度</string>
+    <string name="search_engine_duckduckgo">DuckDuckGo</string>
+
+    <!-- usage -->
+    <string name="usage_setting_activity_error">未找到系统界面</string>
+    <string name="usage_zs">常用</string>
+    <string name="usage_zs_summary">获取应用使用数据权限</string>
+    <string name="usage_pop_title">打开Nano桌面的开关.</string>
+    <string name="usage_notice">提示</string>
+    <string name="usage_alter_go_now">立即设置</string>
+    <string name="usage_alter_later">以后再说</string>
+    <string name="usage_alter_ok">好的</string>
+    <string name="usage_alter_content_nano">如果您想使用常用功能，您需要允许我们获取应用使用数据权限，稍后你可以在Nano设置中找到入口.</string>
+    <string name="usage_alter_content_setting">我们发现 "常用" 没有正常工作, 您可以打开获取应用使用数据权限来激活它.</string>
+
+    <!-- localsearch -->
+    <string name="kuso_history_record">历史纪录</string>
+    <string name="kuso_local_app_name">应用</string>
+    <string name="kuso_local_contact_name">联系人</string>
+    <string name="kuso_local_music_name">音乐</string>
+
+    <!--   scan更新 -->
+    <string name="tv_scan_prompt">您需要先下载Nano 二维码扫描插件才能使用二维码扫描功能。</string>
+    <string name="tv_scan_later">以后再说</string>
+    <string name="tv_scan_download">立即下载</string>
+
+    <string name="edit_icon_default">默认</string>
+    <string name="search_set">搜索设置</string>
+    <string name="date_day">日</string>
+</resources>

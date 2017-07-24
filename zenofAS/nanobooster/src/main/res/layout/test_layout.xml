@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+            android:id="@+id/bt_start_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始统计"
+            android:textSize="18sp"
+            android:onClick="onButtonClick"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统总内存大小： "
+                android:textSize="18sp"/>
+        <TextView
+                android:id="@+id/tv_total_memory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可用内存大小： "
+                android:textSize="18sp"/>
+        <TextView
+                android:id="@+id/tv_aviliable_memory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已用内存大小： "
+                android:textSize="18sp"/>
+        <TextView
+                android:id="@+id/tv_used_memory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已用内存百分比： "
+                android:textSize="18sp"/>
+        <TextView
+                android:id="@+id/tv_used_percent_memory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <Button
+                android:id="@+id/bt_open_accessibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启辅助服务功能"
+                android:textSize="18sp"
+                android:onClick="onButtonClick"/>
+
+        <TextView
+                android:id="@+id/tv_accessibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/bt_clear_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清理内存"
+            android:textSize="18sp"
+            android:onClick="onButtonClick"/>
+
+    <!-- <Button
+             android:id="@+id/bt_deep_clear_memory"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="深度清理内存"
+             android:textSize="18sp"
+             android:onClick="onButtonClick"/>
+
+     <Button
+             android:id="@+id/bt_get_running_app"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="获取正在运行的应用"
+             android:textSize="18sp"
+             android:onClick="onButtonClick"/>
+
+     <ListView
+             android:id="@+id/lv_running_app"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+     </ListView>-->
+
+    <include layout="@layout/ad_unit" android:id="@+id/ad_unit"></include>
+    <include layout="@layout/ad_unit" android:id="@+id/ad_unit2"></include>
+
+</LinearLayout>
+
+

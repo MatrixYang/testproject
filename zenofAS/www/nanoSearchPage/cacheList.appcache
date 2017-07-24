@@ -1,0 +1,15 @@
+CACHE MANIFEST
+
+# 2016-01-26 v1.7.1
+
+CACHE:
+index.html
+js/index.js
+js/jquery-1.11.3.min.js
+css/index.css
+res/img/
+
+NETWORK:
+*
+
+FALLBACK:

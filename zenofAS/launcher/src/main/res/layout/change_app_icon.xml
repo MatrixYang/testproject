@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fcfcfc"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.080"
+            android:background="#263448">
+
+        <Spinner
+                android:id="@+id/sp_changeicon_package"
+                style="@style/spinner_style"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:drawSelectorOnTop="false"
+                android:dropDownVerticalOffset="1dp"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:popupBackground="@color/spinner_normal"
+                android:spinnerMode="dropdown">
+        </Spinner>
+
+        <ImageView
+                android:id="@+id/iv_change_app_icon_triangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/sp_changeicon_package"
+                android:src="@drawable/change_app_icon_spinner_sanjiao"/>
+
+        <TextView
+                android:id="@+id/change_app_icon_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/change_app_icon_title"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/iv_change_app_by_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/change_app_icon_album_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.110"
+            android:background="#f5f5f5"
+            android:gravity="center">
+
+        <ImageView
+                android:id="@+id/iv_change_app_icon_old_icon"
+                android:layout_width="@dimen/change_app_icon_oldicon_size"
+                android:layout_height="@dimen/change_app_icon_oldicon_size"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+                android:id="@+id/iv_change_app_icon_selector"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@id/iv_change_app_icon_old_icon"
+                android:src="@drawable/zs_details_arrow"/>
+
+        <ImageView
+                android:id="@+id/iv_change_app_icon_new_icon"
+                android:layout_width="@dimen/change_app_icon_newicon_size"
+                android:layout_height="@dimen/change_app_icon_newicon_size"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_change_app_icon_selector">
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.740"
+            android:background="#f5f5f5">
+
+        <com.cooeeui.basecore.customview.HeaderGridView
+                android:id="@+id/gv_change_app_icon_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/change_app_icon_gradview_horizontalSpacing"
+                android:numColumns="@dimen/change_app_icon_numcolumns"
+                android:overScrollMode="never"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scrollbarSize="2dip"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+                android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                android:scrollbars="vertical"
+                android:scrollingCache="false"
+                android:stretchMode="columnWidth"
+                android:textFilterEnabled="true"
+                android:verticalSpacing="@dimen/change_app_icon_gradview_verticalSpacing">
+        </com.cooeeui.basecore.customview.HeaderGridView>
+
+        <TextView
+                android:id="@+id/tv_change_app_icon_not_support_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#f5f5f5"
+                android:lineSpacingExtra="4dp"
+                android:maxWidth="320dp"
+                android:padding="16dp"
+                android:text="@string/change_app_icon_not_support_icon_tips"
+                android:textSize="16dp"
+                android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/change_app_icon_bottom_height_sc"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+                android:id="@+id/rl_change_app_icon_moreicon"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/change_app_icon_more_icons_selector"
+                android:clickable="true"
+                android:focusable="true">
+
+            <RelativeLayout
+                    android:layout_width="17dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/change_app_icon_mark">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/change_app_icon_star"/>
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/change_app_icon_more_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/change_app_icon_more_icons"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_change_app_icon_ok"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/change_app_icon_ok_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/ok_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/change_app_icon_ok"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

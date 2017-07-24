@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/zs_about_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zen_setting_titlebar_height"
+            android:background="#333333">
+
+        <FrameLayout
+                android:id="@+id/zen_about_back"
+                android:layout_width="@dimen/arrow_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/zs_back_arrow_selector">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/zen_setting_titlebackmarginleft"
+                    android:layout_marginStart="@dimen/zen_setting_titlebackmarginleft"
+                    android:src="@drawable/zs_back_arrow"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zen_setting_about_icon_container_height"
+                    android:background="#333333">
+
+                <ImageView
+                        android:id="@+id/iv_logo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/zen_logo"/>
+
+                <TextView
+                        android:id="@+id/logo_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_logo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/zen_launcher"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/zen_setting_about_launcher_name_size"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_check_update"
+                    style="@style/aboutLayout_item_rl_style">
+
+                <LinearLayout style="@style/aboutLayout_item_ll_style">
+
+                    <TextView
+                            android:id="@+id/check_update_text"
+                            style="@style/aboutLayout_item_title_style"
+                            android:text="@string/ds_check_update_text"/>
+
+                    <TextView
+                            android:id="@+id/tv_version_name"
+                            style="@style/aboutLayout_item_content_style"
+                            android:text="1.1.1"/>
+                </LinearLayout>
+
+                <View style="@style/aboutLayout_divider_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_facebook"
+                    style="@style/aboutLayout_item_rl_style">
+
+                <LinearLayout style="@style/aboutLayout_item_ll_style">
+
+                    <TextView
+                            style="@style/aboutLayout_item_title_style"
+                            android:text="Facebook"/>
+
+                    <TextView
+                            style="@style/aboutLayout_item_content_style"
+                            android:text="@string/ds_about_facebook_url_text"/>
+                </LinearLayout>
+
+                <View style="@style/aboutLayout_divider_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_email"
+                    style="@style/aboutLayout_item_rl_style">
+
+                <LinearLayout style="@style/aboutLayout_item_ll_style">
+
+                    <TextView
+                            android:id="@+id/about_email_name_text"
+                            style="@style/aboutLayout_item_title_style"
+                            android:text="@string/ds_about_email_name_text"/>
+
+                    <TextView
+                            style="@style/aboutLayout_item_content_style"
+                            android:text="@string/zs_Email_Feedback_Receiver"/>
+                </LinearLayout>
+
+                <View style="@style/aboutLayout_divider_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rl_helpus_translate"
+                    style="@style/aboutLayout_item_rl_style">
+
+                <LinearLayout style="@style/aboutLayout_item_ll_style">
+
+                    <TextView
+                            android:id="@+id/about_helpus_tranlate_text"
+                            style="@style/aboutLayout_item_title_style"
+                            android:text="@string/ds_about_helpus_tranlate_text"/>
+
+                    <TextView
+                            style="@style/aboutLayout_item_content_style"
+                            android:text="@string/ds_about_helpus_tranlate_url"/>
+                </LinearLayout>
+
+                <View style="@style/aboutLayout_divider_style"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/special_thanks"
+                    style="@style/aboutLayout_item_rl_style">
+
+                <LinearLayout style="@style/aboutLayout_item_ll_style">
+
+                    <TextView
+                            android:id="@+id/about_special_thanks_text"
+                            style="@style/aboutLayout_item_title_style"
+                            android:text="@string/ds_about_special_thanks"/>
+                </LinearLayout>
+
+                <View style="@style/aboutLayout_divider_style"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

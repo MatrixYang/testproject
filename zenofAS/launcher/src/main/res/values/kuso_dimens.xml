@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="kuso_search_result_top_edit_height">50.0dip</dimen>
+    <dimen name="kuso_divider_width">1.0px</dimen>
+    <dimen name="kuso_localsearch_item_height">47dp</dimen>
+    <dimen name="kuso_localsearch_item_textsize">13dp</dimen>
+    <dimen name="kuso_localsearch_app_textsize">10dp</dimen>
+    <dimen name="kuso_localsearch_item_summary_textsize">10dp</dimen>
+    <dimen name="kuso_localsearch_title_textsize">15dp</dimen>
+    <dimen name="kuso_localsearch_marginLeft">15dp</dimen>
+    <dimen name="kuso_localsearch_app_icon_size">40dp</dimen>
+</resources>

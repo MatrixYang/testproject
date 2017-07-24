@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<default_workspace xmlns:launcher="http://schemas.android.com/apk/res-auto/com.cooee.zenlauncher">
+
+    <!-- shortcut in workspace begin -->
+    <shortcut
+            launcher:iconName="camera"
+            launcher:intent="*CAMERA*"
+            launcher:position="0"/>
+    <shortcut
+            launcher:iconName="contacts"
+            launcher:intent="intent:content://com.android.contacts/contacts#Intent;action=android.intent.action.VIEW;end"
+            launcher:position="1"/>
+    <shortcut
+            launcher:iconName="defaultApp"
+            launcher:intent="intent:#Intent;action=android.intent.action.MAIN;component=com.android.settings/com.android.settings.Settings;end"
+            launcher:position="2"/>
+    <shortcut
+            launcher:iconName="dial"
+            launcher:intent="intent:#Intent;action=android.intent.action.DIAL;end"
+            launcher:position="3"/>
+    <shortcut
+            launcher:iconName="sms"
+            launcher:intent="intent:#Intent;action=android.intent.action.MAIN;type=vnd.android-dir/mms-sms;end"
+            launcher:position="4"/>
+    <shortcut
+            launcher:iconName="browser"
+            launcher:intent="*BROWSER*"
+            launcher:position="5"/>
+    <!-- shortcut in workspace end -->
+    <!-- appwidget in workspace begin -->
+    <appwidget
+            launcher:className="com.cooeeui.brand.zenlauncher.widgets.weather.WeatherWidget"
+            launcher:packageName="com.cooeeui.zenlauncher"
+            launcher:position="0"
+            launcher:widgetType="nano"/>
+    <appwidget
+            launcher:className="com.cooeeui.brand.zenlauncher.widgets.hotapp.HotappWidget"
+            launcher:packageName="com.cooeeui.zenlauncher"
+            launcher:position="1"
+            launcher:widgetType="nano"/>
+    <!-- appwidget in workspace end -->
+</default_workspace>

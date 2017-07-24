@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/weather_widget"
+              android:orientation="horizontal"
+              android:gravity="center_vertical">
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/widget_height"
+            android:layout_weight="@dimen/widget_left_weight"
+            android:background="@drawable/widget_currbg">
+
+        <ImageView
+                android:id="@+id/widget_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/widget_refresh_left"
+                android:layout_marginTop="@dimen/widget_refresh_top"
+                android:src="@drawable/weather_city_refresh"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/widget_unknow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/widget_unknow"
+                android:layout_marginLeft="@dimen/widget_unknow_left"
+                android:layout_marginTop="@dimen/widget_unknow_top"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/widget_fu_tmp0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/widget_fuhao"
+                android:layout_marginLeft="@dimen/widget_fu_tmp0_left"
+                android:layout_marginTop="@dimen/widget_fu_tmp0_top"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/widget_fu_tmp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_2"
+                android:layout_toRightOf="@+id/widget_fu_tmp0"
+                android:scaleX="@dimen/widget_tmp_scale"
+                android:scaleY="@dimen/widget_tmp_scale"
+                android:layout_marginLeft="@dimen/widget_fu_tmp1_left"
+                android:layout_marginTop="@dimen/widget_fu_tmp1_top"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/widget_fu_tmp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_1"
+                android:layout_toRightOf="@+id/widget_fu_tmp1"
+                android:scaleX="@dimen/widget_tmp_scale"
+                android:scaleY="@dimen/widget_tmp_scale"
+                android:layout_marginLeft="@dimen/widget_fu_tmp2_left"
+                android:layout_marginTop="@dimen/widget_fu_tmp2_top"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/widget_fu_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/widget_unit_f"
+                android:scaleX="@dimen/widget_unit_scale"
+                android:scaleY="@dimen/widget_unit_scale"
+                android:layout_toRightOf="@+id/widget_fu_tmp2"
+                android:layout_marginLeft="@dimen/widget_fu_unit_left"
+                android:layout_marginTop="@dimen/widget_fu_unit_top"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/widget_zheng_tmp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_2"
+                android:scaleX="@dimen/widget_tmp_scale"
+                android:scaleY="@dimen/widget_tmp_scale"
+                android:layout_marginLeft="@dimen/widget_zheng_tmp1_left"
+                android:layout_marginTop="@dimen/widget_zheng_tmp1_top"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/widget_zheng_tmp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_1"
+                android:layout_toRightOf="@+id/widget_zheng_tmp1"
+                android:scaleX="@dimen/widget_tmp_scale"
+                android:scaleY="@dimen/widget_tmp_scale"
+                android:layout_marginLeft="@dimen/widget_zheng_tmp2_left"
+                android:layout_marginTop="@dimen/widget_zheng_tmp2_top"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/widget_zheng_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/widget_unit_f"
+                android:scaleX="@dimen/widget_unit_scale"
+                android:scaleY="@dimen/widget_unit_scale"
+                android:layout_toRightOf="@+id/widget_zheng_tmp2"
+                android:layout_marginLeft="@dimen/widget_zheng_unit_left"
+                android:layout_marginTop="@dimen/widget_zheng_unit_top"
+                android:visibility="gone"/>
+
+        <TextView
+                android:id="@+id/curr_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/curr_temperature_right"
+                android:layout_marginBottom="@dimen/curr_temperature_bottom"
+                android:text="-5/10℃"
+                android:textSize="@dimen/curr_temperature_textsize"
+                android:shadowColor="#44000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="@android:color/white"
+                android:singleLine="true"/>
+
+        <TextView
+                android:id="@+id/curr_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunny"
+                android:textSize="@dimen/curr_temperature_textsize"
+                android:shadowColor="#44000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/curr_temperature"
+                android:layout_marginBottom="@dimen/curr_temperature_bottom"
+                android:layout_marginRight="@dimen/curr_condition_right"
+                android:layout_marginLeft="1dp"
+                android:singleLine="true"
+                android:ellipsize="none"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/widget_height"
+            android:layout_weight="@dimen/widget_right_weight"
+            android:background="@drawable/widget_weather_bg">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/widget_line_bottom"
+                android:layout_marginLeft="@dimen/widget_line_left"
+                android:layout_marginRight="@dimen/widget_line_right"
+                android:background="#d4d4d4"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:id="@+id/first_day"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/widget_height"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:id="@+id/first_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/widget_week_top"
+                        android:layout_centerHorizontal="true"
+                        android:text="Wed."
+                        android:textColor="#7c7c7c"
+                        android:textSize="@dimen/curr_temperature_textsize"
+                        android:singleLine="true"/>
+
+                <ImageView
+                        android:id="@+id/first_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/first_week"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/widget_condition_top"
+                        android:src="@drawable/widget_sunny"
+                        android:scaleX="@dimen/widget_condition_scale"
+                        android:scaleY="@dimen/widget_condition_scale"/>
+
+                <TextView
+                        android:id="@+id/first_tmp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/curr_temperature_bottom"
+                        android:text="-5/10℃"
+                        android:textColor="#7c7c7c"
+                        android:textSize="@dimen/curr_temperature_textsize"
+                        android:singleLine="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/second_day"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/widget_height"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:id="@+id/second_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/widget_week_top"
+                        android:layout_centerHorizontal="true"
+                        android:text="Thur."
+                        android:textColor="#7c7c7c"
+                        android:textSize="@dimen/curr_temperature_textsize"
+                        android:singleLine="true"/>
+
+                <ImageView
+                        android:id="@+id/second_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/second_week"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/widget_condition_top"
+                        android:src="@drawable/widget_smallrain"
+                        android:scaleX="@dimen/widget_condition_scale"
+                        android:scaleY="@dimen/widget_condition_scale"/>
+
+                <TextView
+                        android:id="@+id/second_tmp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/curr_temperature_bottom"
+                        android:text="-5/10℃"
+                        android:textColor="#7c7c7c"
+                        android:textSize="@dimen/curr_temperature_textsize"
+                        android:singleLine="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/third_day"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/widget_height"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:id="@+id/third_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/widget_week_top"
+                        android:layout_centerHorizontal="true"
+                        android:text="Fri."
+                        android:textColor="#7c7c7c"
+                        android:textSize="@dimen/curr_temperature_textsize"
+                        android:singleLine="true"/>
+
+                <ImageView
+                        android:id="@+id/third_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/third_week"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/widget_condition_top"
+                        android:src="@drawable/widget_cloudyday"
+                        android:scaleX="@dimen/widget_condition_scale"
+                        android:scaleY="@dimen/widget_condition_scale"/>
+
+                <TextView
+                        android:id="@+id/third_tmp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/curr_temperature_bottom"
+                        android:text="-5/10℃"
+                        android:textColor="#7c7c7c"
+                        android:textSize="@dimen/curr_temperature_textsize"
+                        android:singleLine="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

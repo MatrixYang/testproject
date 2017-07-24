@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/popup"
+              android:orientation="vertical">
+    <LinearLayout
+            android:id="@+id/button_popuphideapp"
+            style="@style/hideLinearlayoutStyle">
+
+        <TextView
+                android:layout_width="@dimen/all_apps_hide_marginleft"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/hide_app_text"
+                style="@style/hideTextViewStyle"
+                android:text="@string/hideicon"/>
+
+        <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/buttonPopupReminder"
+            style="@style/hideLinearlayoutStyle">
+
+        <TextView
+                android:layout_width="@dimen/all_apps_hide_marginleft"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/hide_tips_text"
+                style="@style/hideTextViewStyle"
+                android:text="@string/tips_setting"/>
+
+        <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonPopupWallpaper"
+        style="@style/hideLinearlayoutStyle">
+
+        <TextView
+            android:layout_width="@dimen/all_apps_hide_marginleft"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/hide_wallpaper_text"
+            style="@style/hideTextViewStyle"
+            android:text="@string/wallpaper"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/buttonPopupSetting"
+            style="@style/hideLinearlayoutStyle">
+
+        <TextView
+                android:layout_width="@dimen/all_apps_hide_marginleft"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/hide_zen_text"
+                style="@style/hideTextViewStyle"
+                android:text="@string/zen_settings"/>
+
+        <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

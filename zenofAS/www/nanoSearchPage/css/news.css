@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  font-family: "Microsoft YaHei";
+}
+html,
+body {
+  width: 100%;
+  position: relative;
+  background: #f2f2f2;
+  transition: background 0.3s linear;
+}
+a:link,
+a:active,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+.news {
+  width: 100%;
+  padding: 0 6px;
+  box-sizing: border-box;
+  display: none;
+}
+.news .header {
+  width: 100%;
+  font-size: 15px;
+  line-height: 35px;
+  overflow: hidden;
+  position: relative;
+}
+.news .header .titleImg {
+  float: left;
+  width: 15px;
+  padding: 10px 0;
+  margin-right: 7px;
+}
+.news .header .titleImg img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.news .header .newsTitle {
+  float: left;
+  color: #5f5f5f;
+  font-weight: 600;
+}
+.news .header .refresh {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  width: 6.9%;
+}
+.news .header .refresh img {
+  width: 100%;
+  display: block;
+}
+.news .content {
+  width: 100%;
+  overflow: hidden;
+}
+.news .content .news-item {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 123px;
+  margin-bottom: 9px;
+  box-shadow: 0 2px 3px #ccc;
+  background: #fff;
+  float: left;
+  display: none;
+}
+.news .content .have-img {
+  padding: 9px 12px 13px 12px;
+}
+.news .content .have-img .img-box {
+  width: 40%;
+  float: left;
+  overflow: hidden;
+  height: 82px;
+}
+.news .content .have-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.news .content .have-img .text {
+  width: 55%;
+  float: right;
+  position: relative;
+}
+.news .content .have-img .text .title {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #2d2d2d;
+}
+.news .content .have-img .text .excerpt {
+  font-size: 12px;
+  line-height: 17px;
+  color: #7a7a7a;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.news .content .have-img .publication {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: #7a7a7a;
+  font-size: 12px;
+  -webkit-transform-origin: 0 50%;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+.news .content .have-img .time {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: #7a7a7a;
+  font-size: 12px;
+  -webkit-transform-origin: 100% 50%;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+.news .content .no-img {
+  padding: 18px 12px 13px 12px;
+}
+.news .content .no-img .text {
+  width: 100%;
+  position: relative;
+}
+.news .content .no-img .text .title {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #2d2d2d;
+}
+.news .content .no-img .text .excerpt {
+  font-size: 12px;
+  line-height: 16px;
+  color: #7a7a7a;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.news .content .no-img .publication {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: #7a7a7a;
+  font-size: 12px;
+  -webkit-transform-origin: 0 50%;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+.news .content .no-img .time {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: #7a7a7a;
+  font-size: 12px;
+  -webkit-transform-origin: 100% 50%;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+.news .more {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #646464;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 3px #ccc;
+}
+.news .more:active {
+  color: #0480ff;
+}
+.news .loading {
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 16px;
+  height: 24px;
+  line-height: 24px;
+}

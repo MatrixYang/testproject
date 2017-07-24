@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_bg"
+    android:orientation="vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp">
+
+    <RelativeLayout
+        android:id="@+id/menu_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_image_margin_left"
+            android:src="@drawable/menu_add" />
+
+        <TextView
+            android:id="@+id/menu_add_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_text_margin_left"
+            android:text="@string/add"
+            android:textColor="@color/menu_item_text_color"
+            android:textSize="@dimen/menu_item_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menu_divider_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height">
+
+        <ImageView
+            android:id="@+id/img_wallpaper_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_image_margin_left"
+            android:src="@drawable/menu_wallpaper" />
+
+        <ImageView
+            android:id="@+id/img_wallpaper_alert"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignTop="@id/img_wallpaper_icon"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/zs_red_alert"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/menu_wallpaper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_text_margin_left"
+            android:text="@string/wallpaper"
+            android:textColor="@color/menu_item_text_color"
+            android:textSize="@dimen/menu_item_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menu_divider_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_tips"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height">
+
+        <ImageView
+            android:id="@+id/img_tips_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_image_margin_left"
+            android:src="@drawable/menu_tips" />
+
+        <ImageView
+            android:id="@+id/img_tips_alert"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignTop="@id/img_tips_icon"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/zs_red_alert"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/menu_tips_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_text_margin_left"
+            android:text="@string/tips_setting"
+            android:textColor="@color/menu_item_text_color"
+            android:textSize="@dimen/menu_item_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menu_divider_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_zen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height">
+
+        <ImageView
+            android:id="@+id/img_zen_setting_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_image_margin_left"
+            android:src="@drawable/menu_zen" />
+
+        <ImageView
+            android:id="@+id/img_zen_setting_alert"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignTop="@id/img_zen_setting_icon"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/zs_red_alert"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/menu_zen_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_text_margin_left"
+            android:text="@string/zen_settings"
+            android:textColor="@color/menu_item_text_color"
+            android:textSize="@dimen/menu_item_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menu_divider_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_system"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_image_margin_left"
+            android:src="@drawable/menu_system" />
+
+        <TextView
+            android:id="@+id/menu_system_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_text_margin_left"
+            android:text="@string/settings"
+            android:textColor="@color/menu_item_text_color"
+            android:textSize="@dimen/menu_item_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_divider_height"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:background="@color/menu_divider_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/img_facebook_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_image_margin_left"
+            android:src="@drawable/menu_facebook" />
+
+        <ImageView
+            android:id="@+id/img_facebook_alert"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignTop="@id/img_facebook_icon"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/zs_red_alert"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/menu_facebook_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/menu_item_text_margin_left"
+            android:text="Facebook"
+            android:textColor="@color/menu_item_text_color"
+            android:textSize="@dimen/menu_item_text_size" />
+    </RelativeLayout>
+</LinearLayout>

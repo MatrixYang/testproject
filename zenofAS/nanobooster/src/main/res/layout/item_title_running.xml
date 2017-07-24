@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.cooeeui.nanobooster.views.RippleView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ripple="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ripple:rv_type="rectangle"
+        android:id="@+id/rv_title_running">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="38dp"
+                      android:background="#E5E5E5"
+                      android:gravity="center_vertical">
+            <CheckBox android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:id="@+id/ck_running"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="9dp"
+                      android:onClick="selectAll"
+                      android:focusable="false"
+                      android:background="@drawable/running_checkbox_selector"
+                      android:button="@null"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tv_title_running"
+                      android:text="Running apps"
+                      android:layout_toRightOf="@+id/ck_running"
+                      android:textSize="16dp"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="14"
+                      android:layout_marginLeft="5dp"
+                      android:textSize="16dp"
+                      android:textColor="#00aae9"
+                      android:id="@+id/tv_running_manager"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="(16)"
+                      android:textSize="16dp"
+                      android:id="@+id/tv_running_total"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.cooeeui.nanobooster.views.RippleView>

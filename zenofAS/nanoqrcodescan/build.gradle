@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.cooeeui.nanoqrcodescan"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 6
+        versionName "1.0.5"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources true    // 自动清除项目中无用资源
+            zipAlignEnabled true
+
+            // 输出apk名称为*****_v1.0.apk
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "Nanoqrcodescan_v${defaultConfig.versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':downloaderlib')
+    compile 'com.android.support:support-v4:23.0.0'
+    compile project(':Pushlib')
+}

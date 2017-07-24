@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+    
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="200dp">
+           
+		    <ImageView
+	        android:id="@+id/image_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitXY"/>
+		    		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:layout_gravity="center">
+		    <ImageButton
+		        android:id="@+id/left_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"		       
+		        android:background="#00000000"
+		        android:src="@drawable/kpsh_left" />
+
+		    <ImageButton
+		        android:id="@+id/right_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:background="#00000000"
+		        android:src="@drawable/kpsh_right" />
+
+		   </RelativeLayout>
+		   <RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:layout_gravity="bottom">
+			<ImageButton
+		        android:id="@+id/more_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:background="#00000000"
+		        android:src="@drawable/kpsh_more" />
+	    </RelativeLayout>
+        </FrameLayout>
+</LinearLayout>

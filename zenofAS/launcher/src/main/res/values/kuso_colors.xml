@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="kuso_search_bar_normal">#77ffffff</color>
+    <color name="kuso_white">#ffffffff</color>
+    <color name="kuso_search_bar_hint">#55ffffff</color>
+    <color name="kuso_background">#f4f4f4</color>
+    <color name="kuso_line">#d5d5d5</color>
+    <color name="kuso_history_title_color">#00aae8</color>
+
+    <color name="kuso_search_setting_text_color">#696969</color>
+    <color name="kuso_choose_search_engine_text_color">#a1a1a1</color>
+    <color name="kuso_engine_name_text">#585d64</color>
+    <color name="kuso_engine_summary_text">#9b9b9b</color>
+    <color name="kuso_back_bg_pressed">#33000000</color>
+    <color name="kuso_allapps_search_list_line_color">#00a2ff</color>
+    <color name="kuso_transparent">#ffffffff</color>
+    <color name="kuso_divider_color">#ffffffff</color>
+    <color name="kuso_allapps_search_list_text_color">#ffffffff</color>
+
+    <color name="kuso_search_list_background">#ffffffff</color>
+</resources>

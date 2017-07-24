@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="language_title">Choose the language you are using</string>
+
+    <string name="activity_not_found">App isn\'t installed.</string>
+    <string name="zen_launcher">Nano Launcher</string>
+
+    <!-- Menu start -->
+    <string name="add">Add</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="settings">System settings</string>
+    <string name="tips_setting">Smart Reminder</string>
+    <string name="zen_settings">Nano settings</string>
+    <string name="recommend_setting">Auto scrolling \"Nano Tools\"</string>
+    <string name="tips_setting_subtitle">Give some advices on overusing the phone.</string>
+    <!-- Menu end -->
+
+    <string name="guide_home_text1">1.Tap to Menu</string>
+    <string name="guide_home_text2">2.Tap icon to edit the style</string>
+    <string name="guide_favorite_text1">1.Tap icon to get more solutions</string>
+    <string name="guide_favorite_text2">2.Shows the most frequently used App based on your daily
+        habits
+    </string>
+    <string name="guide_favorite_text2_usage">2.Shows the most frequently used App based on your
+        daily habits, and it needs access to app usage data.
+    </string>
+    <string name="guide_favorite_text3">3.Set shortcuts , and tap it to Details</string>
+    <string name="guide_allapp_text1">1.Tap to Menu</string>
+    <string name="guide_allapp_text2">2.Tap icon to get more solutions</string>
+
+    <string name="ds_default_launcher_setting">Set as Default Launcher</string>
+    <string name="desktop_search">Show Search Bar</string>
+    <string name="status_bar_setting">Status Bar Setting</string>
+    <string name="ds_feedback_sender_me_text">Me</string>
+    <string name="ds_check_update_text">Check the update</string>
+    <string name="about_zen">About Nano</string>
+    <string name="notice_setting">Nano Notification Plugin</string>
+    <string name="notice_setting_sub">Never miss important messages</string>
+    <string name="ds_about_facebook_url_text">https://www.facebook.com/zenlauncher</string>
+    <string name="ds_about_email_name_text">E-mail</string>
+    <string name="ds_about_found_new_version_text">Get new version,update now?</string>
+    <string name="ds_about_helpus_tranlate_text">Help us to translate Nano Launcher.</string>
+    <string name="ds_about_helpus_tranlate_url">https://crowdin.com/project/zenlauncher</string>
+    <string name="ds_about_special_thanks">Special Thanks</string>
+    <string name="ds_about_special_thanks_text">We are so glad to receive some translations from our
+        customers, It is a great favour to us.Thank you so much for your support, we will do our
+        best to improve our launcher！
+    </string>
+    <string name="ds_about_special_thanks_russian">Russian Translation Support</string>
+    <string name="ds_about_special_thanks_spanish">Spanish Translation Support</string>
+    <string name="ds_about_special_thanks_french">French Translation Support</string>
+    <string name="ds_about_special_thanks_german">German Translation Support</string>
+    <string name="ds_about_special_thanks_portuguese">Portuguese, Brazilian Translation Support
+    </string>
+    <string name="ds_about_special_thanks_Indonesian">Indonesian translation Support</string>
+    <string name="ds_about_special_thanks_Italian">Italian translation Support</string>
+    <string name="ds_about_special_thanks_Turkish">Turkish translation Support</string>
+    <string name="ds_about_special_thanks_Czech">Czech translation support</string>
+    <string name="ds_about_special_thanks_Dutch">Dutch translation support</string>
+    <string name="ds_about_special_thanks_Greek">Greek translation support</string>
+    <string name="ds_about_special_thanks_Romanian">Romanian translation support</string>
+    <string name="ds_about_special_thanks_polish">Polish translation support</string>
+    <string name="ds_about_special_thanks_swedish">Swedish translation support</string>
+    <string name="ds_about_special_thanks_ukrainian">Ukrainian translation support</string>
+    <string name="zen_setting_swicth_engine">Select Search Engine</string>
+    <string name="sounds_not_install">Please install google search first!</string>
+    <string name="ds_blur_switch">Blur background when you swipe sidebar</string>
+    <string name="zs_setting">Setting</string>
+    <string name="zs_more">More</string>
+    <string name="zs_Phone">Appearance</string>
+    <string name="zs_Engine">Search Setting</string>
+    <string name="zs_Feedback">Feedback</string>
+    <string name="zs_FeedbackContentHint">Feedback…</string>
+    <string name="zs_FeedbackContackHint">Your Email、Facebook…</string>
+    <string name="zs_FeedbackCSend">Send</string>
+    <string name="zs_BlurMainTitle">Blur effect</string>
+    <string name="zs_rate_button_encourage">Encourage</string>
+    <string name="zs_rate_button_feedback">Dislike</string>
+    <string name="zs_rate_button_later">Later on</string>
+    <string name="zs_Email_Feedback_Receiver">nanolauncher@gmail.com</string>
+    <string name="zs_Email_Feedback_Subject">Feedback on Nano Launcher</string>
+    <string name="zs_Email_Feedback_Choose_Client">Choose Email Client</string>
+    <string name="zs_Email_Feedback_input_isempty">Input can not be empty</string>
+    <string name="zs_language">Language</string>
+    <string name="zs_advanced">Advanced Setting</string>
+    <string name="zs_delete">Delete successful</string>
+    <string name="zs_long_delete">Press to delete</string>
+    <string name="zs_download_fail">Download failed</string>
+    <string name="zs_alert">Do you want to delete this language?</string>
+    <string name="text_delete">Delete</string>
+    <string name="zs_ZenLife">What\'s Zen life?</string>
+    <string name="zs_ZenLifeShareMessageTitle">Share to your friends</string>
+
+    <!-- public start -->
+    <string name="chooseApp">Choose to use the application:</string>
+    <string name="unload">Uninstall</string>
+    <string name="hideicon">Hide Apps</string>
+    <string name="search_text_hint">Search</string>
+    <string name="search_input_tips">Please input a key</string>
+    <string name="default_cityname">Setting City</string>
+    <string name="default_prompt">Enter city name</string>
+    <string name="weathercurve_title">Forecast</string>
+
+    <string name="defaultWeatherconditionName">Cloudy</string>
+    <string name="unkonwweek">unkonw</string>
+    <string name="notsetcity">Please locate your city first!</string>
+    <string name="flushfailed">Update Failed</string>
+    <string name="flushsuccess">Update Success</string>
+    <string name="networkerror">Network connection exception</string>
+    <string name="citynotfound">Not found this city</string>
+    <string name="default_foreigncorf">Temperature unit</string>
+    <string name="default_foreigncity">Unknown</string>
+    <string name="searchfailed_foreign">Search Failed</string>
+    <string name="Flushfailed_foreign">Flush Failed</string>
+    <string name="Flushsuccess_foreign">Flush Success</string>
+    <string name="networkerror_foreign">Network connection exception</string>
+    <string name="citynotfound_foreign">Not found this city</string>
+    <string name="defaultWeatherconditionName_foreign">Cloudy</string>
+    <string name="firstweek_foreign">Mon.</string>
+    <string name="secondweek_foreign">Tues.</string>
+    <string name="thirdweek_foreign">Wed.</string>
+    <string name="forthweek_foreign">Thur.</string>
+    <string name="fiveweek_foreign">Fri.</string>
+    <string name="sixweek_foreign">Sat.</string>
+    <string name="sevenweek_foreign">Sun.</string>
+    <string name="firstweek_full">Monday</string>
+    <string name="secondweek_full">Tuesday</string>
+    <string name="thirdweek_full">Wednesday</string>
+    <string name="forthweek_full">Thursday</string>
+    <string name="fiveweek_full">Friday</string>
+    <string name="sixweek_full">Saturday</string>
+    <string name="sevenweek_full">Sunday</string>
+    <string name="first_month">Jan.</string>
+    <string name="second_month">Feb.</string>
+    <string name="third_month">Mar.</string>
+    <string name="forth_month">Apr.</string>
+    <string name="fifth_month">May.</string>
+    <string name="sixth_month">Jun.</string>
+    <string name="seventh_month">Jul.</string>
+    <string name="eighth_month">Aug.</string>
+    <string name="ninth_month">Sep.</string>
+    <string name="tenth_month">Oct.</string>
+    <string name="eleventh_month">Nov.</string>
+    <string name="twelfth_month">Dec.</string>
+    <string name="notsetcity_foreign">You have not set the city,Please set the city first</string>
+    <string name="change">Change</string>
+    <string name="change_icon">Change Icon</string>
+    <string name="hide_yes">Yes</string>
+    <string name="hide_no">No</string>
+    <string name="app_recommend_title">Nano Tools</string>
+    <string name="app_more">More Apps</string>
+    <string name="loading">Please wait...</string>
+    <string name="input_isempty">Input is empty, enter the city name</string>
+    <string name="locating">Locating...</string>
+    <string name="no_data_found">No data found !</string>
+    <string name="favorite">Most used</string>
+    <string name="google_play_store">Play Store</string>
+    <string name="ad_loading">Loading...</string>
+    <string name="all_apps">All Apps</string>
+    <!-- public End -->
+
+
+    <!-- install guide start -->
+    <string name="always">Always</string>
+    <string name="once">For once</string>
+    <string name="default_launcher_guide_step1">First, choose</string>
+    <string name="default_launcher_guide_step2">Then, click \"Always\"</string>
+    <!-- install guide end -->
+
+
+    <!-- widget start -->
+    <string name="widget_long_press">Click To Add Widget</string>
+    <string name="widget_add">+ Add Widget</string>
+    <string name="widget_drag_text">Tap and hold the widget to move</string>
+    <string name="widget_setting">Show Widget Page</string>
+    <!-- widget end -->
+
+
+    <!-- SearchBar start -->
+    <string name="sb_not_installed_toast">Google search not installed!</string>
+    <!-- SearchBar end -->
+
+
+    <!-- pop start -->
+    <string name="pop_move_out">Remove</string>
+    <string name="pop_add_speeddial">Home Screen</string>
+    <string name="pop_app_info">App Info</string>
+    <string name="pop_change_app_icon">DIY Icon</string>
+    <string name="pop_add_success">Added successfully</string>
+    <string name="pop_add_fail">No more space on Home Screen.</string>
+    <string name="pop_set_hide">Set as hidden</string>
+    <string name="pop_set_visible">Set as visible</string>
+    <string name="pop_replace_widget">Replace with widget</string>
+    <string name="pop_replace_weather">Replace with clock</string>
+    <string name="pop_hideapp">Hide App.</string>
+    <!-- pop End -->
+
+
+    <!-- Common use start -->
+    <string name="recently_install_text">Latest installed</string>
+    <string name="recommend_app_text">Nano Tools</string>
+    <!-- Common use end -->
+
+
+    <!-- Tips start -->
+    <string name="tips_title">Tips:</string>
+    <string name="tips_time_app">App Time</string>
+    <string name="tips_time_text">Device Time</string>
+    <string name="tips_unlock_text">Unlock Times</string>
+    <string name="tips_unlock_low">Are you waiting for someone\'s call?</string>
+    <string name="tips_unlock_mid">You check for new text messages too frequently!</string>
+    <string name="tips_unlock_high">You over-reliance on a cell phone</string>
+    <string name="tips_time_low">Maybe you can use these time to finish a book</string>
+    <string name="tips_time_mid">Maybe you can do some execise with these time</string>
+    <string name="tips_time_high">Maybe you can have a chat with your family during this time
+    </string>
+    <string name="tips_other_low">Maybe you need sharing a cup of coffee with your friends</string>
+    <string name="tips_other_mid">Cell phone is killing your time!</string>
+    <string name="tips_other_high">You overuse your cell phone</string>
+    <string name="tips_app">You have spent %1$s in %2$s. You should take a rest.</string>
+    <string name="tips_detail">Details</string>
+    <string name="tips_smart_reminder">Smart Reminder</string>
+    <string name="tips_unlocktimes">Your Unlock Times</string>
+    <string name="tips_unlocktimes_unit">(Times)</string>
+    <string name="tips_phonetime">Your Device Time</string>
+    <string name="tips_phonetime_unit_hour">(Hour)</string>
+    <string name="tips_phonetime_unit_min">(Min)</string>
+    <string name="tips_top_title">Top 10 Apps</string>
+    <string name="tips_nodata_warning">You haven\'t use any app for the given time range</string>
+    <string name="tips_time_unit_min">mins</string>
+    <string name="tips_time_unit_hour">hours</string>
+    <string name="tips_appused_unit_min">Min</string>
+    <string name="tips_appused_unit_hour">Hour</string>
+    <string name="tip_view_unlockcount_unit">Times</string>
+    <!-- Tips End -->
+
+
+    <!-- alterDialog String start -->
+    <string name="alter_plugin_name">Notification Plugin</string>
+    <string name="alter_content">Let Nano Notifier be your messager and never miss important
+        messages
+        now.To use this notification feature,Please download this plugin.
+    </string>
+    <string name="alter_download">Download</string>
+    <string name="alter_cancel">Cancel</string>
+    <string name="camera_occupied">The camera is in use by another application, does not open
+    </string>
+    <string name="version_update">Update</string>
+    <string name="version_update_prompt">Nano launcher has released a new version , download and try
+        it now !
+    </string>
+    <string name="version_update_checkbox">Don\'t show again</string>
+    <string name="update_is_newest">You are using the latest version</string>
+    <string name="update_fail">Check for update failed</string>
+    <string name="google_play_not_install">Google play is unavailable</string>
+    <string name="alert_scan">You can use Nano QR code scanner to read QR code after download this
+        plugin.
+    </string>
+    <string name="tv_scan_prompt">You can use Nano QR code scanner to read QR code after download
+        this plugin.
+    </string>
+    <string name="tv_scan_later">Later</string>
+    <string name="tv_scan_download">Download</string>
+    <!-- alterDialog String End -->
+
+
+    <!-- weather content title start -->
+    <string name="default_weather_content_title">Sunny</string>
+    <string name="weather_content_title_tropical_storm">Tropical storm</string>
+    <string name="weather_content_title_thunder_storms">Thunder storms</string>
+    <string name="weather_content_title_sleet">Sleet</string>
+    <string name="weather_content_title_drizzle">Drizzle</string>
+    <string name="weather_content_snow_showers">Snow showers</string>
+    <string name="weather_content_blowing_snow">Blowing snow</string>
+    <string name="weather_content_hail">Hail</string>
+    <string name="weather_content_dust">Dust</string>
+    <string name="weather_content_foggy">Foggy</string>
+    <string name="weather_content_mostly_cloudy">Mostly cloudy</string>
+    <string name="weather_content_sunny">Sunny</string>
+    <string name="weather_content_heavy_snow">Heavy snow</string>
+    <string name="weather_content_not_available">Not available</string>
+    <!-- weather content title End -->
+
+
+    <!-- change app icon -->
+    <string name="change_app_icon_title">DIY Icon</string>
+    <string name="change_app_icon_suggestion">Suggestion</string>
+    <string name="change_app_icon_more_icons">More icons</string>
+    <string name="change_app_icon_ok">OK</string>
+    <string name="change_app_icon_next">Next</string>
+    <string name="change_app_icon_dialog_content">Do not prompt the next</string>
+    <string name="change_app_icon_dialog_title">Do you want to replace the icon in the \"all app\"
+        list?
+    </string>
+    <string name="change_app_icon_dialog_all_yes">Yes</string>
+    <string name="change_app_icon_dialog_all_no">No</string>
+    <string name="change_app_icon_not_support_icon_tips">Sorry,We don\'t support this icon pack for
+        now, but we will fix it as soon as possible. And you can tell us which icon pack you want to
+        use by email.
+    </string>
+    <!-- change app icon -->
+
+    <!-- wallpaper -->
+    <string name="live_wallpaper_text_setting">Settings</string>
+    <string name="live_wallpaper_summary">Start Nano Launcher</string>
+    <string name="wallPaperSetSuccess">set wallpaper success!</string>
+    <string name="wallPaperSetFailed">set wallpaper Failed!</string>
+    <string name="wallpaper_set_wallpaper">Wallpaper Detail</string>
+    <string name="wallpaper_check_net">please check the network</string>
+    <string name="wallpaper_set_as_wallpaper">SET AS WALLPAPER</string>
+    <string name="wallpaper_zen_wallpaper">Nano Wallpaper</string>
+    <string name="wallpaper_local">Local Wallpaper</string>
+    <string name="wallpaper_gallery">Gallery</string>
+    <string name="wallpaper_liver_wallpaper">Livewallpaper</string>
+    <string name="wallpaper_save_success">save success</string>
+    <string name="wallPaper_detailDialogMessage">loading HD wallpaper</string>
+    <string name="wallPaper_selector_fixed">Fixed wallpaper</string>
+    <string name="wallPaper_selector_scrollable">Scrollable wallpaper</string>
+    <!-- wallpaper -->
+    <!-- start nano tools-->
+    <string name="nano_tools_settings">Nano Settings</string>
+    <string name="nano_tools_remind">Remind</string>
+    <string name="nano_tools_top">Hot APP</string>
+    <string name="nano_tools_game">Game Centre</string>
+    <!--end nano tools-->
+
+    <!--start app store-->
+    <string name="app_store_title">Hot App</string>
+    <string name="app_store_app_size">Size:</string>
+    <!--end app store-->
+
+    <!-- search -->
+    <string name="search_check_net">please check the network</string>
+    <string name="search_engine_nano">Nano (Recommend)</string>
+    <string name="search_engine_google">Google</string>
+    <string name="search_engine_yahoo">Yahoo</string>
+    <string name="search_engine_bing">Bing</string>
+    <string name="search_engine_baidu">Baidu</string>
+    <string name="search_engine_duckduckgo">DuckDuckGo</string>
+
+    <!-- usage -->
+    <string name="usage_setting_activity_error">No Usage Setting Activity</string>
+    <string name="usage_zs">Most used</string>
+    <string name="usage_zs_summary">Get the access to app usage data</string>
+    <string name="usage_pop_title">Turn on the nano launcher.</string>
+    <string name="usage_notice">Notice</string>
+    <string name="usage_alter_go_now">Go Now</string>
+    <string name="usage_alter_later">Later</string>
+    <string name="usage_alter_ok">OK</string>
+    <string name="usage_alter_content_nano">If you want to use "Most used", you need to allow nano
+        launcher get the access to app usage data, and you can find it in the nano setting.
+    </string>
+    <string name="usage_alter_content_setting">We find "Most used" didn\'t work, you can fix it by
+        let nano launcher access to your app usage data.
+    </string>
+
+    <!-- localsearch -->
+    <string name="kuso_history_record">History Record</string>
+    <string name="kuso_local_app_name">APP</string>
+    <string name="kuso_local_contact_name">Contacts</string>
+    <string name="kuso_local_music_name">Music</string>
+
+    <string name="edit_icon_default">Default</string>
+    <string name="search_set">Search settings</string>
+    <string name="date_day"></string>
+    <!--设置底部弹窗-->
+    <string name="pop_content">Nano recommend a new feature—— Screen Lock. You can lock your screen
+        by double-click action.
+    </string>
+    <string name="pop_later">Later</string>
+    <string name="pop_try">Try now</string>
+    <string name="new_feature">New Feature</string>
+    <string name="tv_advanced_content">Allowing you lock your screen with a double-tap, freeing up
+        your power button.Don\'t support fingerprint unlock temporarily.
+    </string>
+    <string name="tv_advanced_text">Nano Screen Lock</string>
+    <string name="tv_advanced_title">Advanced Setting</string>
+    <string name="lock_success">Nano Screen Lock Enable Success</string>
+    <string name="lock_failed">Nano Screen Lock Enable Failed</string>
+    <string name="lock_enable">lock enable</string>
+    <string name="lock_disable">lock disable</string>
+    <string name="lock_screen_name">Nano screen lock</string>
+
+</resources>

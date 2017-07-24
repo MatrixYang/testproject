@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/kuso_allapps_search_list_line_color" />
+    <item android:drawable="@color/kuso_transparent" />
+</selector>

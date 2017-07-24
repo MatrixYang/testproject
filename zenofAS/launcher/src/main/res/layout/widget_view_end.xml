@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingBottom="10dp"
+              android:paddingTop="10dp">
+
+    <TextView
+            android:id="@+id/widget_end_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="@color/text_shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="@integer/shadow_dy"
+            android:shadowRadius="@integer/shadow_radius"
+            android:text="@string/widget_add"
+            android:textColor="#e4e4e4"
+            android:textSize="18dp"/>
+
+    <ImageView
+            android:id="@+id/widget_new_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/widget_end_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/add_widget_new_tip"
+            android:visibility="gone"/>
+
+    <View
+            android:id="@+id/end_height"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/widget_end_text"
+            android:visibility="gone"/>
+
+    <View
+            android:id="@+id/end_view"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/navigation_height"
+            android:layout_below="@+id/end_height"
+            android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,2 @@
+include ':launcher', ':notificationservice', ':IconPKG', ':wallpaperlib', ':localsearch', ':wallpaper',
+        ':downloaderlib', ':nanobooster', ':nanoqrcodescan', ':Pushlib'

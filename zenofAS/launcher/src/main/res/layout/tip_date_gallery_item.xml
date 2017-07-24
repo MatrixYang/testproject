@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/tip_date_gallery_margin_top"
+              android:layout_marginTop="@dimen/tip_date_gallery_margin_top"
+              android:gravity="center"
+              android:paddingLeft="@dimen/tip_date_gallery_itempadding"
+              android:paddingRight="@dimen/tip_date_gallery_itempadding">
+
+    <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/tip_date_gallery_textsize"/>
+
+</LinearLayout>

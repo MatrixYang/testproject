@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configure>
+    <AppIfo>
+        <PackageName>com.cooeeui.zenlauncher</PackageName>
+        <PackageName>com.cooeeui.nanobooster</PackageName>
+        <PackageName>com.cooeeui.nanoqrcodescan</PackageName>
+        <PackageName>com.cooeeui.iconui</PackageName>
+        <PackageName>com.cooeeui.notificationservice</PackageName>
+    </AppIfo>
+</Configure>
+

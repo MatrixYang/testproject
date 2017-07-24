@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="image_size">50dp</dimen>
+
+    <!-- home screen start -->
+    <dimen name="home_add_icon_size">46dp</dimen>
+    <dimen name="home_add_icon_size_textwidth">46dp</dimen>
+    <dimen name="home_add_icon_size_textsize">9dp</dimen>
+    <!-- home screen end -->
+
+
+    <!-- favorite start -->
+    <dimen name="favorite_title_padding_top">23dp</dimen>
+    <dimen name="favorite_title_padding_bottom">23dp</dimen>
+    <dimen name="favorite_grid_vertical_spacing">34dp</dimen>
+    <dimen name="favorite_speedy_container_height">68dp</dimen>
+    <dimen name="favorite_recently_recommond_height">171dp</dimen>
+    <!-- favorite end -->
+
+
+    <!-- all APP start -->
+    <dimen name="all_apps_width">377dp</dimen>
+    <dimen name="all_apps_titlebar_height">57dp</dimen>
+    <dimen name="all_apps_section_size">23dp</dimen>
+    <dimen name="all_apps_list_padding_top_bottom">23dp</dimen>
+    <dimen name="all_apps_list_grid_margin_left">6dp</dimen>
+    <dimen name="all_apps_gridItemHeight">75dp</dimen>
+    <dimen name="all_apps_gridItemWidth">75dp</dimen>
+    <!-- all APP end -->
+
+
+    <!-- tip start -->
+    <dimen name="cicle_height">105dp</dimen>
+    <dimen name="cicle_margin_left_right">47dp</dimen>
+    <dimen name="cicle_padding">53dp</dimen>
+    <dimen name="cicle_margin_top">18dp</dimen>
+    <dimen name="cicle_tips_margin_top">18dp</dimen>
+    <dimen name="cicle_tips_unit_margin_top">5dp</dimen>
+    <dimen name="top_title_margin_left">25dp</dimen>
+    <dimen name="top_title_margin_top">21dp</dimen>
+    <dimen name="top_item_margin_left_right">25dp</dimen>
+    <dimen name="top_item_margin_top">12dp</dimen>
+    <dimen name="top_item_content_margin_top_bottom">9dp</dimen>
+    <dimen name="top_item_icon_wh">36dp</dimen>
+    <dimen name="top_item_appname_margin_bottom">7dp</dimen>
+    <dimen name="top_item_height">54dp</dimen>
+    <dimen name="circle_text_size">33dp</dimen>
+    <dimen name="circle_tip_size">12dp</dimen>
+    <dimen name="top_title_text_size">18dp</dimen>
+    <dimen name="top_title_progress_text_size">10dp</dimen>
+    <dimen name="tip_view_marginleft">14dp</dimen>
+    <dimen name="tip_view_margintop">10dp</dimen>
+    <dimen name="top_item_progress_margin_top">7dp</dimen>
+    <dimen name="tip_date_gallery">30dp</dimen>
+    <dimen name="tip_date_gallery_margin_top">13.5dp</dimen>
+    <dimen name="tip_date_gallery_textsize">14dp</dimen>
+    <dimen name="tip_date_gallery_itempadding">18dp</dimen>
+    <!-- tip end -->
+
+
+    <!-- home screen sacles values start -->
+    <item name="weathergroup_temprature_height_sacle" format="float" type="dimen">1.2</item>
+    <!-- home screen sacles values end -->
+
+
+    <!-- change app icon -->
+    <dimen name="change_app_icon_icon_size">48dp</dimen>
+    <dimen name="change_app_icon_oldicon_size">48dp</dimen>
+    <dimen name="change_app_icon_newicon_size">48dp</dimen>
+    <dimen name="change_app_icon_gradview_horizontalSpacing">34dp</dimen>
+    <dimen name="change_app_icon_gradview_verticalSpacing">31dp</dimen>
+    <dimen name="change_app_icon_gradview_marginbottom">0dp</dimen>
+    <dimen name="change_app_icon_gradview_margintop">26dp</dimen>
+    <!-- change app icon -->
+
+
+    <!-- alert dialog -->
+    <dimen name="alert_dialog_layout_width">375dp</dimen>
+    <!-- alert dialog end -->
+
+
+    <!-- home screen sacles values start -->
+    <item name="date_group_week_Y_sacle" format="float" type="dimen">0.38</item>
+    <item name="date_group_week_height_sacle" format="float" type="dimen">0.23</item>
+    <!-- home screen sacles values end -->
+
+    <!-- weather widget start -->
+    <dimen name="weather_widget_minwidth">144dp</dimen>
+    <dimen name="weather_widget_minheight">84dp</dimen>
+
+    <dimen name="widget_height">84dp</dimen>
+    <item name="widget_left_weight" format="float" type="dimen">1</item>
+    <item name="widget_right_weight" format="float" type="dimen">1.6</item>
+    <dimen name="widget_refresh_left">34dp</dimen>
+    <dimen name="widget_refresh_top">18dp</dimen>
+    <dimen name="widget_unknow_left">8dp</dimen>
+    <dimen name="widget_unknow_top">11dp</dimen>
+    <dimen name="widget_fu_tmp0_left">8dp</dimen>
+    <dimen name="widget_fu_tmp0_top">29dp</dimen>
+    <item name="widget_tmp_scale" format="float" type="dimen">0.6</item>
+    <item name="widget_unit_scale" format="float" type="dimen">1.0</item>
+    <item name="widget_condition_scale" format="float" type="dimen">1.0</item>
+    <dimen name="widget_fu_tmp1_left">-8dp</dimen>
+    <dimen name="widget_fu_tmp1_top">-3dp</dimen>
+    <dimen name="widget_fu_tmp2_left">-18dp</dimen>
+    <dimen name="widget_fu_tmp2_top">-3dp</dimen>
+    <dimen name="widget_fu_unit_left">-8dp</dimen>
+    <dimen name="widget_fu_unit_top">11dp</dimen>
+    <dimen name="widget_zheng_tmp1_left">-2dp</dimen>
+    <dimen name="widget_zheng_tmp1_top">-3dp</dimen>
+    <dimen name="widget_zheng_tmp2_left">-18dp</dimen>
+    <dimen name="widget_zheng_tmp2_top">-3dp</dimen>
+    <dimen name="widget_zheng_unit_left">-8dp</dimen>
+    <dimen name="widget_zheng_unit_top">11dp</dimen>
+    <dimen name="curr_temperature_right">6dp</dimen>
+    <dimen name="curr_temperature_bottom">5dp</dimen>
+    <dimen name="curr_temperature_textsize">11dp</dimen>
+    <dimen name="curr_condition_right">8dp</dimen>
+    <dimen name="widget_line_bottom">22dp</dimen>
+    <dimen name="widget_line_left">8dp</dimen>
+    <dimen name="widget_line_right">8dp</dimen>
+    <dimen name="widget_week_top">6dp</dimen>
+    <dimen name="widget_condition_top">3dp</dimen>
+    <!-- weather widget end -->
+
+    <!-- hotapp widget begin-->
+    <dimen name="hotapp_widget_minwidth">144dp</dimen>
+    <dimen name="hotapp_widget_minheight">132dp</dimen>
+
+    <dimen name="hotapp_widget_icon_width">129dp</dimen>
+    <dimen name="hotapp_widget_icon_height">132dp</dimen>
+    <!-- hotapp widget end-->
+
+</resources>

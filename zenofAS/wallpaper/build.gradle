@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    // 编译SDK的版本
+    compileSdkVersion 22
+    // build tools的版本
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.cooeeui.wallpaper"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 14
+        versionName "1.1.4"
+    }
+
+    //配置签名文件的位置
+    signingConfigs {
+        debug {
+        }
+        release {
+            storeFile file("../key")
+            storePassword "cooee8888"
+            keyAlias "cooee"
+            keyPassword "cooee8888"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            shrinkResources true    // 自动清除项目中无用资源
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+            // 输出apk名称为Wallpaper_v1.0.apk
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "Wallpaper_v${defaultConfig.versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':wallpaperlib')
+    compile project(':Pushlib')
+    compile 'org.jetbrains:annotations:13.0'
+}

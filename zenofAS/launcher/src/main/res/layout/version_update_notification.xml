@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:background="#ffffff">
+
+    <ImageView
+            android:layout_width="@dimen/version_notification_icon_size"
+            android:layout_height="@dimen/version_notification_icon_size"
+            android:layout_marginLeft="@dimen/version_notification_margin_lr"
+            android:layout_marginRight="@dimen/version_notification_margin_lr"
+            android:layout_marginTop="@dimen/version_notification_margin_ud"
+            android:layout_marginBottom="@dimen/version_notification_margin_ud"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+            android:id="@+id/tv_version_notification_prompt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/version_update_prompt"
+            android:textColor="#545860"
+            android:textSize="13dp"/>
+
+    <TextView
+            android:id="@+id/tv_version_notification_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/version_notification_margin_lr"
+            android:textColor="#545860"
+            android:text="16:39"
+            android:textSize="13dp"/>
+
+</LinearLayout>

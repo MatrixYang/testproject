@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Notification download begin -->
+    <dimen name="downloader_noti_icon_width">39dp</dimen>
+    <dimen name="downloader_noti_icon_height">40dp</dimen>
+    <dimen name="downloader_noti_icon_margin_left">12dp</dimen>
+    <dimen name="downloader_noti_icon_margin_top">10dp</dimen>
+    <dimen name="downloader_noti_status_margin_top">11dp</dimen>
+    <dimen name="downloader_noti_status_margin_left">15dp</dimen>
+    <dimen name="downloader_noti_status_text_size">15dp</dimen>
+    <dimen name="downloader_noti_progress_height">5dp</dimen>
+    <dimen name="downloader_noti_progress_margin_right">15dp</dimen>
+    <dimen name="downloader_noti_progress_margin_top">10dp</dimen>
+    <dimen name="downloader_noti_progress_margin_left">15dp</dimen>
+    <dimen name="downloader_noti_right_button_width">12dp</dimen>
+    <dimen name="downloader_noti_right_button_height">14dp</dimen>
+    <dimen name="downloader_noti_right_button_margin_top">15dp</dimen>
+    <dimen name="downloader_noti_right_button_margin_right">15dp</dimen>
+    <dimen name="downloader_noti_left_button_width">12dp</dimen>
+    <dimen name="downloader_noti_left_button_height">14dp</dimen>
+    <dimen name="downloader_noti_left_button_margin_top">16dp</dimen>
+    <dimen name="downloader_noti_left_button_margin_right">20dp</dimen>
+    <dimen name="camera_xml_text">90dp</dimen>
+    <!-- Notification download end -->
+
+    <dimen name="ad_unit_height">180dp</dimen>
+    <dimen name="ad_unit_height_domestic">150dp</dimen>
+
+</resources>

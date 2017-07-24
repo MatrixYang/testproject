@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="default_app_icon_name">
+        <item>apps_whatsapp</item>
+        <item>browser_01</item>
+        <item>browser_02</item>
+        <item>browser_03</item>
+        <item>browser_04</item>
+        <item>camera_01</item>
+        <item>camera_02</item>
+        <item>camera_03</item>
+        <item>camera_04</item>
+        <item>contacts_01</item>
+        <item>contacts_02</item>
+        <item>contacts_03</item>
+        <item>contacts_04</item>
+        <item>dial_01</item>
+        <item>dial_02</item>
+        <item>dial_03</item>
+        <item>dial_04</item>
+        <item>dial_05</item>
+        <item>facebook_01</item>
+        <item>facebook_02</item>
+        <item>facebook_03</item>
+        <item>facebook_04</item>
+        <item>flipboard_01</item>
+        <item>flipboard_02</item>
+        <item>flipboard_03</item>
+        <item>flipboard_04</item>
+        <item>google_hangouts_01</item>
+        <item>google_hangouts_02</item>
+        <item>google_hangouts_03</item>
+        <item>google_hangouts_04</item>
+        <item>google_maps_01</item>
+        <item>google_maps_02</item>
+        <item>google_maps_03</item>
+        <item>google_maps_04</item>
+        <item>google_playstore_01</item>
+        <item>google_playstore_02</item>
+        <item>google_playstore_03</item>
+        <item>google_playstore_04</item>
+        <item>google_plus_01</item>
+        <item>google_plus_02</item>
+        <item>google_plus_03</item>
+        <item>google_plus_04</item>
+        <item>google_youtube_01</item>
+        <item>google_youtube_02</item>
+        <item>google_youtube_03</item>
+        <item>google_youtube_04</item>
+        <item>setting_01</item>
+        <item>setting_02</item>
+        <item>setting_03</item>
+        <item>setting_04</item>
+        <item>sms_01</item>
+        <item>sms_02</item>
+        <item>sms_03</item>
+        <item>sms_04</item>
+        <item>sms_05</item>
+        <item>sms_06</item>
+        <item>twitter_01</item>
+        <item>twitter_02</item>
+        <item>twitter_03</item>
+        <item>twitter_04</item>
+        <item>uber_01</item>
+        <item>uber_02</item>
+        <item>uber_03</item>
+        <item>wechat_01</item>
+        <item>wechat_02</item>
+        <item>wechat_03</item>
+        <item>wechat_04</item>
+        <item>yahoo_mail_01</item>
+        <item>yahoo_mail_02</item>
+        <item>yahoo_mail_03</item>
+    </string-array>
+
+</resources>

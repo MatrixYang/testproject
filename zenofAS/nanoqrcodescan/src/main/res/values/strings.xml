@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Nano QR Code Scanner</string>
+    <string name="string_interlinkage">Interlinkage</string>
+    <string name="string_text">Text</string>
+    <string name="share_title">Choose the way to share</string>
+    <string name="exit_toast">Again according to exit the program</string>
+
+    <string name="open">Open</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="copy_success">Copy Success</string>
+    <string name="select_new_photo">Select a new photo</string>
+    <string name="back">Back</string>
+    <string name="no_history_record">NO History Record</string>
+    <string name="history_record">Historical records</string>
+    <string name="no_photo">No photo is selected</string>
+    <string name="decoding_error">No QR Code found in this photo</string>
+
+    <!-- Notification download begin -->
+    <string name="downloader_noti_downloading">Downloading...</string>
+    <string name="downloader_noti_pause">Pause</string>
+    <string name="downloader_noti_error">Error</string>
+    <string name="downloader_noti_done">Done!</string>
+    <string name="Align_the">Align the QR Code with the frame to scan</string>
+    <string name="history_copy">Copy</string>
+    <string name="history_delete">Delete</string>
+    <string name="history_share">Share</string>
+    <string name="dialog_warning">Warning</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_content">Can\'t connect to camera</string>
+    <!-- Notification download end -->
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">Nano壁紙</string>
+    <string name="wallpaper_local">本地壁紙</string>
+    <string name="wallpaper_gallery">相冊</string>
+    <string name="wallpaper_liver_wallpaper">動態壁紙</string>
+    <string name="wallpaper_check_net">請檢查網絡連接</string>
+    <string name="wallpaper_set_wallpaper">壁紙詳情</string>
+    <string name="wallpaper_set_as_wallpaper">設置為當前壁紙</string>
+    <string name="wallPaper_selector_fixed">固定壁紙</string>
+    <string name="wallPaper_selector_scrollable">滾動壁紙</string>
+    <string name="wallPaperSetSuccess">設置壁紙成功!</string>
+    <string name="wallPaperSetFailed">設置壁紙失敗!</string>
+    <string name="wallpaper_save_success">成功保存到本地</string>
+    <string name="wallPaper_detailDialogMessage">正在加載高清壁紙</string>
+    <string name="live_wallpaper_text_setting">設置</string>
+    <string name="live_wallpaper_summary">啟動Nano桌面</string>
+    <string name="zen_launcher">Nano桌面</string>
+
+</resources>

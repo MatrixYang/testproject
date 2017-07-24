@@ -1,0 +1,140 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.cooeeui.nanoqrcodescan">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <!-- MobvistaSDK *begin* -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- These permissions are strongly recommended and will result in higher performance -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- MobvistaSDK *end* -->
+
+    <!-- Kmob广告begin -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <!-- Kmob广告end -->
+
+
+    <application android:allowBackup="true"
+                 android:label="@string/app_name"
+                 android:icon="@mipmap/ic_launcher"
+                 android:supportsRtl="true"
+                 android:theme="@style/AppTheme">
+
+        <activity
+                android:name="com.cooeeui.activity.CaptureActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Black.NoTitleBar"
+                android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- <activity
+                 android:name="com.cooeeui.mytest.MyTestActivity"
+                 android:configChanges="orientation|keyboardHidden|screenSize"
+                 android:label="@string/app_name"
+                 android:screenOrientation="portrait"
+                 android:theme="@android:style/Theme.Black.NoTitleBar"
+                 android:windowSoftInputMode="stateAlwaysHidden">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"/>
+
+                 <category android:name="android.intent.category.LAUNCHER"/>
+             </intent-filter>
+         </activity>-->
+        <activity
+                android:name="com.cooeeui.scan.HistoryActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <activity
+                android:name="com.cooeeui.scan.DialogScanDetail"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@style/MyDialogStyle">
+        </activity>
+
+        <!-- MobvistaSDK *begin* -->
+        <activity
+                android:name="com.mobvista.msdk.shell.MVActivity"
+                android:configChanges="keyboard|orientation"
+                android:screenOrientation="portrait">
+        </activity>
+        <service android:name="com.mobvista.msdk.shell.MVService">
+            <intent-filter>
+                <action android:name="com.mobvista.msdk.download.action"/>
+            </intent-filter>
+        </service>
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="284400338565208"/>
+        <!-- MobvistaSDK *end* -->
+
+
+        <!-- Kmob广告begin -->
+        <meta-data
+                android:name="KMobAd_APP_ID"
+                android:value="643"/>
+        <activity android:name="com.kmob.kmobsdk.InAppWebView"/>
+        <activity
+                android:name="com.kmob.kmobsdk.AdActivity"
+                android:process="com.cooeeui.brand.zenlauncher.search"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service
+                android:name="com.kmob.kmobsdk.KmobService"
+                android:exported="true"
+                android:process="com.kmob.dl.process"/>
+        <!-- Kmob广告end -->
+
+        <!-- Cooee 统计 begin -->
+        <service
+                android:name="com.cooee.statistics.StatisticsServiceNew"
+                android:enabled="true"
+                android:exported="true"
+                android:process="com.cooeeui.wallpaper.statistics"/>
+        <!-- Cooee 统计 end -->
+
+        <!-- 友盟推送push begin -->
+        <meta-data
+                android:name="UMENG_APPKEY"
+                android:value="57511ce5e0f55a80d5002707" >
+        </meta-data>
+        <meta-data
+                android:name="UMENG_MESSAGE_SECRET"
+                android:value="01eb300500507b4b1167863ed0aac0e3" >
+        </meta-data>
+        <!-- 友盟推送push end -->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">Nano Wallpaper</string>
+    <string name="wallpaper_local">Local Wallpaper</string>
+    <string name="wallpaper_gallery">Gallery</string>
+    <string name="wallpaper_liver_wallpaper">Livewallpaper</string>
+    <string name="wallpaper_check_net">please check the network</string>
+    <string name="wallpaper_set_wallpaper">Wallpaper Detail</string>
+    <string name="wallpaper_set_as_wallpaper">SET AS WALLPAPER</string>
+    <string name="wallPaper_selector_fixed">Fixed wallpaper</string>
+    <string name="wallPaper_selector_scrollable">Scrollable wallpaper</string>
+    <string name="wallPaperSetSuccess">set wallpaper success!</string>
+    <string name="wallPaperSetFailed">set wallpaper Failed!</string>
+    <string name="wallpaper_save_success">save success</string>
+    <string name="wallPaper_detailDialogMessage">loading HD wallpaper</string>
+    <string name="live_wallpaper_text_setting">Settings</string>
+    <string name="live_wallpaper_summary">Start Nano Launcher</string>
+    <string name="zen_launcher">Nano Launcher</string>
+
+</resources>

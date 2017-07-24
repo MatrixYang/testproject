@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/fl_accessibility_dialog"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="invisible">
+
+    <ImageView
+            android:id="@+id/iv_accessibility_alert_dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#60000000"/>
+
+    <RelativeLayout
+            android:id="@+id/rl_accessibility_alert_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:background="#ffffff"
+            android:layout_gravity="bottom">
+
+        <LinearLayout
+                android:id="@+id/ll_title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/ic_launcher"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Enable Nano Booster"
+                    android:textColor="#5c6067"
+                    android:textSize="20dp"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/iv_divider_line"
+                android:layout_below="@id/ll_title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#848991">
+        </ImageView>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_below="@id/iv_divider_line"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.5"
+                android:text="With Nano Booster accessibility, Nano Booster will help you to stop some unnecessary background Apps, improve your phone speed by 50%."
+                android:textColor="#848991"
+                android:textSize="14dp"/>
+
+        <com.cooeeui.nanobooster.views.RippleView
+                xmlns:ripple="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btn_accessibility_enable_now"
+                android:background="#00aae9"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:clickable="true"
+                ripple:rv_type="rectangle"
+                ripple:rv_rippleDuration="100">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Enable Now"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"/>
+
+        </com.cooeeui.nanobooster.views.RippleView>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/kuso_search_list_background">
+
+    <View style="@style/kuso_local_serach_divider"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp">
+
+        <TextView
+                android:id="@+id/kuso_search_clean_history_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:textColor="@color/kuso_history_title_color"
+                android:textSize="@dimen/kuso_localsearch_title_textsize"/>
+
+        <View style="@style/kuso_local_serach_line"/>
+    </RelativeLayout>
+</LinearLayout>

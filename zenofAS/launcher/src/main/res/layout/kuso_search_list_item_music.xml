@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:zhy="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/kuso_localsearch_item_height"
+                android:background="@drawable/kuso_selector_search_list_item"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:clickable="false"
+                android:focusable="false">
+
+    <com.cooeeui.brand.zenlauncher.localsearch.IconImageView
+            android:id="@+id/kuso_search_list_item_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            zhy:src="@drawable/kuso_music_icon"
+            zhy:type="circle"
+            />
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/kuso_search_list_item_icon"
+            android:layout_marginLeft="8dp"
+            >
+
+        <TextView
+                android:id="@id/kuso_search_list_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/kuso_engine_name_text"
+                android:textSize="@dimen/kuso_localsearch_item_textsize"/>
+
+        <TextView
+                android:id="@+id/kuso_search_list_item_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/kuso_engine_summary_text"
+                android:textSize="@dimen/kuso_localsearch_item_summary_textsize"
+                />
+    </LinearLayout>
+
+
+</RelativeLayout>
